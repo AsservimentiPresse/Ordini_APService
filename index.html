@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Ordini Magazzino </title>
+<title>Ordini Magazzino APService </title>
 
 <script src="https://unpkg.com/html5-qrcode"></script>
 
@@ -80,1115 +80,6418 @@ li {
 
 // 📦 DATABASE
 let prodotti = {
-
-  "NS E4TE1SMK-F41": {
-    "descrizione": "Finecorsa di sicurezza con serratura PIZZATO",
-    "codiceInterno": "6274",
+  "NEW 050ASLFI01": {
+    "descrizione": "App. di Sicurezza 220-690V FC3C F Int. 1nc",
+    "codiceInterno": "4",
     "tipo": "P"
   },
-  "CA12PD0M": {
-    "descrizione": "Cavo per finecorsa con serratura PIZZATO 12 metri",
-    "codiceInterno": "6275",
+  "NEW 050C7": {
+    "descrizione": "Connettore C7",
+    "codiceInterno": "5",
     "tipo": "P"
   },
-  "060PMG": {
-    "descrizione": "Pulsantiera mobile",
-    "codiceInterno": "8189",
+  "NEW 050DSL": {
+    "descrizione": "Dispositivo di Sicurezza Lampeggiante 110-690V",
+    "codiceInterno": "6",
     "tipo": "P"
   },
-  "016P3P22": {
-    "descrizione": "Puls. 3 pos. Standard 2NO+2NC",
-    "codiceInterno": "8190",
+  "NEW 050FC3C": {
+    "descrizione": "Finecorsa Tripolare 3NC",
+    "codiceInterno": "7",
     "tipo": "P"
   },
-  "MU54630": {
-    "descrizione": "IMPACT67 PN DIO8 IOL8 M12L 5P - PROFINET, modulo compatto, metallo",
-    "codiceInterno": "8587",
+  "NEW 050FI01": {
+    "descrizione": "Finecorsa Interblocco 1nc",
+    "codiceInterno": "8",
     "tipo": "P"
   },
-  "MU59818": {
-    "descrizione": "MVP12-P6 DIO8 DIO8 8xM12A IOLB12 E0 - Hub IO-Link,custodia in plastica 60mm",
-    "codiceInterno": "8588",
+  "NEW 050PE13C": {
+    "descrizione": "Plafoniera 13W 240V 50-60Hz",
+    "codiceInterno": "9",
     "tipo": "P"
   },
-  "CANALE ZAMET": {
-    "descrizione": "KIT CANALE CALPESTABILI ZAMET Vs. off. 24/CB/100615 del 20/02/2024",
-    "codiceInterno": "9782",
+  "NEW 050S030": {
+    "descrizione": "Staffa Base Reversibile Dispositivo Lampeggiante",
+    "codiceInterno": "10",
     "tipo": "P"
   },
-  "MU59738": {
-    "descrizione": "MVP12-P6 DIO8 DIO8 8xM12A IOLA12 PL5 B0 IO-Link Class A Hub + Ext.power port",
-    "codiceInterno": "9817",
+  "NEW 050S032": {
+    "descrizione": "Staffa a Slitta 2 Fissaggi",
+    "codiceInterno": "11",
     "tipo": "P"
   },
-  "OMRA4EGBM2B041": {
-    "descrizione": "PULSANTE SICUREZZA OMRON",
-    "codiceInterno": "9897",
+  "ELSAT DLNFLED8": {
+    "descrizione": "DISP.DI.ILL. A.LED 8W 600LM 230V 50/60Hz+MICRO",
+    "codiceInterno": "2935",
     "tipo": "P"
   },
-  "OMRA4EGOP2": {
-    "descrizione": "SICUREZZA-ACCA4EGSUPPORT",
-    "codiceInterno": "9898",
+  "ELSAT DLNLED4": {
+    "descrizione": "DISP.DI.ILL. A.LED 4W 500LM 230V 50/60Hz",
+    "codiceInterno": "2976",
     "tipo": "P"
   },
-  "SIE 6FX50022DC101DA0": {
-    "descrizione": "CAVO DI SEGNALE 30MT SINAMICS DRIVE CLIQ",
-    "codiceInterno": "10736",
+  "FIN 7L4302301100": {
+    "descrizione": "Lampada Led 6W 110-240V",
+    "codiceInterno": "3160",
     "tipo": "P"
   },
-  "SIE 6FX50025DN461DA0": {
-    "descrizione": "CAVO POTENZA 30MT + FRENO",
-    "codiceInterno": "10738",
-    "tipo": "T"
+  "FIN 7L4602301100": {
+    "descrizione": "Lampada Led 13W 110-240V",
+    "codiceInterno": "3213",
+    "tipo": "P"
+  },
+  "NEW 060PMG": {
+    "descrizione": "",
+    "codiceInterno": "",
+    "tipo": "P"
+  },
+  "DIX WDR-120-24": {
+    "descrizione": "MW ET-SW/180-550/24/5AWDRH120",
+    "codiceInterno": "12",
+    "tipo": "P"
+  },
+  "DIX TDR-240-24": {
+    "descrizione": "MW ET-SW/3X400-500V/24Vdc/10A/DRT240",
+    "codiceInterno": "13",
+    "tipo": "P"
+  },
+  "EUR ET6084-NDR120": {
+    "descrizione": "MW ET-SW/90-264Vac/24Vdc/5A/NDR120",
+    "codiceInterno": "14",
+    "tipo": "P"
+  },
+  "TDR-480-24": {
+    "descrizione": "power supply with PFC and Constant Current; Output 24VDC at 20A",
+    "codiceInterno": "2336",
+    "tipo": "P"
+  },
+  "1606-XLE960DX-3N": {
+    "descrizione": "Power Supply 408-552VAC 3 Phase Inp, 24VDC Out, 960 Watt, 40A",
+    "codiceInterno": "2655",
+    "tipo": "P"
+  },
+  "1606-XLS480E-3": {
+    "descrizione": "Power Supply, 480 W, 24V DC, 3-Phase 20A",
+    "codiceInterno": "2656",
+    "tipo": "P"
+  },
+  "ET6154": {
+    "descrizione": "Alimentatore TDR-240-24 Trif. 10A 24Vdc",
+    "codiceInterno": "2756",
+    "tipo": "P"
+  },
+  "ET5931": {
+    "descrizione": "Alimentatore WDR-120-24 Bifase 5A 24Vdc",
+    "codiceInterno": "2757",
+    "tipo": "P"
+  },
+  "WEI1469540000": {
+    "descrizione": "Alimentatore PRO ECO3 240W 24V 10A",
+    "codiceInterno": "3401",
+    "tipo": "P"
+  },
+  "DKC RZDPC22": {
+    "descrizione": "Staffa Portacanalina x Pulsanti D.22 (50pz)",
+    "codiceInterno": "15",
+    "tipo": "P"
+  },
+  "FCZ A0Z53F7T200KM": {
+    "descrizione": "Mensola 53 Saldata 200(+20)",
+    "codiceInterno": "16",
+    "tipo": "P"
+  },
+  "FCZ B4E01A3H060L1": {
+    "descrizione": "Passerella a Rete-NL senza base 60x60mm (3mt)",
+    "codiceInterno": "17",
+    "tipo": "P"
+  },
+  "BOC 02181": {
+    "descrizione": "DN-AS G Canalina Cablaggio Flex 15mm (24pz)",
+    "codiceInterno": "18",
+    "tipo": "P"
+  },
+  "BOC 02182": {
+    "descrizione": "DN-AM G Canalina Cablaggio Flex 25mm (24pz)",
+    "codiceInterno": "19",
+    "tipo": "P"
+  },
+  "BOC 02183": {
+    "descrizione": "DN-AL G Canalina Cablaggio Flex 35mm (14pz)",
+    "codiceInterno": "20",
+    "tipo": "P"
+  },
+  "BOC 04847": {
+    "descrizione": "Scatola Parete Lisce 380x300x120 IP56",
+    "codiceInterno": "21",
+    "tipo": "P"
+  },
+  "BOC COV60": {
+    "descrizione": "Coperchio Canalina L.60 Grigia",
+    "codiceInterno": "22",
+    "tipo": "P"
+  },
+  "BOC COV80": {
+    "descrizione": "Coperchio Canalina L.80 Grigia",
+    "codiceInterno": "23",
+    "tipo": "P"
+  },
+  "BOC R6-06511": {
+    "descrizione": "Ductafix R6 Rivetti in Nylon (cf 500pz)",
+    "codiceInterno": "24",
+    "tipo": "P"
+  },
+  "BOC T1EN-100X80G": {
+    "descrizione": "Canalina Cablaggio Grigia 100x80 (16mt)",
+    "codiceInterno": "25",
+    "tipo": "P"
+  },
+  "BOC T1EN-25X40G": {
+    "descrizione": "Canalina Cablaggio Grigia 25X40 (72mt)",
+    "codiceInterno": "26",
+    "tipo": "P"
+  },
+  "BOC T1EN-25X60G": {
+    "descrizione": "Canalina Cablaggio Grigia 25x60 (48mt)",
+    "codiceInterno": "27",
+    "tipo": "P"
+  },
+  "BOC T1EN-25X80G": {
+    "descrizione": "Canalina Cablaggio Grigia 25x80 (48mt)",
+    "codiceInterno": "28",
+    "tipo": "P"
+  },
+  "BOC T1EN-40X40G": {
+    "descrizione": "Canalina Cablaggio Grigia 40x40",
+    "codiceInterno": "29",
+    "tipo": "P"
+  },
+  "BOC T1EN-40X60G": {
+    "descrizione": "Canalina Cablaggio Grigia 40x60 (36mt)",
+    "codiceInterno": "30",
+    "tipo": "P"
+  },
+  "BOC T1EN-40X80G": {
+    "descrizione": "Canalina Cablaggio Grigia 40x80 (32mt)",
+    "codiceInterno": "31",
+    "tipo": "P"
+  },
+  "BOC T1EN-60X80G": {
+    "descrizione": "Canalina Cablaggio Grigia 60x80 (24mt)",
+    "codiceInterno": "32",
+    "tipo": "P"
+  },
+  "BOC T1EN-80X80G": {
+    "descrizione": "Canalina Cablaggio Grigia 80x80 (24mt)",
+    "codiceInterno": "33",
+    "tipo": "P"
+  },
+  "LEG 047272": {
+    "descrizione": "WL2006-Blizzard P Coppia Pann. Lat. H. 2000xP.600",
+    "codiceInterno": "34",
+    "tipo": "P"
+  },
+  "LEG 047273": {
+    "descrizione": "WL2206-Blizzard P Coppia Pann. Lat. H.2200xP.600",
+    "codiceInterno": "35",
+    "tipo": "P"
+  },
+  "LEG 047617": {
+    "descrizione": "WZ2010F-Blizzard P piastra frontale 2000x1000",
+    "codiceInterno": "36",
+    "tipo": "P"
+  },
+  "LEG 047618": {
+    "descrizione": "Piastra interna ins. frontale 2000x1200",
+    "codiceInterno": "37",
+    "tipo": "P"
+  },
+  "LEG 047624": {
+    "descrizione": "WZ2212F-Blizzard P Piastra Frontale H.2200xL.1200",
+    "codiceInterno": "38",
+    "tipo": "P"
+  },
+  "LEG 047653": {
+    "descrizione": "WZ2000-Blizzard P sett. unione piastre 2000x100",
+    "codiceInterno": "39",
+    "tipo": "P"
+  },
+  "LEG 047658": {
+    "descrizione": "WZ1100-Zoccolo Frontale L.1000x100",
+    "codiceInterno": "40",
+    "tipo": "P"
+  },
+  "LEG 047659": {
+    "descrizione": "WZ1120-Zoccolo Frontale L.1200x100",
+    "codiceInterno": "2320",
+    "tipo": "P"
+  },
+  "LEG 047678": {
+    "descrizione": "WZ0160-Zoccolo Laterale P.600x100",
+    "codiceInterno": "42",
+    "tipo": "P"
+  },
+  "LEG 047683": {
+    "descrizione": "WH9009-Blizzard P Kit unione piano 1000kg",
+    "codiceInterno": "43",
+    "tipo": "P"
+  },
+  "LEG 047696": {
+    "descrizione": "WH9002-Kit 4 golfari M14 1000kg",
+    "codiceInterno": "44",
+    "tipo": "P"
+  },
+  "LEG 047698": {
+    "descrizione": "WH9003-Blizzard P angolari di sollevamento (2pz)",
+    "codiceInterno": "45",
+    "tipo": "P"
+  },
+  "LEG 047863": {
+    "descrizione": "WS2006Z-Blizzard P 2000x1000x600+zocc.100",
+    "codiceInterno": "46",
+    "tipo": "P"
+  },
+  "LEG 047928": {
+    "descrizione": "WS2026-Blizzard P L.1200xH.2000xP.600 2P Zocc.100",
+    "codiceInterno": "47",
+    "tipo": "P"
+  },
+  "LEG 047948": {
+    "descrizione": "WS2226-Blizzard P L.1200xH.2200xP.600 2P Zocc.100",
+    "codiceInterno": "48",
+    "tipo": "P"
+  },
+  "LEG 048016": {
+    "descrizione": "WH0160-Blizzard P traversa semplice L.600",
+    "codiceInterno": "49",
+    "tipo": "P"
+  },
+  "LEG 048683": {
+    "descrizione": "WI2011-Blizzard P porta 2 battenti H.2000xL.1000",
+    "codiceInterno": "50",
+    "tipo": "P"
+  },
+  "LEG 047266": {
+    "descrizione": "WL1805-Blizzard P Coppia Pann. Lat. H 1800xP.500",
+    "codiceInterno": "956",
+    "tipo": "P"
+  },
+  "LEG 047610": {
+    "descrizione": "WZ1880F- Blizzard P piastra frontale 1800x800",
+    "codiceInterno": "919",
+    "tipo": "P"
+  },
+  "LEG 047616": {
+    "descrizione": "WZ2080F-Blizzard P piastra frontale 2000x800",
+    "codiceInterno": "920",
+    "tipo": "P"
+  },
+  "LEG 047656": {
+    "descrizione": "WZ1060-Blizzardp Kit Zoccolo",
+    "codiceInterno": "921",
+    "tipo": "P"
+  },
+  "LEG 047657": {
+    "descrizione": "WZ1080-Zoccolo Frontale L.800x100",
+    "codiceInterno": "922",
+    "tipo": "P"
+  },
+  "LEG 047677": {
+    "descrizione": "WZ0150-Zoccolo Laterale P.500x100",
+    "codiceInterno": "923",
+    "tipo": "P"
+  },
+  "LEG 047682": {
+    "descrizione": "WH9008-Blizzard P Kit unione piano 500kg",
+    "codiceInterno": "924",
+    "tipo": "P"
+  },
+  "LEG 047895": {
+    "descrizione": "WS1885-Blizzard P 1800x800x500+zocc.100 1P Cieca",
+    "codiceInterno": "925",
+    "tipo": "P"
+  },
+  "LEG 047919": {
+    "descrizione": "WS2006Z-Blizzard P 2000x800x600+zocc.100 1P Cieca",
+    "codiceInterno": "926",
+    "tipo": "P"
+  },
+  "LEG 047924": {
+    "descrizione": "WS2006Z-Blizzard P 2000x1000x600+zocc.100 1P Cieca",
+    "codiceInterno": "927",
+    "tipo": "P"
+  },
+  "LEG 048014": {
+    "descrizione": "WH0140-Blizzard P traversa semplice L.400",
+    "codiceInterno": "928",
+    "tipo": "P"
+  },
+  "LEG 048015": {
+    "descrizione": "WH0150-Blizzard P traversa semplice L.500",
+    "codiceInterno": "929",
+    "tipo": "P"
+  },
+  "LEG 048692": {
+    "descrizione": "WZ0104-Crossing Kit Laterale",
+    "codiceInterno": "930",
+    "tipo": "P"
+  },
+  "LEG 631650": {
+    "descrizione": "DL9060-Crossing Leggio",
+    "codiceInterno": "931",
+    "tipo": "P"
+  },
+  "LEG 631655": {
+    "descrizione": "DL1606-Crossing Base P=40",
+    "codiceInterno": "932",
+    "tipo": "P"
+  },
+  "LEG 631665": {
+    "descrizione": "DL1206-Crossing Leggio",
+    "codiceInterno": "933",
+    "tipo": "P"
+  },
+  "LEG 631675": {
+    "descrizione": "DL1406-Crossing Alzata",
+    "codiceInterno": "934",
+    "tipo": "P"
+  },
+  "LEG 631710": {
+    "descrizione": "DL0406-crossing Piastra Alzata",
+    "codiceInterno": "935",
+    "tipo": "P"
+  },
+  "LEG 631651": {
+    "descrizione": "DL9080-Crossing Leggio",
+    "codiceInterno": "2251",
+    "tipo": "P"
+  },
+  "LEG 631653": {
+    "descrizione": "DL9012-Crossing Leggio L.1200",
+    "codiceInterno": "2319",
+    "tipo": "P"
+  },
+  "LEG 631652": {
+    "descrizione": "DL9010-Crossing Leggio L.1000",
+    "codiceInterno": "2392",
+    "tipo": "P"
+  },
+  "LEG 047637": {
+    "descrizione": "Piastra interna ins. laterale 2000x1200",
+    "codiceInterno": "2759",
+    "tipo": "P"
+  },
+  "LEG 048033": {
+    "descrizione": "Traversa/montante universale 2000 mm multifunzione",
+    "codiceInterno": "2782",
+    "tipo": "P"
+  },
+  "LEG 047615": {
+    "descrizione": "WZ2010F-Blizzard P piastra frontale 2000x600",
+    "codiceInterno": "2922",
+    "tipo": "P"
+  },
+  "LEG 047914": {
+    "descrizione": "WS2026-Blizzard P L.600xH.2000xP.600 Porta Ceca Zocc.100",
+    "codiceInterno": "2923",
+    "tipo": "P"
+  },
+  "LEG 047905": {
+    "descrizione": "WS2026-Blizzard P L.1200xH.1800xP.600 2P Zocc.100",
+    "codiceInterno": "3056",
+    "tipo": "P"
+  },
+  "LEG 047632": {
+    "descrizione": "Piastra interna ins. laterale 1800x1200",
+    "codiceInterno": "3057",
+    "tipo": "P"
+  },
+  "LEG 047271": {
+    "descrizione": "WL2006-Blizzard P Coppia Pann. Lat. H. 1800xP.600",
+    "codiceInterno": "3058",
+    "tipo": "P"
+  },
+  "LEG 048032": {
+    "descrizione": "Traversa/montante universale 1800 mm multifunzione",
+    "codiceInterno": "3059",
+    "tipo": "P"
+  },
+  "LEG 047636": {
+    "descrizione": "Piastra interna ins. laterale 2000x1000",
+    "codiceInterno": "3214",
+    "tipo": "P"
+  },
+  "143.250.500": {
+    "descrizione": "Giunto Rotante + Profilo L.500 mm - profiPLUS70",
+    "codiceInterno": "2986",
+    "tipo": "P"
+  },
+  "143.005.000": {
+    "descrizione": "Torretta Rotante - profiPLUS70",
+    "codiceInterno": "2987",
+    "tipo": "P"
+  },
+  "143.020.000": {
+    "descrizione": "Gomito - profiPLUS70",
+    "codiceInterno": "2988",
+    "tipo": "P"
+  },
+  "143.002.000": {
+    "descrizione": "Profilo L.2000 mm - profiPLUS70",
+    "codiceInterno": "2989",
+    "tipo": "P"
+  },
+  "CS-CO-ATP5625": {
+    "descrizione": "Cassetta Pensile 500x600x250 + Foratura profiPLUS70 lato sup.",
+    "codiceInterno": "2990",
+    "tipo": "P"
+  },
+  "LEG 047635": {
+    "descrizione": "Piastra interna ins. laterale 2000x800",
+    "codiceInterno": "3292",
+    "tipo": "P"
+  },
+  "653.07": {
+    "descrizione": "Cassetta di Distrubuzione serie ALUBOX IP66 410x315x150",
+    "codiceInterno": "3280",
+    "tipo": "p"
+  },
+  "DKC R5CQE20126T": {
+    "descrizione": "Armadi componibili CQE 2000x1200x600 porta cieca",
+    "codiceInterno": "2972",
+    "tipo": "P"
+  },
+  "DKC R5PN800": {
+    "descrizione": "Pulpito compatto PN da 800",
+    "codiceInterno": "2252",
+    "tipo": "P"
+  },
+  "DKC R1ZCORR1": {
+    "descrizione": "Angolare Zoccolo H.100 mm.",
+    "codiceInterno": "2253",
+    "tipo": "P"
+  },
+  "DKC R1ZCOR2": {
+    "descrizione": "Angolare Zoccolo H.200 mm.",
+    "codiceInterno": "2968",
+    "tipo": "P"
+  },
+  "DKC R1ZPRO801": {
+    "descrizione": "Profilo Zoccolo H.100 mm. L.800",
+    "codiceInterno": "2255",
+    "tipo": "P"
+  },
+  "DKC R1ZPRO381": {
+    "descrizione": "Profilo Zoccolo H.100 mm. L.380",
+    "codiceInterno": "2256",
+    "tipo": "P"
+  },
+  "DKC R5PN600": {
+    "descrizione": "Pulpito compatto PN da 600",
+    "codiceInterno": "2321",
+    "tipo": "P"
+  },
+  "DKC R1ZPRO601": {
+    "descrizione": "Profilo Zoccolo H.100 mm. L.600",
+    "codiceInterno": "2322",
+    "tipo": "P"
+  },
+  "DKC R1ZPRO602": {
+    "descrizione": "Profilo Zoccolo H.200 mm. L.600",
+    "codiceInterno": "2970",
+    "tipo": "P"
+  },
+  "DKC R5CQE20146": {
+    "descrizione": "Armadi componibili CQE 2000x1400x600 porta cieca",
+    "codiceInterno": "2324",
+    "tipo": "P"
+  },
+  "DKC R5LE2062": {
+    "descrizione": "Laterali per CQE 2000x600 mm.Coppia",
+    "codiceInterno": "2325",
+    "tipo": "P"
+  },
+  "DKC R1ZPRO1401": {
+    "descrizione": "Profilo Zoccolo H.100 mm. L.1400",
+    "codiceInterno": "2326",
+    "tipo": "P"
+  },
+  "DKC RZPCE20140": {
+    "descrizione": "Pannello di cablaggio a inserimento frontale per CQE, CAE 2000x1400",
+    "codiceInterno": "2341",
+    "tipo": "P"
+  },
+  "DKC RZDL60": {
+    "descrizione": "Traversa di fissaggio supporti per barre - cavi laterale P600",
+    "codiceInterno": "2342",
+    "tipo": "P"
+  },
+  "DKC RZA33": {
+    "descrizione": "Golfari di sollevamento per CQE - CAE 12M",
+    "codiceInterno": "2343",
+    "tipo": "P"
+  },
+  "DKC R5CQE20126": {
+    "descrizione": "Armadi componibili CQE 2000x1200x600 porta cieca",
+    "codiceInterno": "2362",
+    "tipo": "P"
+  },
+  "DKC RZPCE20120": {
+    "descrizione": "Pannello di cablaggio a inserimento frontale per CQE, CAE 2000x1200",
+    "codiceInterno": "2363",
+    "tipo": "P"
+  },
+  "DKC R1ZPRO1201": {
+    "descrizione": "Profilo Zoccolo H.100 mm. L.1200",
+    "codiceInterno": "2364",
+    "tipo": "P"
+  },
+  "DKC R1ZPRO1202": {
+    "descrizione": "Profilo Zoccolo H.200 mm. L.1200",
+    "codiceInterno": "2969",
+    "tipo": "P"
+  },
+  "DKC R5CND15042LB": {
+    "descrizione": "Condizionatore da Parete 1500W 400V/2 50/60 Hz",
+    "codiceInterno": "2971",
+    "tipo": "P"
+  },
+  "DKC R5KLM15042LB": {
+    "descrizione": "Condizionatore da Parete 1500W 400V/2 50/60 Hz",
+    "codiceInterno": "2352",
+    "tipo": "P"
+  },
+  "RIT 3243200": {
+    "descrizione": "SK Filtro di Uscita 323x323mm ral 7035",
+    "codiceInterno": "51",
+    "tipo": "P"
+  },
+  "RIT 3244100": {
+    "descrizione": "SK Ventilatore 700-770mc/h 230Vac 323x323mm",
+    "codiceInterno": "52",
+    "tipo": "P"
+  },
+  "RIT 4540000": {
+    "descrizione": "TS Squadrette Kombi",
+    "codiceInterno": "53",
+    "tipo": "P"
+  },
+  "RIT 4591700": {
+    "descrizione": "TS Pannello Intermedio H.2000mm",
+    "codiceInterno": "54",
+    "tipo": "P"
+  },
+  "RIT 5001222": {
+    "descrizione": "CM Lamiere di Fondo L.600mm",
+    "codiceInterno": "1173",
+    "tipo": "P"
+  },
+  "RIT 5001223": {
+    "descrizione": "CM Lamiere di Fondo L.800mm",
+    "codiceInterno": "55",
+    "tipo": "P"
+  },
+  "RIT 6746600": {
+    "descrizione": "TP Compatto Leggio L.600xH.960xP.400 ral 7035",
+    "codiceInterno": "1159",
+    "tipo": "P"
+  },
+  "RIT CP6028.015": {
+    "descrizione": "Frontale per Comfort-Panel e Optipanel.",
+    "codiceInterno": "",
+    "tipo": "P"
+  },
+  "RIT CP6380.510": {
+    "descrizione": "Cassetta in alluminio Optipanel 520x500mm",
+    "codiceInterno": "",
+    "tipo": "P"
+  },
+  "RIT 6748500": {
+    "descrizione": "TP Compatto Leggio L.800xH.960xP.400 ral 7035",
+    "codiceInterno": "56",
+    "tipo": "P"
+  },
+  "RIT 8006500": {
+    "descrizione": "TS Armadio L.1000xH2000xP600 ral 7035",
+    "codiceInterno": "57",
+    "tipo": "P"
+  },
+  "RIT 8106235": {
+    "descrizione": "TS Pareti Laterali H.2000xP.600 ral 7035",
+    "codiceInterno": "58",
+    "tipo": "P"
+  },
+  "RIT 8200000": {
+    "descrizione": "Flex Block Angolare H200 (4pz)",
+    "codiceInterno": "59",
+    "tipo": "P"
+  },
+  "RIT 8200010": {
+    "descrizione": "Flex Block Flangia L.1000 H.200",
+    "codiceInterno": "60",
+    "tipo": "P"
+  },
+  "RIT 8200600": {
+    "descrizione": "Flex Block Flangia L.600 H.200",
+    "codiceInterno": "61",
+    "tipo": "P"
+  },
+  "RIT 8200800": {
+    "descrizione": "Flex Block Flangia L.800 H.200",
+    "codiceInterno": "62",
+    "tipo": "P"
+  },
+  "RIT 8601040": {
+    "descrizione": "TS Zoccoli Laterali L.400xH.100",
+    "codiceInterno": "63",
+    "tipo": "P"
+  },
+  "RIT 8601060": {
+    "descrizione": "TS Zoccoli Laterali L.600xH.100",
+    "codiceInterno": "64",
+    "tipo": "P"
+  },
+  "RIT 8601800": {
+    "descrizione": "TS Zoccoli Ant/Post L.800xH.100",
+    "codiceInterno": "65",
+    "tipo": "P"
+  },
+  "RIT 8602000": {
+    "descrizione": "TS Zoccoli Ant/Post L.1000xH200",
+    "codiceInterno": "66",
+    "tipo": "P"
+  },
+  "RIT 8602060": {
+    "descrizione": "TS Zoccoli Laterali L.600xH.200",
+    "codiceInterno": "67",
+    "tipo": "P"
+  },
+  "RIT 8602600": {
+    "descrizione": "TS Zoccoli Ant/Post L.600xH.200",
+    "codiceInterno": "68",
+    "tipo": "P"
+  },
+  "RIT 8602800": {
+    "descrizione": "TS Zoccoli Ant/Post L.800xH.200",
+    "codiceInterno": "69",
+    "tipo": "P"
+  },
+  "RIT 8606500": {
+    "descrizione": "TS Armadio L.600xH.2000xP.600 ral 7035",
+    "codiceInterno": "70",
+    "tipo": "P"
+  },
+  "RIT 8800410": {
+    "descrizione": "TS Elemento di Giunzione Verticale (6pz)",
+    "codiceInterno": "71",
+    "tipo": "P"
+  },
+  "RIT 8800430": {
+    "descrizione": "TS Squadretta di Giunzione (4pz)",
+    "codiceInterno": "72",
+    "tipo": "P"
+  },
+  "RIT 8806500": {
+    "descrizione": "TS Armadio L.800xH.2000xP.600 ral 7035",
+    "codiceInterno": "73",
+    "tipo": "P"
+  },
+  "RIT 8000100": {
+    "descrizione": "Flex Block Clip Accoppiamento (12pz)",
+    "codiceInterno": "874",
+    "tipo": "P"
+  },
+  "RIT 8206000": {
+    "descrizione": "VX Armadio L.1200xH.2000xP.600 ral 7035",
+    "codiceInterno": "1153",
+    "tipo": "P"
+  },
+  "RIT 8106245": {
+    "descrizione": "VX Pareti Laterali H.2000xP.600 ral 7035",
+    "codiceInterno": "1154",
+    "tipo": "P"
+  },
+  "RIT 8640025": {
+    "descrizione": "VX Zoccoli Ant/Post L.1200xH.200",
+    "codiceInterno": "1155",
+    "tipo": "P"
+  },
+  "RIT 8640002": {
+    "descrizione": "VX Zoccoli Ant/Post L.600xH.100 (Flange avvitate)",
+    "codiceInterno": "1157",
+    "tipo": "P"
+  },
+  "RIT 8620003": {
+    "descrizione": "VX Zoccoli Ant/Post L.800xH.100",
+    "codiceInterno": "1182",
+    "tipo": "P"
+  },
+  "RIT 8640043": {
+    "descrizione": "VX Zoccoli Laterali L.600xH.200",
+    "codiceInterno": "1156",
+    "tipo": "P"
+  },
+  "RIT 8640031": {
+    "descrizione": "VX Zoccoli Laterali L.400xH.100 (Flange avvitate)",
+    "codiceInterno": "1158",
+    "tipo": "P"
+  },
+  "RIT 8620031": {
+    "descrizione": "VX Zoccoli Laterali L.400xH.100",
+    "codiceInterno": "1183",
+    "tipo": "P"
+  },
+  "RIT 8617720": {
+    "descrizione": "VX Profilo di montaggio 18x39",
+    "codiceInterno": "1160",
+    "tipo": "P"
+  },
+  "RIT 2500300": {
+    "descrizione": "SZ Lampada LED 1200 Lumen con Sensore",
+    "codiceInterno": "1161",
+    "tipo": "P"
+  },
+  "RIT 2500500": {
+    "descrizione": "SZ Cavo Alim. 100/240V 3P",
+    "codiceInterno": "1162",
+    "tipo": "P"
+  },
+  "RIT 4568000": {
+    "descrizione": "VX Golfari M12",
+    "codiceInterno": "2015",
+    "tipo": "P"
+  },
+  "RIT 8826000": {
+    "descrizione": "VX Armadio L.800xH.2200xP.600 ral 7035",
+    "codiceInterno": "2421",
+    "tipo": "P"
+  },
+  "RIT 8126245": {
+    "descrizione": "VX Pareti Laterali H.2200xP.600 ral 7035",
+    "codiceInterno": "2651",
+    "tipo": "P"
+  },
+  "RIT 8640023": {
+    "descrizione": "VX Zoccoli Ant/Post L.800xH.200",
+    "codiceInterno": "2420",
+    "tipo": "P"
+  },
+  "RIT 4592700": {
+    "descrizione": "VX Pannello Intermedio H.2200mm",
+    "codiceInterno": "2423",
+    "tipo": "P"
+  },
+  "RIT 8617500": {
+    "descrizione": "VX Kit di Accoppiamento Universale",
+    "codiceInterno": "2422",
+    "tipo": "P"
+  },
+  "RIT 8800865": {
+    "descrizione": "VX Profilo Copertura tetto 600mm",
+    "codiceInterno": "2424",
+    "tipo": "P"
+  },
+  "RIT 2500214": {
+    "descrizione": "SZ Lampada Led 900 Lumen Standard USA",
+    "codiceInterno": "2637",
+    "tipo": "P"
+  },
+  "RIT 2500530": {
+    "descrizione": "SZ Cavo Passante UL 100/240V 3P",
+    "codiceInterno": "2652",
+    "tipo": "P"
+  },
+  "ZND 40102-01": {
+    "descrizione": "01.07 HLT Staffa a Muro Bundbuchse",
+    "codiceInterno": "74",
+    "tipo": "P"
+  },
+  "ZND 40104-01": {
+    "descrizione": "01-07 HLT Angolo Accoppiamento 90°",
+    "codiceInterno": "75",
+    "tipo": "P"
+  },
+  "ZND 40105-01": {
+    "descrizione": "01.07 HLT Giunto Accoppiamento Rotante",
+    "codiceInterno": "76",
+    "tipo": "P"
+  },
+  "ZND 40110-01": {
+    "descrizione": "01.07 HLT Adattatore Inclinazione Fisso 10°",
+    "codiceInterno": "77",
+    "tipo": "P"
+  },
+  "ZND 40130-1000": {
+    "descrizione": "01.07 HLT Tubo L.1000mm",
+    "codiceInterno": "78",
+    "tipo": "P"
+  },
+  "ZND DIC/241": {
+    "descrizione": "Leggio LC 1000x350x400 + Piastra Interna",
+    "codiceInterno": "79",
+    "tipo": "P"
+  },
+  "ZND DPH5650/HLT": {
+    "descrizione": "Cassa Pensile H.500xL.560xP.210 Foro 65mm",
+    "codiceInterno": "81",
+    "tipo": "P"
+  },
+  "ZND DRC103": {
+    "descrizione": "Piastra Interna DRC/VFR H.1700xL900",
+    "codiceInterno": "82",
+    "tipo": "P"
+  },
+  "ZND DRC105": {
+    "descrizione": "Piastra Interna DRC/VFR H.1900xL.500",
+    "codiceInterno": "83",
+    "tipo": "P"
+  },
+  "ZND DRC106": {
+    "descrizione": "Piastra Interna DRC/VFR H.1900xL.700",
+    "codiceInterno": "84",
+    "tipo": "P"
+  },
+  "ZND DRC107": {
+    "descrizione": "Piastra Interna DRC/VFR H.1900xL.900",
+    "codiceInterno": "85",
+    "tipo": "P"
+  },
+  "ZND DRC108": {
+    "descrizione": "Piastra Interna DRC/VFR H.1900xL.1100",
+    "codiceInterno": "86",
+    "tipo": "P"
+  },
+  "ZND DRC122": {
+    "descrizione": "Piastra Intermedia DRC H.18850xL.100",
+    "codiceInterno": "87",
+    "tipo": "P"
+  },
+  "ZND DRC601M": {
+    "descrizione": "Zoccolo DRC/VFR H.100xL.600xP.400 ral_7009",
+    "codiceInterno": "88",
+    "tipo": "P"
+  },
+  "ZND DRC603": {
+    "descrizione": "Zoccolo DRC/VFR H.100xL.600xP.600 ral_7009",
+    "codiceInterno": "89",
+    "tipo": "P"
+  },
+  "ZND DRC606M": {
+    "descrizione": "Zoccolo DRC/VFR H.100xL.800xP.400 ral_7009",
+    "codiceInterno": "90",
+    "tipo": "P"
+  },
+  "ZND DRC607": {
+    "descrizione": "Zoccolo DRC/VFR H.100xL.800xP.500 ral_7009",
+    "codiceInterno": "91",
+    "tipo": "P"
+  },
+  "ZND DRC608": {
+    "descrizione": "Zoccolo DRC/VFR H.100xL.600xP.600 ral_7009",
+    "codiceInterno": "92",
+    "tipo": "P"
+  },
+  "ZND DRC611": {
+    "descrizione": "Zoccolo DRC/VFR H.100xL.1000xP.400 ral_7009",
+    "codiceInterno": "93",
+    "tipo": "P"
+  },
+  "ZND DRC613": {
+    "descrizione": "Zoccolo H.100xL.1000xP.600 ral_7009",
+    "codiceInterno": "94",
+    "tipo": "P"
+  },
+  "ZND DRC616": {
+    "descrizione": "Zoccolo DRC/VFR H.100xL.1200xP.400 ral_7009",
+    "codiceInterno": "95",
+    "tipo": "P"
+  },
+  "ZND DRC618": {
+    "descrizione": "Zoccolo DRC/VFR H.100xL.1200xP.600 ral_7009",
+    "codiceInterno": "96",
+    "tipo": "P"
+  },
+  "ZND DRC641": {
+    "descrizione": "Zoccolo H.100xL.1400xP.400 ral_7009",
+    "codiceInterno": "97",
+    "tipo": "P"
+  },
+  "ZND DRC721": {
+    "descrizione": "Traversa Laterale H.25xP.250",
+    "codiceInterno": "98",
+    "tipo": "P"
+  },
+  "ZND DRC722": {
+    "descrizione": "Traversa Laterale H.25xP.350",
+    "codiceInterno": "99",
+    "tipo": "P"
+  },
+  "ZND DRC723": {
+    "descrizione": "Traversa Laterale H.25xP.450",
+    "codiceInterno": "100",
+    "tipo": "P"
+  },
+  "ZND DRC817-35": {
+    "descrizione": "Pannello Retro DRC/VFR H.2000xL.1000 Ral 7035",
+    "codiceInterno": "101",
+    "tipo": "P"
+  },
+  "ZND DRC887-35": {
+    "descrizione": "CP Porta Battente H.2010xL.500+500 Ral 7035",
+    "codiceInterno": "102",
+    "tipo": "P"
+  },
+  "ZND DRC910": {
+    "descrizione": "Golfare di Sollevamento M.12",
+    "codiceInterno": "103",
+    "tipo": "P"
+  },
+  "ZND DRC910B-35": {
+    "descrizione": "Golfare di Sollevamento Doppio M12",
+    "codiceInterno": "104",
+    "tipo": "P"
+  },
+  "ZND DRC928": {
+    "descrizione": "Astina BloccoPorta x Leggio LM",
+    "codiceInterno": "105",
+    "tipo": "P"
+  },
+  "ZND DRC930-35": {
+    "descrizione": "Colore Ritocco ral_7035",
+    "codiceInterno": "106",
+    "tipo": "P"
+  },
+  "ZND DRC938": {
+    "descrizione": "Kit Unione Armadi DRC",
+    "codiceInterno": "107",
+    "tipo": "P"
+  },
+  "ZND DRC939": {
+    "descrizione": "Kit di Affiancamento Armadi",
+    "codiceInterno": "108",
+    "tipo": "P"
+  },
+  "ZND KA10184-35": {
+    "descrizione": "Quadro KA H.1800xL.1000xP.400 ral_7035",
+    "codiceInterno": "109",
+    "tipo": "P"
+  },
+  "ZND KA10184SP-35": {
+    "descrizione": "Quadro KA H.1800xL.1000xP.400 ral_7035 s/piastra",
+    "codiceInterno": "110",
+    "tipo": "P"
+  },
+  "ZND KA10206SS-35": {
+    "descrizione": "Struttura KA 2000x1000x600 Ral 7035",
+    "codiceInterno": "111",
+    "tipo": "P"
+  },
+  "ZND KA12206SP-35": {
+    "descrizione": "Quadro KA H.2000xL.1200xP.600 ral_7035 s/piastra",
+    "codiceInterno": "112",
+    "tipo": "P"
+  },
+  "ZND KA1840-35": {
+    "descrizione": "Coppia Laterali x KA H.1800xP.400 ral_7035",
+    "codiceInterno": "113",
+    "tipo": "P"
+  },
+  "ZND KA2050-35": {
+    "descrizione": "Coppia Laterali x KA H.2000xP.500 ral_7035",
+    "codiceInterno": "114",
+    "tipo": "P"
+  },
+  "ZND KA2060-35": {
+    "descrizione": "Coppia Laterali x KA H.2000xP.600 ral_7035",
+    "codiceInterno": "115",
+    "tipo": "P"
+  },
+  "ZND KA6206SP-35": {
+    "descrizione": "Quadro KA H.2000xL.600xP.600 ral_7035 s/piastra",
+    "codiceInterno": "116",
+    "tipo": "P"
+  },
+  "ZND KA8205SP-35": {
+    "descrizione": "Quadro KA H.2000xL.800xP.500 ral_7035 s/piastra",
+    "codiceInterno": "117",
+    "tipo": "P"
+  },
+  "ZND KA8206SP-35": {
+    "descrizione": "Quadro KA H. 2000xL.800xP.600 ral_7035 s/piastra",
+    "codiceInterno": "118",
+    "tipo": "P"
+  },
+  "ZND LC-SPEC": {
+    "descrizione": "Leggio+Piastra Int. H.1000xL.350xP.400 ral_7035",
+    "codiceInterno": "119",
+    "tipo": "P"
+  },
+  "ZND LM1014-35": {
+    "descrizione": "Leggio Compatto 980x1000x400 ral_7035",
+    "codiceInterno": "120",
+    "tipo": "P"
+  },
+  "ZND LM1214-35": {
+    "descrizione": "Leggio Compatto H.980x L.1200x P.400 ral_7035",
+    "codiceInterno": "121",
+    "tipo": "P"
+  },
+  "ZND LM6014-35": {
+    "descrizione": "Leggio Compatto H.980xL.600xP.400 ral_7035",
+    "codiceInterno": "122",
+    "tipo": "P"
+  },
+  "ZND LM8014-35": {
+    "descrizione": "Leggio Compatto H.980x L.800x P.400 ral_7035",
+    "codiceInterno": "123",
+    "tipo": "P"
+  },
+  "ZND LVE1010": {
+    "descrizione": "Piastra Interna L.1000 H.850 x LM1014",
+    "codiceInterno": "124",
+    "tipo": "P"
+  },
+  "ZND LVE1012": {
+    "descrizione": "Piastra Interna L.1200 H.850 x LM1214",
+    "codiceInterno": "125",
+    "tipo": "P"
+  },
+  "ZND LVE1016": {
+    "descrizione": "Piastra Interna L.1600 H.850 x LM1016",
+    "codiceInterno": "126",
+    "tipo": "P"
+  },
+  "ZND LVE1060": {
+    "descrizione": "Piastra Interna L.600 H.850 x LM6014",
+    "codiceInterno": "127",
+    "tipo": "P"
+  },
+  "ZND LVE106-35": {
+    "descrizione": "Base \"\"LVE\"\" IP66 H.700xL.1400xP.400 ral_7035",
+    "codiceInterno": "128",
+    "tipo": "P"
+  },
+  "ZND LVE1080": {
+    "descrizione": "Piastra Interna L.800 H.850 x LM8014",
+    "codiceInterno": "129",
+    "tipo": "P"
+  },
+  "ZND LVE206-35": {
+    "descrizione": "Leggio \"LVE\" IP66 H.280xL.1400xP.578 ral_7035",
+    "codiceInterno": "130",
+    "tipo": "P"
+  },
+  "999 LEGGIO-350": {
+    "descrizione": "Leggio+Piastra Int. H.1000xL.350xP.400 ral_7035",
+    "codiceInterno": "",
+    "tipo": ""
+  },
+  "ZND LVE102-35": {
+    "descrizione": "Base \"\"LVE\"\" IP66 H.700xL.800xP.400 ral_7035",
+    "codiceInterno": "948",
+    "tipo": "P"
+  },
+  "ZND LVE105-35": {
+    "descrizione": "Base \"\"LVE\"\" IP66 H.700xL.1600xP.400 ral_7035",
+    "codiceInterno": "949",
+    "tipo": "P"
+  },
+  "ZND LVE202-35": {
+    "descrizione": "Leggio \"LVE\" IP66 H.280xL.800xP.578 ral_7035",
+    "codiceInterno": "950",
+    "tipo": "P"
+  },
+  "ZND LVE205-35": {
+    "descrizione": "Leggio \"LVE\" IP66 H.280xL.1600xP.578 ral_7035",
+    "codiceInterno": "951",
+    "tipo": "P"
+  },
+  "ZND LV102.35": {
+    "descrizione": "BASE LEGGIO LV H700XL800XP400 RAL7035",
+    "codiceInterno": "1077",
+    "tipo": "P"
+  },
+  "ZND LV202.35": {
+    "descrizione": "MENSOLA INTERMEDIA H200XL800XP843",
+    "codiceInterno": "1078",
+    "tipo": "P"
+  },
+  "ZND LV302.35": {
+    "descrizione": "ALZATA LV H470XL800XP390 RAL7035",
+    "codiceInterno": "1079",
+    "tipo": "P"
+  },
+  "ZND KA1218SP.35": {
+    "descrizione": "Quadro KA H.1800xL.1200xP.500 ral_7035",
+    "codiceInterno": "1979",
+    "tipo": "P"
+  },
+  "ZND KA1850-35": {
+    "descrizione": "Coppia Laterali x KA H.1800xP.500 ral_7035",
+    "codiceInterno": "1980",
+    "tipo": "P"
+  },
+  "ZND DRC104": {
+    "descrizione": "Piastra Interna DRC/VFR H.1700xL.1100",
+    "codiceInterno": "1981",
+    "tipo": "P"
+  },
+  "ZND DRC617": {
+    "descrizione": "Zoccolo DRC/VFR H.100xL.1200xP.500 ral_7009",
+    "codiceInterno": "1982",
+    "tipo": "P"
+  },
+  "ZND LM8014.RAL5015": {
+    "descrizione": "Leggio Compatto H.980x L.800x P.400 ral_5014",
+    "codiceInterno": "2089",
+    "tipo": "P"
+  },
+  "SNR NSYSF2012602D": {
+    "descrizione": "SF PTA Piena No Piast. 2000X1200X600",
+    "codiceInterno": "2380",
+    "tipo": "P"
+  },
+  "SNR NSY2SP206": {
+    "descrizione": "2 Laterali SF 2000X600",
+    "codiceInterno": "2382",
+    "tipo": "P"
+  },
+  "SNR NSYEC1261": {
+    "descrizione": "Placca Passac.2 Parti 1200X600",
+    "codiceInterno": "2383",
+    "tipo": "P"
+  },
+  "SNR NSYSPF12100": {
+    "descrizione": "Fronte Retro Angolari 1200X100",
+    "codiceInterno": "2384",
+    "tipo": "P"
+  },
+  "SNR NSYSFEB": {
+    "descrizione": "4 GOLFARI DI SOLLEVAMENTO M12",
+    "codiceInterno": "2977",
+    "tipo": "P"
+  },
+  "SNR NSYEC861": {
+    "descrizione": "PLACCA PASSAC. 2 PARTI 800x600",
+    "codiceInterno": "2904",
+    "tipo": "P"
+  },
+  "SNR NSYSF20860": {
+    "descrizione": "SF PTA PIENA NO PIAST. 2000x800x600",
+    "codiceInterno": "2903",
+    "tipo": "P"
+  },
+  "SNR NSYSPS6100": {
+    "descrizione": "2 Laterali Zoccolo 600X100",
+    "codiceInterno": "2385",
+    "tipo": "P"
+  },
+  "SNR NSYMP2012": {
+    "descrizione": "Piatra Int. Lam. 2000X1200",
+    "codiceInterno": "2386",
+    "tipo": "P"
+  },
+  "SNR NSYSUCR4060": {
+    "descrizione": "2 Traverse 40X600",
+    "codiceInterno": "2387",
+    "tipo": "P"
+  },
+  "SNR NSYSD8": {
+    "descrizione": "Pulpito con Fondo Fisso L.800 RAL 7035",
+    "codiceInterno": "2247",
+    "tipo": "P"
+  },
+  "SNR NSYSD6": {
+    "descrizione": "Pulpito con Fondo Fisso L.600 RAL 7035",
+    "codiceInterno": "2907",
+    "tipo": "P"
+  },
+  "SNR NSYSPF8100": {
+    "descrizione": "Zoccolo Fronte/Retro Angolare 800x100",
+    "codiceInterno": "2248",
+    "tipo": "P"
+  },
+  "SNR NSYSPF6100": {
+    "descrizione": "Zoccolo Fronte/Retro Angolare 600x100",
+    "codiceInterno": "2908",
+    "tipo": "P"
+  },
+  "SNR NSYSPS4100SD": {
+    "descrizione": "2 Laterali Zoccolo 400x100SD",
+    "codiceInterno": "2249",
+    "tipo": "P"
+  },
+  "SNR NSYPMP8580": {
+    "descrizione": "Piastra Interna Lamiera Pulpito L.800",
+    "codiceInterno": "2250",
+    "tipo": "P"
+  },
+  "SNR NSYPMP8560": {
+    "descrizione": "Piastra Interna Lamiera Pulpito L.600",
+    "codiceInterno": "2909",
+    "tipo": "P"
+  },
+  "SNR NSYMP208": {
+    "descrizione": "PIASTRA INTERNA LAM. 2000x800",
+    "codiceInterno": "2906",
+    "tipo": "P"
+  },
+  "DIS.CM140 Evolution": {
+    "descrizione": "Contenitore CM140 Evolution",
+    "codiceInterno": "2144",
+    "tipo": "P"
+  },
+  "DIS.CM140 Evolution 2": {
+    "descrizione": "Coperchio CM140 Evolution 2",
+    "codiceInterno": "2145",
+    "tipo": "P"
+  },
+  "TBT DIC/241": {
+    "descrizione": "Leggio LC 1000x350x400 + Piastra Interna",
+    "codiceInterno": "2081",
+    "tipo": "P"
+  },
+  "AT 81030": {
+    "descrizione": "Cassa AT L800 H1000 P300 - RAL7035 Bucciato",
+    "codiceInterno": "3239",
+    "tipo": "P"
+  },
+  "AT-KM040": {
+    "descrizione": "Kit Staffe Fissaggio A Parete (4 PZ)",
+    "codiceInterno": "3240",
+    "tipo": "P"
+  },
+  "3.AR080100": {
+    "descrizione": "080 SUPPORT PROFILE 1000mm",
+    "codiceInterno": "2997",
+    "tipo": "P"
+  },
+  "3.AR080700": {
+    "descrizione": "080 ROTOTABLE WALL HINGE HORIZOUTLET 340°(±170°)",
+    "codiceInterno": "3000",
+    "tipo": "P"
+  },
+  "3.AR080420": {
+    "descrizione": "080 ANGLE PIECE 90º",
+    "codiceInterno": "3001",
+    "tipo": "P"
+  },
+  "3.AR080320": {
+    "descrizione": "080 ROTABLE PANEL/COUP. 310°",
+    "codiceInterno": "3002",
+    "tipo": "P"
+  },
+  "3.AR080834": {
+    "descrizione": "PANEL ADAPTOR 10º",
+    "codiceInterno": "3003",
+    "tipo": "P"
+  },
+  "3.TK060700": {
+    "descrizione": "060 ROTOTABLE WALL HINGE HORIZOUTLET 315°(±150°)",
+    "codiceInterno": "1971",
+    "tipo": "P"
+  },
+  "3.TK060420": {
+    "descrizione": "060 ANGLE PIECE 90º",
+    "codiceInterno": "1972",
+    "tipo": "P"
+  },
+  "3.TK060100": {
+    "descrizione": "060 SUPPORT PROFILE 1000mm",
+    "codiceInterno": "1973",
+    "tipo": "P"
+  },
+  "3.TK060320": {
+    "descrizione": "ROTATABLE PANEL COUPLING ø130mm 310º",
+    "codiceInterno": "2122",
+    "tipo": "P"
+  },
+  "3.TK060834": {
+    "descrizione": "ANGLE PIECE 10º x TK060320",
+    "codiceInterno": "2123",
+    "tipo": "P"
+  },
+  "3.TK060845": {
+    "descrizione": "± 40° ROTOTABLE TILTING PANEL",
+    "codiceInterno": "1974",
+    "tipo": "P"
+  },
+  "CAV 12G1B": {
+    "descrizione": "Cavo NPI FROR 12x1mmq C/GV 300/500V",
+    "codiceInterno": "131",
+    "tipo": "P"
+  },
+  "CAV 19G1B": {
+    "descrizione": "NPI FROR 19x1mmq con GV 300/500V",
+    "codiceInterno": "132",
+    "tipo": "P"
+  },
+  "CAV 1X10BLUM-5010": {
+    "descrizione": "Unip. H07VK 1x10mmq 450/750V BLU SCURO-5010",
+    "codiceInterno": "133",
+    "tipo": "P"
+  },
+  "CAV 1X16NEM": {
+    "descrizione": "Unip. H07VK 1x16mmq 450/750V NERO",
+    "codiceInterno": "134",
+    "tipo": "P"
+  },
+  "CAV 1X1BLUM-5010": {
+    "descrizione": "Unip. H07VK 1x1mmq 450/750V BLU SCURO-5010",
+    "codiceInterno": "135",
+    "tipo": "P"
+  },
+  "CAV 1X25GVM": {
+    "descrizione": "Unip. H07VK 1x25mmq 450/750V GIALLO-VERDE",
+    "codiceInterno": "136",
+    "tipo": "P"
+  },
+  "CAV 24G1,5B": {
+    "descrizione": "Cavo NPI FROR 24x1,5mmq C/GV 300/500V",
+    "codiceInterno": "137",
+    "tipo": "P"
+  },
+  "CAV 2X0,75": {
+    "descrizione": "FRZ07502M100 FROR16  DIN 47100 CCA 2x0,75mmq",
+    "codiceInterno": "138",
+    "tipo": "P"
+  },
+  "CAV 2X1,5M": {
+    "descrizione": "NPI FROR 2x1,5mmq  300/500V",
+    "codiceInterno": "139",
+    "tipo": "P"
+  },
+  "CAV 4X2,5-SCH": {
+    "descrizione": "BDS CFZ250046  FR20H2R16 CCA 4x2,5mmq-Sch. con G/V",
+    "codiceInterno": "140",
+    "tipo": "P"
+  },
+  "CAV 7G1,5B": {
+    "descrizione": "NPI FROR 7G1,5mmq con GV 300/500V",
+    "codiceInterno": "141",
+    "tipo": "P"
+  },
+  "CAV BDS FRO7503M100": {
+    "descrizione": "FROR Colorati DIN 47100 3x0,75mmq",
+    "codiceInterno": "142",
+    "tipo": "P"
+  },
+  "CAV FG160R16-5G25B": {
+    "descrizione": "FG160R16 5G25 Grigio 7035",
+    "codiceInterno": "143",
+    "tipo": "P"
+  },
+  "CAV FS17-1X1,5ARM": {
+    "descrizione": "FS17 450-750V 1X1,5mmq ARANCIO",
+    "codiceInterno": "144",
+    "tipo": "P"
+  },
+  "CAV FS17-1X1,5BLUM-5010": {
+    "descrizione": "FS17 450-750V 1x1,5mmq BLU SCURO-5010",
+    "codiceInterno": "145",
+    "tipo": "P"
+  },
+  "CAV FS17-1X1,5GVM": {
+    "descrizione": "FS17 450-750V 1x1,5mmq GIALLO-VERDE",
+    "codiceInterno": "146",
+    "tipo": "P"
+  },
+  "CAV FS17-1X1,5NEM": {
+    "descrizione": "FS17 450-750V 1x1,5mmq NERO-9005",
+    "codiceInterno": "147",
+    "tipo": "P"
+  },
+  "CAV FS17-1X10BCM": {
+    "descrizione": "FS17 450/750V 1x10mmq Blu 5015",
+    "codiceInterno": "148",
+    "tipo": "P"
+  },
+  "CAV FS17-1X10NEM": {
+    "descrizione": "FS17 450/750V 1x10mmq NERO-9005",
+    "codiceInterno": "149",
+    "tipo": "P"
+  },
+  "CAV FS17-1X16NEM": {
+    "descrizione": "FS17 450/750V 1x16mmq NERO-9005",
+    "codiceInterno": "150",
+    "tipo": "P"
+  },
+  "CAV FS17-1X1ARM": {
+    "descrizione": "FS17 450-750V 1x1mmq ARANCIO",
+    "codiceInterno": "151",
+    "tipo": "P"
+  },
+  "CAV FS17-1X1BLUM-5010": {
+    "descrizione": "FS17 450-750V 1x1mmq BLU SCURO-5010",
+    "codiceInterno": "152",
+    "tipo": "P"
+  },
+  "CAV FS17-1X2,5BLUM-5010": {
+    "descrizione": "FS17 450/750V 1X2,5mmq BLU SCURO-5010",
+    "codiceInterno": "153",
+    "tipo": "P"
+  },
+  "CAV FS17-1X2,5GVM": {
+    "descrizione": "FS17 450-750V 1x2,5mmq GIALLO-VERDE",
+    "codiceInterno": "154",
+    "tipo": "P"
+  },
+  "CAV FS17-1X2,5NEM": {
+    "descrizione": "FS17 450-750V 1x2,5mmq NERO-9005",
+    "codiceInterno": "155",
+    "tipo": "P"
+  },
+  "CAV FS17-1X25GVM": {
+    "descrizione": "FS17 450/750V 1x25mmq Giallo-Verde",
+    "codiceInterno": "156",
+    "tipo": "P"
+  },
+  "CAV FS17-1X4GVM": {
+    "descrizione": "FS17 450/750V 1x4mmq Giallo-Verde",
+    "codiceInterno": "157",
+    "tipo": "P"
+  },
+  "CAV FS17-1X4NEM": {
+    "descrizione": "FS17 450/750V 1x4mmq NERO 9005",
+    "codiceInterno": "158",
+    "tipo": "P"
+  },
+  "CAV FS17-1X50NEB": {
+    "descrizione": "FS17 450/750V 1x50mmq NERO 9005",
+    "codiceInterno": "159",
+    "tipo": "P"
+  },
+  "CAV FS17-1X6GVM": {
+    "descrizione": "FS17 450-750V 1x6mmq GIALLO-VERDE",
+    "codiceInterno": "160",
+    "tipo": "P"
+  },
+  "CAV FS17-1X6NEM": {
+    "descrizione": "FS17 450-750V 1x6mmq NERO-9005",
+    "codiceInterno": "161",
+    "tipo": "P"
+  },
+  "CAV H05-1X050BLUM-5010": {
+    "descrizione": "Unip. H05VK 1x0,50 300/500V BLU SCURO-5010",
+    "codiceInterno": "162",
+    "tipo": "P"
+  },
+  "CAV H05-1X075BLUM-5010": {
+    "descrizione": "Unip. H05VK 1x0,75 300/500V BLU SCURO-5010",
+    "codiceInterno": "163",
+    "tipo": "P"
+  },
+  "CAV H05-1X075NEM": {
+    "descrizione": "Unip. H05VK 1x0,75 300/500V NERO",
+    "codiceInterno": "164",
+    "tipo": "P"
+  },
+  "CAV P00-B9536": {
+    "descrizione": "BELDEN 24AWG 6Poli Computer Cable",
+    "codiceInterno": "165",
+    "tipo": "P"
+  },
+  "CAV P999-B9533": {
+    "descrizione": "BELDEN 24AWG 3Poli Computer Cable",
+    "codiceInterno": "166",
+    "tipo": "P"
+  },
+  "CAV P999-B9538": {
+    "descrizione": "BELDEN 34AWG 8Poli Computer Cable",
+    "codiceInterno": "167",
+    "tipo": "P"
+  },
+  "MOD SL0002": {
+    "descrizione": "Serrafili Looping mod.2",
+    "codiceInterno": "168",
+    "tipo": "P"
+  },
+  "MOD SL0003": {
+    "descrizione": "Serrafili Looping mod.3",
+    "codiceInterno": "169",
+    "tipo": "P"
+  },
+  "CAV FS17-1X6BLUM": {
+    "descrizione": "FS17 450-750V 1x6mmq BLU SCURO",
+    "codiceInterno": "954",
+    "tipo": "P"
+  },
+  "NXT C12007176": {
+    "descrizione": "Borraccia Raccolta Condensa",
+    "codiceInterno": "3244",
+    "tipo": "P"
+  },
+  "NXT 10K0E0C00000": {
+    "descrizione": "Condiz. Nvent Montaggio Semincasso 1500W  400/460V 2 50/60 Hz",
+    "codiceInterno": "3222",
+    "tipo": "P"
+  },
+  "STZ CVE8002288000_45": {
+    "descrizione": "Condizionatore 800W",
+    "codiceInterno": "170",
+    "tipo": "P"
+  },
+  "SNR A9A26924": {
+    "descrizione": "IOF per IC60/IID/ISW-NA/RCA/ARA",
+    "codiceInterno": "185",
+    "tipo": "P"
+  },
+  "SNR A9F84204": {
+    "descrizione": "Interr. Magnetot. C60H 2P C 4A 10Ka",
+    "codiceInterno": "186",
+    "tipo": "P"
+  },
+  "SNR A9F84304": {
+    "descrizione": "Interr. Magnetot. C60H 3P C 4A 10Ka",
+    "codiceInterno": "187",
+    "tipo": "P"
+  },
+  "SNR A9F89206": {
+    "descrizione": "Interr. Magnetot. C60H 2P C 6A 10Ka",
+    "codiceInterno": "188",
+    "tipo": "P"
+  },
+  "SNR A9F89210": {
+    "descrizione": "Interr. Magnetot. C60H 2P C 10A 10Ka",
+    "codiceInterno": "189",
+    "tipo": "P"
+  },
+  "SNR A9F89450": {
+    "descrizione": "Interr. Magnetot. C60H 4P C 50A 10Ka",
+    "codiceInterno": "190",
+    "tipo": "P"
+  },
+  "SNR A9N15656": {
+    "descrizione": "Base Portafusibili STI 3P 10,3x38 500V",
+    "codiceInterno": "191",
+    "tipo": "P"
+  },
+  "SNR A9P52602": {
+    "descrizione": "Interr. Magnetot. C40 1P+N 2A curva C 6Ka",
+    "codiceInterno": "192",
+    "tipo": "P"
+  },
+  "SNR A9N17509": {
+    "descrizione": "Interr. Magnetot. C40 1P+N 16A curva C 6Ka",
+    "codiceInterno": "193",
+    "tipo": "P"
+  },
+  "SNR A9Y82625": {
+    "descrizione": "Blocco Differenziale Vigi C40 1P+N 30ma AC",
+    "codiceInterno": "194",
+    "tipo": "P"
+  },
+  "SNR CA3KN22BD": {
+    "descrizione": "Contattore Aux. 2NC+2NO  24Vdc VT",
+    "codiceInterno": "195",
+    "tipo": "P"
+  },
+  "SNR CA3KN40BD": {
+    "descrizione": "Contattore Aux. 4no 24Vdc VT",
+    "codiceInterno": "196",
+    "tipo": "P"
+  },
+  "SNR GV1G09": {
+    "descrizione": "Morsettiera di Alimentazione GV2",
+    "codiceInterno": "197",
+    "tipo": "P"
+  },
+  "SNR GV2G445": {
+    "descrizione": "Barrette Parallelo 4 GV2 45mm",
+    "codiceInterno": "198",
+    "tipo": "P"
+  },
+  "SNR GV2ME02": {
+    "descrizione": "Interr. Salvamotore 0,16-0,25A",
+    "codiceInterno": "199",
+    "tipo": "P"
+  },
+  "SNR GV2ME03": {
+    "descrizione": "Interr. Salvamotore 0,25-0,40A",
+    "codiceInterno": "200",
+    "tipo": "P"
+  },
+  "SNR GV2ME04": {
+    "descrizione": "Interr. Salvamotore 0,40-0,63A",
+    "codiceInterno": "201",
+    "tipo": "P"
+  },
+  "SNR GV2ME05": {
+    "descrizione": "Interr. Salvamotore 0,6-1A",
+    "codiceInterno": "202",
+    "tipo": "P"
+  },
+  "SNR GV2ME06": {
+    "descrizione": "Interr. Salvamotore 1-1,6A",
+    "codiceInterno": "203",
+    "tipo": "P"
+  },
+  "SNR GV2ME07": {
+    "descrizione": "Interr. Salvamotore 1,6-2,4A",
+    "codiceInterno": "204",
+    "tipo": "P"
+  },
+  "SNR GV2ME08": {
+    "descrizione": "Interr. Salvamotore 2,5-4A",
+    "codiceInterno": "205",
+    "tipo": "P"
+  },
+  "SNR GV2ME10": {
+    "descrizione": "Interr. Salvamotore 4-6A",
+    "codiceInterno": "206",
+    "tipo": "P"
+  },
+  "SNR GV2ME14": {
+    "descrizione": "Interr. Salvamotore 6-10A",
+    "codiceInterno": "207",
+    "tipo": "P"
+  },
+  "SNR GV2ME16": {
+    "descrizione": "Interr. Salvamotore 9-14A",
+    "codiceInterno": "208",
+    "tipo": "P"
+  },
+  "SNR GV2ME20": {
+    "descrizione": "Interr. Salvamotore 13-18A",
+    "codiceInterno": "209",
+    "tipo": "P"
+  },
+  "SNR GV2ME22": {
+    "descrizione": "Interr. Salvamotore 20-25A",
+    "codiceInterno": "210",
+    "tipo": "P"
+  },
+  "SNR GVAE11": {
+    "descrizione": "Contatto Ausiliario 1no+1nc",
+    "codiceInterno": "211",
+    "tipo": "P"
+  },
+  "SNR KCF2PZ": {
+    "descrizione": "Manovra Rossa Lucchettabile V3/V4",
+    "codiceInterno": "212",
+    "tipo": "P"
+  },
+  "SNR KZ74": {
+    "descrizione": "Accessorio B/P 40-63A",
+    "codiceInterno": "213",
+    "tipo": "P"
+  },
+  "SNR LA1KN04": {
+    "descrizione": "Contatti Ausiliari 4nc CA3/LC1K/LP1K",
+    "codiceInterno": "214",
+    "tipo": "P"
+  },
+  "SNR LA1KN22": {
+    "descrizione": "Contatti Ausiliari 2no+2nc CA3/LC1K/LP1K",
+    "codiceInterno": "215",
+    "tipo": "P"
+  },
+  "SNR LA1KN31": {
+    "descrizione": "Contatti Ausiliari 3no+1nc CA3/LC1K/LP1K",
+    "codiceInterno": "216",
+    "tipo": "P"
+  },
+  "SNR LA1KN40": {
+    "descrizione": "Contatti Ausiliari 4no CA3/LC1K/LP1K",
+    "codiceInterno": "217",
+    "tipo": "P"
+  },
+  "SNR LAD8N11": {
+    "descrizione": "Contatto Laterale 1no+1nc LC1D/CAD",
+    "codiceInterno": "218",
+    "tipo": "P"
+  },
+  "SNR LAD9R1V": {
+    "descrizione": "Kit invertitore 9-38A IN",
+    "codiceInterno": "219",
+    "tipo": "P"
+  },
+  "SNR LADN11": {
+    "descrizione": "Contatti Ausiliari 1n0+1nc LC1D09-D150/CAD",
+    "codiceInterno": "220",
+    "tipo": "P"
+  },
+  "SNR LADN20": {
+    "descrizione": "Contatti Ausiliari 2no LC1D09-D150/CAD",
+    "codiceInterno": "221",
+    "tipo": "P"
+  },
+  "SNR LADN22": {
+    "descrizione": "Contatti Ausiliari 2no+2nc LC1D09-D150/CAD",
+    "codiceInterno": "222",
+    "tipo": "P"
+  },
+  "SNR LADN31": {
+    "descrizione": "Contatti Ausiliari 3no+1nc LC1D09-D150/CAD",
+    "codiceInterno": "223",
+    "tipo": "P"
+  },
+  "SNR LADN40": {
+    "descrizione": "Contatti Ausiliari 4no LC1D09-D150/CAD",
+    "codiceInterno": "224",
+    "tipo": "P"
+  },
+  "SNR LADR0": {
+    "descrizione": "Contatti Ausiliari Temporizzati Ritardato Eccitazione",
+    "codiceInterno": "225",
+    "tipo": "P"
+  },
+  "SNR LC1D09BD": {
+    "descrizione": "Contattore 9A 4Kw 24Vdc 1no+1nc",
+    "codiceInterno": "226",
+    "tipo": "P"
+  },
+  "SNR LC1D09B7": {
+    "descrizione": "Contattore 9A 4Kw 24Vac 1no+1nc",
+    "codiceInterno": "2097",
+    "tipo": "P"
+  },
+  "SNR LC1D12BD": {
+    "descrizione": "Contattore 12A 5,5Kw 24Vdc 1no+1nc",
+    "codiceInterno": "227",
+    "tipo": "P"
+  },
+  "SNR LC1D18B7": {
+    "descrizione": "Contattore 3P 7,5Kw 24Vac 1no+1nc",
+    "codiceInterno": "228",
+    "tipo": "P"
+  },
+  "SNR LC1D18BD": {
+    "descrizione": "Contattore 18A 7,5Kw24Vdc 1no+1nc",
+    "codiceInterno": "229",
+    "tipo": "P"
+  },
+  "SNR LC1D25BD": {
+    "descrizione": "Contattore 25A 11Kw 24Vdc 1no+1nc",
+    "codiceInterno": "230",
+    "tipo": "P"
+  },
+  "SNR LC1D32BD": {
+    "descrizione": "Contattore 32A 15Kw 24Vdc 1no+1nc",
+    "codiceInterno": "231",
+    "tipo": "P"
+  },
+  "SNR LC1D40ABD": {
+    "descrizione": "Contattore Everlink 3P 40A  24Vdc 1no+1nc",
+    "codiceInterno": "232",
+    "tipo": "P"
+  },
+  "SNR LC1D50ABD": {
+    "descrizione": "Contattore Everlink 3P 50A  24Vdc 1no+1nc",
+    "codiceInterno": "233",
+    "tipo": "P"
+  },
+  "SNR LC1D65ABD": {
+    "descrizione": "Contattore Everlink 3P 65A  24Vdc 1no+1nc",
+    "codiceInterno": "234",
+    "tipo": "P"
+  },
+  "SNR LC1D95BD": {
+    "descrizione": "Contattore 95A 45Kw 3P 24Vdc 1no+1nc",
+    "codiceInterno": "235",
+    "tipo": "P"
+  },
+  "SNR LC1K0910B7": {
+    "descrizione": "Contattore 3P 4Kw 24Vac 1no",
+    "codiceInterno": "236",
+    "tipo": "P"
+  },
+  "SNR LP1K0910BD": {
+    "descrizione": "Contattore 3P 4Kw 24Vdc 1no",
+    "codiceInterno": "237",
+    "tipo": "P"
+  },
+  "SNR V3": {
+    "descrizione": "Blocco Interruttore 3P 63A",
+    "codiceInterno": "238",
+    "tipo": "P"
+  },
+  "SNR V4": {
+    "descrizione": "Blocco Interruttore 3P 80A",
+    "codiceInterno": "239",
+    "tipo": "P"
+  },
+  "SNR VZ01": {
+    "descrizione": "Polo Principale 20A",
+    "codiceInterno": "240",
+    "tipo": "P"
+  },
+  "SNR VZ11": {
+    "descrizione": "Polo Neutro 25/32/40A",
+    "codiceInterno": "241",
+    "tipo": "P"
+  },
+  "SNR VZ12": {
+    "descrizione": "Polo Neutro 63/80A",
+    "codiceInterno": "242",
+    "tipo": "P"
+  },
+  "SNR VZ14": {
+    "descrizione": "Polo di Terra VC01",
+    "codiceInterno": "243",
+    "tipo": "P"
+  },
+  "SNR VZ20": {
+    "descrizione": "Contatti Ausiliari VC01",
+    "codiceInterno": "244",
+    "tipo": "P"
+  },
+  "SNR VZ26": {
+    "descrizione": "Calotta Coprimorsetto Polo Neutro 25/32/40A",
+    "codiceInterno": "245",
+    "tipo": "P"
+  },
+  "SNR VZ27": {
+    "descrizione": "Calotta Coprimorsetto Polo Neutro 63/80A",
+    "codiceInterno": "246",
+    "tipo": "P"
+  },
+  "SNR VZ29": {
+    "descrizione": "Calotta Coprimorsetto Contatti Aus. 1P VC01",
+    "codiceInterno": "247",
+    "tipo": "P"
+  },
+  "SNR VZ31": {
+    "descrizione": "Albero Prolunga 300mm 40-63A",
+    "codiceInterno": "248",
+    "tipo": "P"
+  },
+  "SNR VZ7": {
+    "descrizione": "Contatti Ausiliari 1n0+1nc VARIO",
+    "codiceInterno": "249",
+    "tipo": "P"
+  },
+  "SNR VZ8": {
+    "descrizione": "Calotte Copri Morsetti V1-V2",
+    "codiceInterno": "250",
+    "tipo": "P"
+  },
+  "SNR VZ9": {
+    "descrizione": "Calotta Coprimorsetti 40/63A",
+    "codiceInterno": "251",
+    "tipo": "P"
+  },
+  "SNR XPSABV1133P": {
+    "descrizione": "Modulo di Sicurezza 3no (1 Rit.) Cat.4  24Vac/dc",
+    "codiceInterno": "252",
+    "tipo": "P"
+  },
+  "SNR XPSAC5121": {
+    "descrizione": "Modulo SIC 3NO CAT3",
+    "codiceInterno": "253",
+    "tipo": "P"
+  },
+  "SNR XPSUAF13AP": {
+    "descrizione": "Modulo di sicurezza multifunzione 2 ingressi, Harmony XPSU, 3NO + uscita diagnostica",
+    "codiceInterno": "254",
+    "tipo": "P"
+  },
+  "SNR XPSAR311144": {
+    "descrizione": "Modulo di Sicurezza 7no Cat.4  24Vac/dc",
+    "codiceInterno": "255",
+    "tipo": "P"
+  },
+  "SNR XPSAV11113": {
+    "descrizione": "Modulo di Sicurezza 6no (3 Rit.) Cat.4 24Vac/dc",
+    "codiceInterno": "256",
+    "tipo": "P"
+  },
+  "SNR VCCF01": {
+    "descrizione": "Vario Completo 3P 20A",
+    "codiceInterno": "351",
+    "tipo": "P"
+  },
+  "MG A9P52602": {
+    "descrizione": "Interr. Magnetot. C40 1P+N 2A curva C 6Ka",
+    "codiceInterno": "943",
+    "tipo": "P"
+  },
+  "MG A9Y82625": {
+    "descrizione": "Blocco Differenziale Vigi C40 1P+N 30ma AC",
+    "codiceInterno": "944",
+    "tipo": "P"
+  },
+  "SNR LP1K0610BD": {
+    "descrizione": "Contattore 3P 2,2Kw 24Vdc 1no 6A",
+    "codiceInterno": "946",
+    "tipo": "P"
+  },
+  "SNR LP2K0601BD": {
+    "descrizione": "Teleinvertitore 3P 4Kw 6A 24Vdc 1nc",
+    "codiceInterno": "947",
+    "tipo": "P"
+  },
+  "SNR LC1D80BD": {
+    "descrizione": "Contattore 80A 37Kw 3P 24Vdc 1no+1nc",
+    "codiceInterno": "1100",
+    "tipo": "P"
+  },
+  "SNR XPSUS12AP": {
+    "descrizione": "Modulo di Sicurezza Cat.4 24Vac/dc",
+    "codiceInterno": "2024",
+    "tipo": "P"
+  },
+  "SNR GV4P115N": {
+    "descrizione": "Interruttore Magnetotermico GV4 Manrot 115A 50kA",
+    "codiceInterno": "2291",
+    "tipo": "P"
+  },
+  "SNR GV4APN01": {
+    "descrizione": "Manovra Rotativa Rinviata Nera IP54 GV4",
+    "codiceInterno": "2294",
+    "tipo": "P"
+  },
+  "SNR A9E18325": {
+    "descrizione": "Segnalazione  Doppia Luminosa Rossa/Verde  110/230 Vac",
+    "codiceInterno": "1902",
+    "tipo": "P"
+  },
+  "SNR A9E18330": {
+    "descrizione": "Segnalazione Luminosa Rossa 24/48 Vdc",
+    "codiceInterno": "1903",
+    "tipo": "P"
+  },
+  "SNR A9F79425": {
+    "descrizione": "Interruttore Automatico iC60N 4P 25A 6kA curva C",
+    "codiceInterno": "1904",
+    "tipo": "P"
+  },
+  "SNR 10341": {
+    "descrizione": "Quadro Modulare Kaedra 18 moduli",
+    "codiceInterno": "1905",
+    "tipo": "P"
+  },
+  "SIE 3LD22030TK53": {
+    "descrizione": "Interr. Emergenza 3x32A fix frontale",
+    "codiceInterno": "257",
+    "tipo": "P"
+  },
+  "SIE 3LD22130TK51": {
+    "descrizione": "Interr. Principale 3x32A fix fondo BLP",
+    "codiceInterno": "258",
+    "tipo": "P"
+  },
+  "SIE 3LD22130TK53": {
+    "descrizione": "Interr. Emergenza 3x32A fix fondo BLP",
+    "codiceInterno": "259",
+    "tipo": "P"
+  },
+  "SIE 3LD25140TK53": {
+    "descrizione": "Interr. Emergenza 3x63A fix fondo BLP",
+    "codiceInterno": "260",
+    "tipo": "P"
+  },
+  "SIE 3NW7013": {
+    "descrizione": "Base 1P per Fusibili 10x38",
+    "codiceInterno": "261",
+    "tipo": "P"
+  },
+  "SIE 3NW7023": {
+    "descrizione": "Base 2P per Fusibili 10x38",
+    "codiceInterno": "322",
+    "tipo": "P"
+  },
+  "SIE 3NW7033": {
+    "descrizione": "Base 3P per Fusibili 10x38",
+    "codiceInterno": "263",
+    "tipo": "P"
+  },
+  "SIE 3NW7231": {
+    "descrizione": "Base 3P per Fusibili 22x58",
+    "codiceInterno": "264",
+    "tipo": "P"
+  },
+  "SIE 3RA29132AA1": {
+    "descrizione": "Blocco Meccanico S00",
+    "codiceInterno": "265",
+    "tipo": "P"
+  },
+  "SIE 3RH19211HA31": {
+    "descrizione": "Blocco Ausiliari 3NO+1NC x S0-S12 DIN EN 5",
+    "codiceInterno": "266",
+    "tipo": "P"
+  },
+  "SIE 3RH21221BB40": {
+    "descrizione": "Contattore Ausiliario 2no+2nc 24Vdc S00 VT",
+    "codiceInterno": "267",
+    "tipo": "P"
+  },
+  "SIE 3RH21401BB40": {
+    "descrizione": "Contattore Ausiliario 4no 24Vdc S00 VT",
+    "codiceInterno": "268",
+    "tipo": "P"
+  },
+  "SIE 3RH29111FA22": {
+    "descrizione": "Blocco Contatti Aus. 2no+2nc S00-S0",
+    "codiceInterno": "269",
+    "tipo": "P"
+  },
+  "SIE 3RH29111FA40": {
+    "descrizione": "Blocco Contatti Aus. 4no S00-S0",
+    "codiceInterno": "270",
+    "tipo": "P"
+  },
+  "SIE 3RH29111HA20": {
+    "descrizione": "Bloc. Aus. 2L SOO AND SO, VT",
+    "codiceInterno": "271",
+    "tipo": "P"
+  },
+  "SIE 3RT10441BB40": {
+    "descrizione": "Contattore 30KW 24Vdc",
+    "codiceInterno": "272",
+    "tipo": "P"
+  },
+  "SIE 3RT10461BB40": {
+    "descrizione": "Contattore S3 45KW 24Vdc",
+    "codiceInterno": "273",
+    "tipo": "P"
+  },
+  "SIE 3RT19361ER00": {
+    "descrizione": "Combinazione di Diodi x S2-S3 24Vdc",
+    "codiceInterno": "274",
+    "tipo": "P"
+  },
+  "SIE 3RT20111KA10": {
+    "descrizione": "Interr. Autom. S00 9-12,5A VT",
+    "codiceInterno": "275",
+    "tipo": "P"
+  },
+  "SIE 3RT20151BB41": {
+    "descrizione": "Contattore-3KW-1L-24Vdc-S00 VT",
+    "codiceInterno": "276",
+    "tipo": "P"
+  },
+  "SIE 3RT20151BB42": {
+    "descrizione": "Contattore-3KW-1nc-24Vdc-S00 VT",
+    "codiceInterno": "277",
+    "tipo": "P"
+  },
+  "SIE 3RT20161BB41": {
+    "descrizione": "Contattore 4KW-1L-24Vdc-S00 VT",
+    "codiceInterno": "278",
+    "tipo": "P"
+  },
+  "SIE 3RT20171BB41": {
+    "descrizione": "Contattore 5,5KW-1L-24Vdc-S00 VT",
+    "codiceInterno": "279",
+    "tipo": "P"
+  },
+  "SIE 3RT20181BB41": {
+    "descrizione": "Contattore 7,5KW-1L-24Vdc-S00 VT",
+    "codiceInterno": "280",
+    "tipo": "P"
+  },
+  "SIE 3RT20281BB40": {
+    "descrizione": "Contattore 18,5KW-1no+1nc-24Vdc-S0 VT",
+    "codiceInterno": "1152",
+    "tipo": "P"
+  },
+  "SIE 3RT2031NB30": {
+    "descrizione": "Contattore 22KW-1no+1nc-20/33Vdc-S2 VT",
+    "codiceInterno": "281",
+    "tipo": "P"
+  },
+  "SIE 3RT20381NB30": {
+    "descrizione": "Contattore 37KW-1no+1nc-20/33Vdc-S2 VT",
+    "codiceInterno": "282",
+    "tipo": "P"
+  },
+  "SIE 3RT29161DG00": {
+    "descrizione": "Diodo 12-250Vdc S00",
+    "codiceInterno": "283",
+    "tipo": "P"
+  },
+  "SIE 3RT29361ER00": {
+    "descrizione": "Diodo 24Vdc S2",
+    "codiceInterno": "284",
+    "tipo": "P"
+  },
+  "SIE 3RV19151DB": {
+    "descrizione": "Barra collettore trifase  45 mm per 5 Interruttore",
+    "codiceInterno": "285",
+    "tipo": "P"
+  },
+  "SIE 3RV20110EA10": {
+    "descrizione": "Interr. Autom. S00 0,28-0,4A VT",
+    "codiceInterno": "286",
+    "tipo": "P"
+  },
+  "SIE 3RV20111CA10": {
+    "descrizione": "Interruttore Automatico S00 1,8-2,5A VT",
+    "codiceInterno": "1172",
+    "tipo": "P"
+  },
+  "SIE 3RV20110JA10": {
+    "descrizione": "Interr. Autom. S00  0,7-1A VT",
+    "codiceInterno": "287",
+    "tipo": "P"
+  },
+  "SIE 3RV24110KA10": {
+    "descrizione": "Interr. Autom. S00 0,9-1,25A VT",
+    "codiceInterno": "288",
+    "tipo": "P"
+  },
+  "SIE 3RV20111AA10": {
+    "descrizione": "Interr. Autom. S00 1,1-1,6A VT",
+    "codiceInterno": "289",
+    "tipo": "P"
+  },
+  "SIE 3RV20111EA10": {
+    "descrizione": "Interr. Autom. S00 2,8-4A VT",
+    "codiceInterno": "290",
+    "tipo": "P"
+  },
+  "SIE 3RV20111GA10": {
+    "descrizione": "Interr. Autom. S00 4,5-6,3A VT",
+    "codiceInterno": "291",
+    "tipo": "P"
+  },
+  "SIE 3RV20111KA10": {
+    "descrizione": "Interruttore Automatico S00 9-12,5A VT",
+    "codiceInterno": "292",
+    "tipo": "P"
+  },
+  "SIE 3RV20214BA10": {
+    "descrizione": "Interruttore Automatico S0 14-20A VT",
+    "codiceInterno": "293",
+    "tipo": "P"
+  },
+  "SIE 3RV20214PA10": {
+    "descrizione": "Interruttore Automatico S0 30-36A VT",
+    "codiceInterno": "294",
+    "tipo": "P"
+  },
+  "SIE 3RV29011E": {
+    "descrizione": "Contatti Aus. Frontali 1no+1nc VT S00-S0",
+    "codiceInterno": "295",
+    "tipo": "P"
+  },
+  "SIE 3RV29255AB": {
+    "descrizione": "Morsetto di alimentazione trifase",
+    "codiceInterno": "296",
+    "tipo": "P"
+  },
+  "SIE 3VA10803ED460AA0": {
+    "descrizione": "Interr.Autom. 3VA 80A 4P  25Ka TM FTFM B/T",
+    "codiceInterno": "297",
+    "tipo": "P"
+  },
+  "SIE 3VA11104ED360AA0": {
+    "descrizione": "Interr.Autom. 3VA 100A 3P  36Ka TM FTFM B/T",
+    "codiceInterno": "298",
+    "tipo": "P"
+  },
+  "SIE 3VA11124EF320AA0": {
+    "descrizione": "Interr.Autom. 3VA 125A 3P  36Ka TM ATAM L",
+    "codiceInterno": "299",
+    "tipo": "P"
+  },
+  "SIE 3VA11164EE320AA0": {
+    "descrizione": "Interr.Autom. 3VA 160A 3P 36KA TM ATFM L",
+    "codiceInterno": "300",
+    "tipo": "P"
+  },
+  "SIE 3VA1123ED360AA0": {
+    "descrizione": "Interr.Autom. 3VA 125A 3P  25KA TM210 FTFM",
+    "codiceInterno": "301",
+    "tipo": "P"
+  },
+  "SIE 3VA11403EF360AA0": {
+    "descrizione": "Interr.Autom. 3VA 40A 3P 25KA TM ATAM",
+    "codiceInterno": "302",
+    "tipo": "P"
+  },
+  "SIE 3VA11503ED360AAO": {
+    "descrizione": "Interr. Autom. 3VA 50A 3P 25KA TM ATAM",
+    "codiceInterno": "303",
+    "tipo": "P"
+  },
+  "SIE 3VA11633EF360AA0": {
+    "descrizione": "Interr. Autom. 3VA 63A 3P 25KA TM ATAM",
+    "codiceInterno": "304",
+    "tipo": "P"
+  },
+  "SIE 3VA11804EF360AA0": {
+    "descrizione": "Interr. Autom. 3VA 80A 3P 36KA TM ATAM",
+    "codiceInterno": "305",
+    "tipo": "P"
+  },
+  "SIE 3VA91110WD30": {
+    "descrizione": "Calotta Coprimorsetti x 3VA10-1 3P (1pz)",
+    "codiceInterno": "306",
+    "tipo": "P"
+  },
+  "SIE 3VA91110WD40": {
+    "descrizione": "Calotta Coprimorsetti x 3VA10-1 4P (1pz)",
+    "codiceInterno": "307",
+    "tipo": "P"
+  },
+  "SIE 3VA9113-0RS20": {
+    "descrizione": "Modulo RCD510 x 3VA1/160 Diff.Regolabile",
+    "codiceInterno": "308",
+    "tipo": "P"
+  },
+  "SIE 3VA91570FK25": {
+    "descrizione": "Comando Rinviato B/P x 3VA10/1 Emerg.",
+    "codiceInterno": "309",
+    "tipo": "P"
+  },
+  "SIE 3VA91870SH10": {
+    "descrizione": "Adattatore Guida Din x Interr. 3P-4P 3VA",
+    "codiceInterno": "310",
+    "tipo": "P"
+  },
+  "SIE 3VA99080BB11": {
+    "descrizione": "Bobina di Minima Tensione 24Vdc",
+    "codiceInterno": "311",
+    "tipo": "P"
+  },
+  "SIE 3VA99880AA21": {
+    "descrizione": "Contatto Anticipato tipo HP",
+    "codiceInterno": "312",
+    "tipo": "P"
+  },
+  "SIE 3VA99880BL30": {
+    "descrizione": "Bobina Lancio Sx 24Vac 50-60Hz / 12_30Vdc",
+    "codiceInterno": "313",
+    "tipo": "P"
+  },
+  "SIE 5SM23220": {
+    "descrizione": "Blocco Differenziale 2P 40A AC",
+    "codiceInterno": "314",
+    "tipo": "P"
+  },
+  "SIE 5ST2507": {
+    "descrizione": "Blocco di Distribuzione 1P 160A",
+    "codiceInterno": "315",
+    "tipo": "P"
+  },
+  "SIE 5SY62167": {
+    "descrizione": "Interr.Mtermico 2P C16 6KA",
+    "codiceInterno": "316",
+    "tipo": "P"
+  },
+  "SIE 5SY65027": {
+    "descrizione": "Interr.Mtermico 1P+N C2 6KA",
+    "codiceInterno": "317",
+    "tipo": "P"
+  },
+  "SIE 8UD19002DA00": {
+    "descrizione": "Adattatore x Albero 8x8mm 3VA",
+    "codiceInterno": "319",
+    "tipo": "P"
+  },
+  "SIE 8UD19002WA00": {
+    "descrizione": "Albero Prolunga 300mm 8x8mm 3VA",
+    "codiceInterno": "320",
+    "tipo": "P"
+  },
+  "SIE 8UD19002WB00": {
+    "descrizione": "Albero Prolunga 600mm 8x8mm 3VA",
+    "codiceInterno": "321",
+    "tipo": "P"
+  },
+  "SIE 3RT20261BB40": {
+    "descrizione": "contactor, AC-3 25 A, 11 kW / 400 V 1 NO + 1 NC, 24 V",
+    "codiceInterno": "936",
+    "tipo": "P"
+  },
+  "SIE 3RT29261ES00": {
+    "descrizione": "Combinatios Diodo 30-250Vdc S0",
+    "codiceInterno": "1151",
+    "tipo": "P"
+  },
+  "SIE 3RV20111HA10": {
+    "descrizione": "Interr. Autom. S00 5,5-8A VT",
+    "codiceInterno": "938",
+    "tipo": "P"
+  },
+  "SIE 3UG45011AW30": {
+    "descrizione": "Rele di Livello 24-240Vac-dc - 1CO - 2-200kOhm",
+    "codiceInterno": "1068",
+    "tipo": "P"
+  },
+  "SIE 3RW30261BB04": {
+    "descrizione": "SIRIUS soft starter S0 25 A, 11 kW/400 V, 40 °C 200-480 V AC, 24 V AC/DC",
+    "codiceInterno": "1177",
+    "tipo": "P"
+  },
+  "SIE 5SY65067": {
+    "descrizione": "Interr.Mtermico 1P+N C6 6KA",
+    "codiceInterno": "354",
+    "tipo": "P"
+  },
+  "SIE 3VA91570FK21": {
+    "descrizione": "Comando Rinviato B/P x 3VA10/1 Emerg. NERO",
+    "codiceInterno": "2397",
+    "tipo": "P"
+  },
+  "SIE 3RQ10001GB00": {
+    "descrizione": "Positively DriverRelay 2NO contacts / 1 NC contact 24 VDC SIL 2 / PL",
+    "codiceInterno": "3223",
+    "tipo": "P"
+  },
+  "ABB 1SVR730850R0300": {
+    "descrizione": "CM-ENS-31S Rele di Livello 24Vdc",
+    "codiceInterno": "",
+    "tipo": ""
+  },
+  "ABB ESB25-40N": {
+    "descrizione": "Contattore Modulare 25A 24Vac/dc -  220-400V",
+    "codiceInterno": "1906",
+    "tipo": "P"
+  },
+  "140G-G3C3-D12": {
+    "descrizione": "140G - 35 kA Interrupt Rating, T/M - Thermal Magnetic, 3 Poles, 125 A",
+    "codiceInterno": "2542",
+    "tipo": "P"
+  },
+  "140G-G-NVM21B": {
+    "descrizione": "140G/1494V Product Handle Accessories/Operating Mechanisms",
+    "codiceInterno": "2543",
+    "tipo": "P"
+  },
+  "140G-G-SNJ": {
+    "descrizione": "Frame G..J, Shunt Trip (SNT), 24-30V AC/DC",
+    "codiceInterno": "2544",
+    "tipo": "P"
+  },
+  "140G-G-EA1R1J": {
+    "descrizione": "Frame G..J, Cable, AX/AL 24V DC",
+    "codiceInterno": "2545",
+    "tipo": "P"
+  },
+  "140G-G-DRA": {
+    "descrizione": "Adapts to 35 mm DIN Rail",
+    "codiceInterno": "2548",
+    "tipo": "P"
+  },
+  "140MT-C3E-B16": {
+    "descrizione": "Motor Protection Circuit Breaker, C Frame, 1 - 1.6A",
+    "codiceInterno": "2552",
+    "tipo": "P"
+  },
+  "140MT-C3E-B40": {
+    "descrizione": "Motor Protection Circuit Breaker, C Frame, 2.5 - 4A",
+    "codiceInterno": "2553",
+    "tipo": "P"
+  },
+  "140MT-C3E-C10": {
+    "descrizione": "Motor Protection Circuit Breaker, C Frame, 6.3 - 10A",
+    "codiceInterno": "2554",
+    "tipo": "P"
+  },
+  "140MT-C-AFA11": {
+    "descrizione": "Blocco di contatti ausiliari, 1 N/C + 1 N/A",
+    "codiceInterno": "2555",
+    "tipo": "P"
+  },
+  "140MT-C-WTEN": {
+    "descrizione": "Feeder Terminal, 80A",
+    "codiceInterno": "2556",
+    "tipo": "P"
+  },
+  "140MT-C-CW455": {
+    "descrizione": "Barra di distribuzione serie 140",
+    "codiceInterno": "2557",
+    "tipo": "P"
+  },
+  "1489-M1C040": {
+    "descrizione": "Miniature Circuit Breake 240V AC, 1 Pole, Trip Curve C, 4A",
+    "codiceInterno": "2558",
+    "tipo": "P"
+  },
+  "100-E116KJ11": {
+    "descrizione": "Contactor, IEC, 116 A, 24-60V 50-60 Hz, 3 NO Poles, 1 NO 1 NC Auxiliary Contacts",
+    "codiceInterno": "2559",
+    "tipo": "P"
+  },
+  "100-C12EJ10": {
+    "descrizione": "Contattore serie 100C, 3 poli, 3 NA, 12 A, 5,5 kW, bobina 24 V c.c.",
+    "codiceInterno": "2560",
+    "tipo": "P"
+  },
+  "100-C09EJ10": {
+    "descrizione": "Contattore serie 100C, 3 poli, 3 NA, 9 A, 4 kW, bobina 24 V dc",
+    "codiceInterno": "2561",
+    "tipo": "P"
+  },
+  "100-C09EJ01": {
+    "descrizione": "Contattore serie 100C, 3 poli, 3 NA, 9 A, 4 kW, bobina 24 V dc 1nc aux",
+    "codiceInterno": "2562",
+    "tipo": "P"
+  },
+  "100-FA20": {
+    "descrizione": "Contatto ausiliario 2 contatti N/A",
+    "codiceInterno": "2563",
+    "tipo": "P"
+  },
+  "105-PW23": {
+    "descrizione": "Kit invertitore",
+    "codiceInterno": "2564",
+    "tipo": "P"
+  },
+  "700-CF400EJ": {
+    "descrizione": "Contattore serie 700C, 4 poli, 4 NA, 25 A, bobina 24 V dc",
+    "codiceInterno": "2569",
+    "tipo": "P"
+  },
+  "100-FA22M": {
+    "descrizione": "Contatto ausiliario 4 contatti, 2NC + 2NO, serie 100F",
+    "codiceInterno": "2608",
+    "tipo": "P"
+  },
+  "100-MCA00": {
+    "descrizione": "Interblocco meccanico per uso con Serie 100C",
+    "codiceInterno": "2654",
+    "tipo": "P"
+  },
+  "100-ETS146L": {
+    "descrizione": "Terminal Shrouds 100-E116...100-E146",
+    "codiceInterno": "2678",
+    "tipo": "P"
+  },
+  "1734-AENT": {
+    "descrizione": "Ethernet/IP Adapter Module With Power Supply",
+    "codiceInterno": "2659",
+    "tipo": "P"
+  },
+  "1734-IB8": {
+    "descrizione": "Module Of Input Digital 8E 24VDC",
+    "codiceInterno": "2661",
+    "tipo": "P"
+  },
+  "1734-OB8": {
+    "descrizione": "Module Of Output Digital 8O 24VDC",
+    "codiceInterno": "2662",
+    "tipo": "P"
+  },
+  "1734-TOP": {
+    "descrizione": "Module Base For Point I/O",
+    "codiceInterno": "2663",
+    "tipo": "P"
+  },
+  "2711P-T7C21D8S": {
+    "descrizione": "Panel View Plus 7 terminal, Touch 7\"",
+    "codiceInterno": "2664",
+    "tipo": "P"
+  },
+  "1734-OB8S": {
+    "descrizione": "DC Output Module, 8 Points, Safety, 24VDC",
+    "codiceInterno": "2665",
+    "tipo": "P"
+  },
+  "5069-L320ERMS3": {
+    "descrizione": "Compact GuardLogix SIL3 2.0/1.0M Motion",
+    "codiceInterno": "2666",
+    "tipo": "P"
+  },
+  "5069-IB8S": {
+    "descrizione": "Compact 5000 8 Channel 24VDC Safety Input Module",
+    "codiceInterno": "2667",
+    "tipo": "P"
+  },
+  "5069-RTB64-SCREW": {
+    "descrizione": "5069 Compact I/O Power terminal RTB kit for both 4 and 6 pin Screw type",
+    "codiceInterno": "2668",
+    "tipo": "P"
+  },
+  "5069-RTB18-SCREW": {
+    "descrizione": "Compact 5000 18 Screw RTB",
+    "codiceInterno": "2669",
+    "tipo": "P"
+  },
+  "2198-DBR90-F": {
+    "descrizione": "Kinetix 5700, AC Line Filter, 90 Arms Input and Output",
+    "codiceInterno": "2670",
+    "tipo": "P"
+  },
+  "1321-3R100A": {
+    "descrizione": "Three-Phase Line Reactor, 100 Amps, 0.15 mh",
+    "codiceInterno": "2671",
+    "tipo": "P"
+  },
+  "2198-RP200": {
+    "descrizione": "Kinetix 5700 Regen Bus Supply 200A Peak",
+    "codiceInterno": "2672",
+    "tipo": "P"
+  },
+  "2198-D057-ERS24": {
+    "descrizione": "2x23A Dual-axis Module 85mm",
+    "codiceInterno": "2675",
+    "tipo": "P"
+  },
+  "1783-BMS10CGN": {
+    "descrizione": "Stratix 5700, 8 copper 10/100 ports full FW, 1588 PTP, NAT",
+    "codiceInterno": "2673",
+    "tipo": "P"
+  },
+  "2198-H070-P-T": {
+    "descrizione": "T-connector and bus-bars for control power on Frame 3 follower drives",
+    "codiceInterno": "2674",
+    "tipo": "P"
+  },
+  "2198-TCON-24VDCIN36": {
+    "descrizione": "Kinetix 5700 Shared-bus T-connector kit",
+    "codiceInterno": "2676",
+    "tipo": "P"
+  },
+  "BAU BFN3-1-016-001": {
+    "descrizione": "Filtro di Rete 3x16A 275/480Vac 50/60Hz 10Nm",
+    "codiceInterno": "323",
+    "tipo": "P"
+  },
+  "BAU BFN3-1-030-001": {
+    "descrizione": "Filtro di Rete 3x30A 275/480Vac 50/60Hz",
+    "codiceInterno": "324",
+    "tipo": "P"
+  },
+  "BAU BFN3-1-100-001": {
+    "descrizione": "Filtro di Rete 3x100A 275/480Vac 50/60Hz",
+    "codiceInterno": "325",
+    "tipo": "P"
+  },
+  "BAU BK3-0025/0030-001": {
+    "descrizione": "Reattanza 3F 500Vmax 30Amp",
+    "codiceInterno": "326",
+    "tipo": "P"
+  },
+  "BAU BK3-0080/0100-001": {
+    "descrizione": "Reattanza 3F 500Vmax 82Amp",
+    "codiceInterno": "327",
+    "tipo": "P"
+  },
+  "BAU BM4412-STI-01300-S01-03-E80": {
+    "descrizione": "Azionamento IN 3x400V(480V)ac 50-60Hz Out 3x0_400V(460V)ac 3x2,5A(2,1A) 0-450Hz",
+    "codiceInterno": "328",
+    "tipo": "P"
+  },
+  "BAU BM4423-ST1-01300-S01-03-E80": {
+    "descrizione": "Azionamento IN 3x400Vac OUT 3x0_400Vac 11A 0_450Hz",
+    "codiceInterno": "329",
+    "tipo": "P"
+  },
+  "BAU BM4424-ST1-01300-S01-03-E80": {
+    "descrizione": "Azionamento IN 3x400Vac OUT 3x0_400Vac 15A 0_450Hz",
+    "codiceInterno": "952",
+    "tipo": "P"
+  },
+  "BAU BM4432-ST1-01300-S01-03-E80": {
+    "descrizione": "Azionamento IN 3x400Vac OUT 3x0_370Vac 22,5A 0_450Hz",
+    "codiceInterno": "330",
+    "tipo": "P"
+  },
+  "BAU BM4443-SI1-01343-S01-03-E80": {
+    "descrizione": "Azionamento IN 3x400V(480V)ac 50-60Hz Out 3x0-400V(460V)ac 3x80A (66A) 0-450Hz",
+    "codiceInterno": "331",
+    "tipo": "P"
+  },
+  "BAU HPM1100-22RJ": {
+    "descrizione": "Resistenza di Frenatura 22RJ",
+    "codiceInterno": "332",
+    "tipo": "P"
+  },
+  "BAU RFH130-130RJ": {
+    "descrizione": "Resistenza di Frenatura RFH130 130RJ",
+    "codiceInterno": "333",
+    "tipo": "P"
+  },
+  "BAU RFH220-44RJ": {
+    "descrizione": "Resistenza di Frenatura 44RJ",
+    "codiceInterno": "953",
+    "tipo": "P"
+  },
+  "BAU RFH220-60RJ": {
+    "descrizione": "Resistenza di Frenatura 60RJ",
+    "codiceInterno": "334",
+    "tipo": "P"
+  },
+  "BAU RMT 01X 2KW 16R": {
+    "descrizione": "Resistenza di Frenatura 2Kw 16R 10%",
+    "codiceInterno": "335",
+    "tipo": "P"
+  },
+  "BAU BM5523-SI06-0101-0S28-00-01-E80-#01": {
+    "descrizione": "Azionamento IN 3x400Vac OUT 3x0_400Vac 11A 0_450Hz",
+    "codiceInterno": "336",
+    "tipo": "P"
+  },
+  "BAU BM4434-SI1-01300-S01-03-E80": {
+    "descrizione": "Azionamento IN 3x400Vac OUT 3x0_400Vac 45A 0_450Hz",
+    "codiceInterno": "2135",
+    "tipo": "P"
+  },
+  "BAU BK3-0040/0050-001": {
+    "descrizione": "Reattanza 3F 500Vmax 41Amp",
+    "codiceInterno": "2137",
+    "tipo": "P"
+  },
+  "BAU BFN3-1-42-001": {
+    "descrizione": "Filtro di Rete 3x42A 275/480Vac 50/60Hz",
+    "codiceInterno": "2136",
+    "tipo": "P"
+  },
+  "BAU HPM1300-16RJ": {
+    "descrizione": "Resistenza di Frenatura 16RJ",
+    "codiceInterno": "2138",
+    "tipo": "P"
+  },
+  "BAU BK3-0022/0027-111": {
+    "descrizione": "Reattanza 3F 600Vmax 22Amp",
+    "codiceInterno": "2632",
+    "tipo": "P"
+  },
+  "BAU BM5523-SI06-0101-0128-00-01-E80-#01": {
+    "descrizione": "IN 3x400V(480V)ac 50-60Hz Out 3x0-400V(460V)ac 3x11A (10,2A) 0-599Hz",
+    "codiceInterno": "3068",
+    "tipo": "P"
+  },
+  "BAU BM5522-SI06-0101-0128-00-01-E80-#01": {
+    "descrizione": "IN 3x400V(480V)ac 50-60Hz Out 3x0-400V(460V)ac 3x7,5A (6,7A) 0-599Hz",
+    "codiceInterno": "3107",
+    "tipo": "P"
+  },
+  "BAU RFH165-86RJ": {
+    "descrizione": "Resistenza di Frenatura 86RJ",
+    "codiceInterno": "3362",
+    "tipo": "P"
+  },
+  "Basetta Cavo Flat": {
+    "descrizione": "Basetta Cavo Flat 26 Poli",
+    "codiceInterno": "2146",
+    "tipo": "P"
+  },
+  "ELA A2010068": {
+    "descrizione": "NEXUS Expansion 16 Input / 16 Output",
+    "codiceInterno": "2776",
+    "tipo": "P"
+  },
+  "ELA N2X2P2P2SX01X12V-2-02": {
+    "descrizione": "CP NEXUS N2 2Assi PWM 32in/32out PNP SW V.2.02",
+    "codiceInterno": "337",
+    "tipo": "P"
+  },
+  "BT-F110-W": {
+    "descrizione": "Staffa montaggio Sensore PMI lineare",
+    "codiceInterno": "171",
+    "tipo": "P"
+  },
+  "BT-F130-A": {
+    "descrizione": "Attuatore per PMI360DV",
+    "codiceInterno": "172",
+    "tipo": "P"
+  },
+  "BT-F90-W": {
+    "descrizione": "Attuatore per PMI120 lineare",
+    "codiceInterno": "173",
+    "tipo": "P"
+  },
+  "GLV18-8-450/73/120": {
+    "descrizione": "Fotocellula M18 a tasteggio fino a 450 mm",
+    "codiceInterno": "174",
+    "tipo": "P"
+  },
+  "INX360D-F99-I2E2-V15": {
+    "descrizione": "Sensore inclinazione",
+    "codiceInterno": "175",
+    "tipo": "P"
+  },
+  "MH-F90": {
+    "descrizione": "Staffa montaggio Sensore PMI120 lineare",
+    "codiceInterno": "176",
+    "tipo": "P"
+  },
+  "ML100-8-1000-RT/95/103": {
+    "descrizione": "Fotocellula miniaturizzata a tasteggio fino a 1.000 mm",
+    "codiceInterno": "177",
+    "tipo": "P"
+  },
+  "OBT300-R101-2EP-IO-V31-L": {
+    "descrizione": "Fotocellula LASER__Soppressione di Sfondo regolabile\nfino 300mm  2 Uscite Push pull connettore M8-4 pin",
+    "codiceInterno": "178",
+    "tipo": "P"
+  },
+  "OBT350-R101-2EP-IO-V31": {
+    "descrizione": "Fotocellula__Soppressione di Sfondo regolabile\n fino 350 mm 2 Uscite Push pull connettore M8-4 pin",
+    "codiceInterno": "179",
+    "tipo": "P"
+  },
+  "PMI120-F90-IU-V1": {
+    "descrizione": "Sensore Induttivo Lineare Uscita analogica TENSIONE/CORRENTE CORSA 120 mm",
+    "codiceInterno": "180",
+    "tipo": "P"
+  },
+  "PMI210-F110-IU-V1": {
+    "descrizione": "Sensore Induttivo Lineare CORSA 210 mm  Uscita analogica TENSIONE/CORRENTESensore Induttivo Lineare CORSA 210 mm  Uscita analogica TENSIONE/CORRENTE",
+    "codiceInterno": "181",
+    "tipo": "P"
+  },
+  "PMI360DV-F130-IU2E2-V15": {
+    "descrizione": "Sensore induttivo rotativo n.2 uscite PNP regolabili\nN. 1 uscita analogica TENSIONE/CORRENTESensore induttivo rotativo n.2 uscite PNP regolabili\nN. 1 uscita analogica TENSIONE/CORRENTE",
+    "codiceInterno": "182",
+    "tipo": "P"
+  },
+  "PMI360-F110-IU-V1": {
+    "descrizione": "Sensore Induttivo Lineare CORSA 360 mm\nUscita analogica TENSIONE/CORRENTESensore Induttivo Lineare CORSA 360 mm\nUscita analogica TENSIONE/CORRENTE",
+    "codiceInterno": "183",
+    "tipo": "P"
+  },
+  "PMI510-F110-IU-V1": {
+    "descrizione": "Sensore Induttivo Lineare CORSA 510 mm\nUscita analogica TENSIONE/CORRENTESensore Induttivo Lineare CORSA 510 mm\nUscita analogica TENSIONE/CORRENTE",
+    "codiceInterno": "184",
+    "tipo": "P"
+  },
+  "ICRL-U-8RJ45-DIN-NT": {
+    "descrizione": "Ethernet unmanaged switch ICRL-U-8RJ45-DIN",
+    "codiceInterno": "1991",
+    "tipo": "P"
+  },
+  "SNR ATS22D47Q": {
+    "descrizione": "ATS22 Avviatore Softstart 22Kw 400V 47A",
+    "codiceInterno": "338",
+    "tipo": "P"
+  },
+  "SNR ATV320U04N4B": {
+    "descrizione": "Altivar 320 0,37Kw 380/500V 3F 50/60Hz",
+    "codiceInterno": "339",
+    "tipo": "P"
+  },
+  "SNR ATV320U15N4B": {
+    "descrizione": "Altivar 320 1,5Kw/3Hp 380/500V 3F 50-60Hz 8,7A/5,5A",
+    "codiceInterno": "340",
+    "tipo": "P"
+  },
+  "SNR ATV320U22N4B": {
+    "descrizione": "Altivar 320 2,2Kw/3Hp 380/500V 3F 50/60Hz",
+    "codiceInterno": "341",
+    "tipo": "P"
+  },
+  "SNR ATV320U30N4B": {
+    "descrizione": "Altivar 320 3Kw/3Hp 380/500V 3F 50/60Hz",
+    "codiceInterno": "342",
+    "tipo": "P"
+  },
+  "SNR ATV320U40N4B": {
+    "descrizione": "Altivar 320 4Kw/5Hp 380/500V 3F 50/60Hz",
+    "codiceInterno": "343",
+    "tipo": "P"
+  },
+  "SNR ATV320U55N4B": {
+    "descrizione": "Altivar 320 5,5Kw/7Hp 380/500V 3F 50/60Hz",
+    "codiceInterno": "345",
+    "tipo": "P"
+  },
+  "SNR METSEPM3200": {
+    "descrizione": "Multimetro PM3200",
+    "codiceInterno": "346",
+    "tipo": "P"
+  },
+  "SNR SR3B101BD": {
+    "descrizione": "PLC Zelio 24Vdc 6/IN 4/OUT Rele",
+    "codiceInterno": "347",
+    "tipo": "P"
+  },
+  "SNR SR3B261BD": {
+    "descrizione": "PLC ZELIO 24Vdc 16/IN  10/OUT Rele",
+    "codiceInterno": "348",
+    "tipo": "P"
+  },
+  "SNR SR3XT141BD": {
+    "descrizione": "Espansione Zelio",
+    "codiceInterno": "349",
+    "tipo": "P"
+  },
+  "SNR VW3A7701": {
+    "descrizione": "Resistenza di Frenatura 3/4Kw P (W) 50/100",
+    "codiceInterno": "352",
+    "tipo": "P"
+  },
+  "SNR ATV320U75N4B": {
+    "descrizione": "Altivar 320 7,5Kw/10Hp 380/500V 3F 50/60Hz",
+    "codiceInterno": "945",
+    "tipo": "P"
+  },
+  "SNR TM221M16RG": {
+    "descrizione": "Controller M221-16IO Relay Spring Book",
+    "codiceInterno": "1058",
+    "tipo": "P"
+  },
+  "SNR TM3DI16G": {
+    "descrizione": "Module TM3-16 Inputs Spring",
+    "codiceInterno": "1059",
+    "tipo": "P"
+  },
+  "SNR TM3DQ16RG": {
+    "descrizione": "Module TM3-16 Outputs Relays Spring",
+    "codiceInterno": "1060",
+    "tipo": "P"
+  },
+  "SNR TM3DM24RG": {
+    "descrizione": "Module TM3-24 IO Relays Spring",
+    "codiceInterno": "1061",
+    "tipo": "P"
+  },
+  "SNR ATV320U06N4C": {
+    "descrizione": "Altivar 320 0,55Kw 380/500V 3F 50/60Hz",
+    "codiceInterno": "1917",
+    "tipo": "P"
+  },
+  "SNR ATV320U07N4C": {
+    "descrizione": "Altivar 320 0,75Kw 380/500V 3F 50/60Hz",
+    "codiceInterno": "1918",
+    "tipo": "P"
+  },
+  "SNR RM22LA32MR": {
+    "descrizione": "Relè controllo livelli RM22-L - 24..240 V AC/DC - 2 C/O",
+    "codiceInterno": "1962",
+    "tipo": "P"
+  },
+  "SNR TM221M16R": {
+    "descrizione": "Controller M221-16IO Relay",
+    "codiceInterno": "2049",
+    "tipo": "P"
+  },
+  "SNR TM3DI16": {
+    "descrizione": "Module TM3-16 Inputs",
+    "codiceInterno": "2050",
+    "tipo": "P"
+  },
+  "SNR TM3DQ16R": {
+    "descrizione": "Module TM3-16 Outputs",
+    "codiceInterno": "2051",
+    "tipo": "P"
+  },
+  "SNR XB4BD912R4K7": {
+    "descrizione": "Testa potenziometro 4,7K completo Ø22",
+    "codiceInterno": "2173",
+    "tipo": "P"
+  },
+  "SNR ATV320U30N4C": {
+    "descrizione": "Altivar 320 COMPATTO 3Kw/3Hp 380/500V 3F 50/60Hz",
+    "codiceInterno": "2167",
+    "tipo": "P"
+  },
+  "SNR ATV340U30N4": {
+    "descrizione": "Altivar 340 3Kw/3Hp 380/500V 3F 50/60Hz",
+    "codiceInterno": "2295",
+    "tipo": "P"
+  },
+  "SNR ATV340U55N4": {
+    "descrizione": "Altivar 340 5,5Kw/7Hp 380/500V 3F 50/60Hz",
+    "codiceInterno": "2296",
+    "tipo": "P"
+  },
+  "SNR TM2DRA16RT": {
+    "descrizione": "Modulo output discrete M238 - 16 output relè",
+    "codiceInterno": "2388",
+    "tipo": "P"
+  },
+  "SNR XBH1AA0R4X1": {
+    "descrizione": "Display digitale 4 cifre led rosso Zelio Control",
+    "codiceInterno": "2605",
+    "tipo": "P"
+  },
+  "SNR ATV340U40N4": {
+    "descrizione": "Altivar 340 4Kw/5Hp 380/500V 3F 50/60Hz",
+    "codiceInterno": "2942",
+    "tipo": "P"
+  },
+  "SNR VW3A3627": {
+    "descrizione": "Scheda Profinet",
+    "codiceInterno": "2943",
+    "tipo": "P"
+  },
+  "SNR XPSMCMCP0802": {
+    "descrizione": "Modulo configurabile modulare di sicurezza 8DI 2DO",
+    "codiceInterno": "2346",
+    "tipo": "P"
+  },
+  "SNR ATV340U22N4": {
+    "descrizione": "Altivar 340 2,2Kw/3Hp 380/500V 3F 50/60Hz",
+    "codiceInterno": "3293",
+    "tipo": "P"
+  },
+  "SNR ATV320U22N4C": {
+    "descrizione": "Altivar 320 COMPATTO 2,2Kw/3Hp 380/500V 3F 50/60Hz",
+    "codiceInterno": "3318",
+    "tipo": "P"
+  },
+  "SIE 3SU1900-0KP80-0AA0": {
+    "descrizione": "Cavo x Collegamento Moduli Profinet (10mt)",
+    "codiceInterno": "353",
+    "tipo": "P"
+  },
+  "SIE 6ES7 954-8LE03-0AA0": {
+    "descrizione": "SINAMIC S7 Memory Card 12M",
+    "codiceInterno": "",
+    "tipo": "P"
+  },
+  "SIE 6AV2-124-0GC01-0AX0": {
+    "descrizione": "Pannello Operatore TP700 Comfort",
+    "codiceInterno": "355",
+    "tipo": "P"
+  },
+  "SIE 6AV2-124-0MC01-0AX0": {
+    "descrizione": "Pannello Operatore TP 1200  Comfort 12\"",
+    "codiceInterno": "2116",
+    "tipo": "P"
+  },
+  "SIE 6AV2128-3KB06-0AX1": {
+    "descrizione": "SIMATIC HMI MTP1000, Unified Comfort Panel, display da 10,1\"",
+    "codiceInterno": "3185",
+    "tipo": "P"
+  },
+  "SIE 6AV6 647-0AH11-3AX0": {
+    "descrizione": "KP 300 Basic Mono PN",
+    "codiceInterno": "356",
+    "tipo": "P"
+  },
+  "SIE 6AV6 647-0AH11-3AX1": {
+    "descrizione": "KP 300 Basic Mono PN",
+    "codiceInterno": "3127",
+    "tipo": "P"
+  },
+  "SIE 6AV2 124-0MC01-0AX0": {
+    "descrizione": "Pannello Operatore TP1200 Comfort",
+    "codiceInterno": "1181",
+    "tipo": "P"
+  },
+  "SIE 6EP1334-3BA10": {
+    "descrizione": "IN 120-230V IN 230-400-500V OUT 24Vdc 10A",
+    "codiceInterno": "357",
+    "tipo": "P"
+  },
+  "SIE 6EP1334-3BA20": {
+    "descrizione": "IN 120-230V IN 230-400-500V OUT 24Vdc 20A",
+    "codiceInterno": "3253",
+    "tipo": "P"
+  },
+  "SIE 6EP1333-1LB00": {
+    "descrizione": "SITOP PSU100L IN 3AC 120/230 V  OUT 24 Vdc/5 A",
+    "codiceInterno": "2104",
+    "tipo": "P"
+  },
+  "SIE 6EP1436-2BA10": {
+    "descrizione": "SITOP PSU300S IN 3AC 400/500V Out 24Vdc/20A",
+    "codiceInterno": "358",
+    "tipo": "P"
+  },
+  "SIE 6EP1437-2BA20": {
+    "descrizione": "SITOP PSU300S IN 3AC 400/500V OUT 24Vdc 40A",
+    "codiceInterno": "359",
+    "tipo": "P"
+  },
+  "SIE 6EP3436-7SB00-3AX0": {
+    "descrizione": "SITOP PSU6200 IN 3AC 400/500 V OUT 24 Vdc/20 A",
+    "codiceInterno": "2407",
+    "tipo": "P"
+  },
+  "SIE 6EP1437-3BA10": {
+    "descrizione": "SITOP MODULAR 40A 3ph IN 400-500V Out 24Vdc",
+    "codiceInterno": "360",
+    "tipo": "P"
+  },
+  "SIE 6EP1961-2BA41": {
+    "descrizione": "SITOP PSE200U IN 24Vdc/40A OUT 4x24Vdc/10A",
+    "codiceInterno": "361",
+    "tipo": "P"
+  },
+  "SIE 6ES7 131-4BF00-0AA0": {
+    "descrizione": "Modulo Elettronico 8DI 24Vdc",
+    "codiceInterno": "362",
+    "tipo": "P"
+  },
+  "SIE 6ES7 131-6BF00-0BA0": {
+    "descrizione": "DI-ST 8x24Vdc DI-ST Modulo Ingressi",
+    "codiceInterno": "363",
+    "tipo": "P"
+  },
+  "SIE 6ES7 131-6BF01-0BA0": {
+    "descrizione": "ET 200SP Digital input module DI 8x24VDC ST",
+    "codiceInterno": "364",
+    "tipo": "P"
+  },
+  "SIE 6ES7 131-6BH00-0BA0": {
+    "descrizione": "DI-ST 16x24Vdc Modulo Ingressi",
+    "codiceInterno": "365",
+    "tipo": "P"
+  },
+  "SIE 6ES7 131-6BH01-0BA0": {
+    "descrizione": "DI-ST 16x24Vdc Modulo Ingressi",
+    "codiceInterno": "366",
+    "tipo": "P"
+  },
+  "SIE 6ES7 132-4BF00-0AA0": {
+    "descrizione": "Modulo Elettronico 8DQ 24Vdc 0,5A",
+    "codiceInterno": "367",
+    "tipo": "P"
+  },
+  "SIE 6ES7 132-6BD20-0BA0": {
+    "descrizione": "DQ-ST 4x24Vdc/2A Modulo Uscite",
+    "codiceInterno": "368",
+    "tipo": "P"
+  },
+  "SIE 6ES7 132-6BF00-0BA0": {
+    "descrizione": "DQ-ST 8x24Vdc/0,5A Modulo Uscite",
+    "codiceInterno": "369",
+    "tipo": "P"
+  },
+  "SIE 6ES7 132-6BF01-0BA0": {
+    "descrizione": "DQ-ST 8x24Vdc/0,5A Modulo Uscite",
+    "codiceInterno": "370",
+    "tipo": "P"
+  },
+  "SIE 6ES7 132-6BH00-0BA0": {
+    "descrizione": "DQ-ST 16x24Vdc/0,5A Modulo Uscite",
+    "codiceInterno": "371",
+    "tipo": "P"
+  },
+  "SIE 6ES7 132-6BH01-0BA0": {
+    "descrizione": "DQ-ST 16x24Vdc/0,5A Modulo Uscite",
+    "codiceInterno": "372",
+    "tipo": "P"
+  },
+  "SIE 6ES7 134-6FB00-0BA1": {
+    "descrizione": "AI 2xU ST Modulo Ingressi Analogico",
+    "codiceInterno": "373",
+    "tipo": "P"
+  },
+  "SIE 6ES7 134-6HD00-0BA1": {
+    "descrizione": "Analog Input Module AI-ST 4xU/I 2-wire",
+    "codiceInterno": "374",
+    "tipo": "P"
+  },
+  "SIE 6ES7 134-6HD01-0BA1": {
+    "descrizione": "ET 200SP Analog Input Module AI 4xU/I 2-wire ST",
+    "codiceInterno": "375",
+    "tipo": "P"
+  },
+  "SIE 6ES7 135-4FB01-0AB0": {
+    "descrizione": "Modulo Elettronico 2AOU",
+    "codiceInterno": "376",
+    "tipo": "P"
+  },
+  "SIE 6ES7 135-6FB00-0BA1": {
+    "descrizione": "AQ 2xU ST Modulo Uscite Analogico",
+    "codiceInterno": "377",
+    "tipo": "P"
+  },
+  "SIE 6ES7 135-6HD00-0BA1": {
+    "descrizione": "AQ 4xU/I ST Modulo Analogico",
+    "codiceInterno": "378",
+    "tipo": "P"
+  },
+  "SIE 6ES7 136-6BA00-0CA0": {
+    "descrizione": "PROFIsafe F-DI 8x24Vdc Modulo Emergenze",
+    "codiceInterno": "379",
+    "tipo": "P"
+  },
+  "SIE 6ES7 136-6BA01-0CA0": {
+    "descrizione": "PROFIsafe F-DI 8x24Vdc Modulo Emergenze",
+    "codiceInterno": "2839",
+    "tipo": "P"
+  },
+  "SIE 6ES7 136-6DB00-0CA0": {
+    "descrizione": "PROFIsafe F-DQ 4x24Vdc/2A PM Modulo Emerg.",
+    "codiceInterno": "380",
+    "tipo": "P"
+  },
+  "SIE 6ES7 138-4CA01-0AA0": {
+    "descrizione": "POWER PM-E DC24V perModuli Elettronici con",
+    "codiceInterno": "381",
+    "tipo": "P"
+  },
+  "SIE 6ES7 142-5AF00-0BA0": {
+    "descrizione": "SIMATIC ET 200AL, DQ 8x 24 V DC/2 A, 8x M12",
+    "codiceInterno": "382",
+    "tipo": "P"
+  },
+  "SIE 6ES7 143-5AF00-0BA0": {
+    "descrizione": "SIMATIC ET 200AL, DIQ 4+DQ 4x 24 V DC/0.5 A, 4x M12",
+    "codiceInterno": "383",
+    "tipo": "P"
+  },
+  "SIE 6ES7 144-5KD00-0BA0": {
+    "descrizione": "ET 200AL Analog input module AI 4xU/I/RTD 4xM12",
+    "codiceInterno": "384",
+    "tipo": "P"
+  },
+  "SIE 6ES7 151-3AA23-0AB0": {
+    "descrizione": "IM151-3 PN ET 200S PROFINET",
+    "codiceInterno": "385",
+    "tipo": "P"
+  },
+  "SIE 6ES7 151-8AB01-0AB0": {
+    "descrizione": "IM151-8 CPU PN/DP PROFINET Controller/DP",
+    "codiceInterno": "386",
+    "tipo": "P"
+  },
+  "SIE 6ES7 155-6AA01-0BN0": {
+    "descrizione": "IM155-6PN ST Interface Module",
+    "codiceInterno": "387",
+    "tipo": "P"
+  },
+  "SIE 6ES7 155-6AU01-0BN0": {
+    "descrizione": "IM155-6PN ST ET200SP",
+    "codiceInterno": "388",
+    "tipo": "P"
+  },
+  "SIE 6ES7 157-1AB00-0AB0": {
+    "descrizione": "Interface module IM 157-1 PN (ET200AL)",
+    "codiceInterno": "389",
+    "tipo": "P"
+  },
+  "SIE 6ES7 158-3AD01-0XA0": {
+    "descrizione": "Coupler PN/PN ET200",
+    "codiceInterno": "390",
+    "tipo": "P"
+  },
+  "SIE 6ES7 193-4CA40-0AA0": {
+    "descrizione": "Base Moduli IN/OUT",
+    "codiceInterno": "391",
+    "tipo": "P"
+  },
+  "SIE 6ES7 193-4CD20-0AA0": {
+    "descrizione": "Base Alimentatore (Modulo Terminale)",
+    "codiceInterno": "392",
+    "tipo": "P"
+  },
+  "SIE 6ES7 193-6AR00-0AA0": {
+    "descrizione": "Profinet BA 2xRJ45",
+    "codiceInterno": "393",
+    "tipo": "P"
+  },
+  "SIE 6ES7 193-6BP00-0BA0": {
+    "descrizione": "Base",
+    "codiceInterno": "394",
+    "tipo": "P"
+  },
+  "SIE 6ES7 193-6BP00-0DA0": {
+    "descrizione": "Base Alimentata",
+    "codiceInterno": "395",
+    "tipo": "P"
+  },
+  "SIE 6ES7 214-1AG40-0XB0": {
+    "descrizione": "CPU 1214C DI 14x24Vdc DQ 10x24Vdc 0,5A AI 2x10bit 0-10Vdc",
+    "codiceInterno": "405",
+    "tipo": "P"
+  },
+  "SIE 6ES7 215-1AG40-0XB0": {
+    "descrizione": "CPU 1215C DC/DC/DC. 14DI/10D0",
+    "codiceInterno": "406",
+    "tipo": "P"
+  },
+  "SIE 6ES7 223-1BL32-0XB0": {
+    "descrizione": "SM1223 16DIx24Vdc/16DOx24Vdc 0,5A",
+    "codiceInterno": "407",
+    "tipo": "P"
+  },
+  "SIE 6ES7 223-1BH32-0XB0": {
+    "descrizione": "SIMATIC S7-1200, I/O digitali SM 1223, 8 DI/8 DO, 8 DI DC 24V",
+    "codiceInterno": "2496",
+    "tipo": "P"
+  },
+  "SIE 6ES7 221-1BH32-0XB0": {
+    "descrizione": "SIMATIC S7-1200, Digital input SM 1221, 16 DI, 24 V DC",
+    "codiceInterno": "3025",
+    "tipo": "P"
+  },
+  "SIE 6ES7 221-1BF32-0XB0": {
+    "descrizione": "SIMATIC S7-1200, unità di ingressi digitali SM 1221, 8 DI, DC 24V",
+    "codiceInterno": "3161",
+    "tipo": "P"
+  },
+  "SIE 6ES7 232-4HB32-0XB0": {
+    "descrizione": "SM 1232 AQ2",
+    "codiceInterno": "408",
+    "tipo": "P"
+  },
+  "SIE 6ES7 232-4HA30-0XB0": {
+    "descrizione": "SB 1232 AQ AQ 1x12BIT  Analog Output Module",
+    "codiceInterno": "2147",
+    "tipo": "P"
+  },
+  "SIE 6ES7 510-1DJ01-0AB0": {
+    "descrizione": "CPU 1510 SP-1PN ET200SP",
+    "codiceInterno": "409",
+    "tipo": "P"
+  },
+  "SIE 6ES7 510-1SJ01-0AB0": {
+    "descrizione": "CPU 1510SP F-1 PN ET200 SP",
+    "codiceInterno": "410",
+    "tipo": "P"
+  },
+  "SIE 6ES7 510-1SK03-0AB0": {
+    "descrizione": "CPU 1510SP F-1 PN ET200 SP",
+    "codiceInterno": "3396",
+    "tipo": "P"
+  },
+  "SIE 6ES7 512-1DK01-0AB0": {
+    "descrizione": "CPU 1512SP 1PN",
+    "codiceInterno": "411",
+    "tipo": "P"
+  },
+  "SIE 6ES7 512-1SK01-0AB0": {
+    "descrizione": "CPU 1512SP F-1 PN ET200 SP",
+    "codiceInterno": "412",
+    "tipo": "P"
+  },
+  "SIE 6ES7 512-1SM03-0AB0": {
+    "descrizione": "CPU 1512SP F-1 PN ET200 SP",
+    "codiceInterno": "2807",
+    "tipo": "P"
+  },
+  "SIE 6ES7 5455-DA00-0AB0": {
+    "descrizione": "ET 200SP. CM DP FOR ET 200SP",
+    "codiceInterno": "413",
+    "tipo": "P"
+  },
+  "SIE 6ES7 545-5DA00-0AB0": {
+    "descrizione": "CM DP Module (profibus)",
+    "codiceInterno": "414",
+    "tipo": "P"
+  },
+  "SIE 6GK 5005-0BA00-1AB2": {
+    "descrizione": "Switch Mode Scalance XB005 5xRJ45 Ports",
+    "codiceInterno": "421",
+    "tipo": "P"
+  },
+  "SIE 6GK 5008-0BA00-1AB2": {
+    "descrizione": "Switch Mode Scalance XB008 8xRJ45 Ports",
+    "codiceInterno": "422",
+    "tipo": "P"
+  },
+  "SIE 6GK 5615-0AA0-2AA2": {
+    "descrizione": "Scalance 5615 Industrial Router",
+    "codiceInterno": "423",
+    "tipo": "P"
+  },
+  "SIE 6SL3000-0BE23-6DA1": {
+    "descrizione": "Basic Line Filter x 36KW ALM/SLM 40KW BLM 3ac 380-480V 50-60HZ 74A",
+    "codiceInterno": "424",
+    "tipo": "P"
+  },
+  "SIE 6SL3000-0CE23-6AA0": {
+    "descrizione": "Sinamics SLM 36KW Un480V Ieff77A Ln0,4mh",
+    "codiceInterno": "425",
+    "tipo": "P"
+  },
+  "SIE 6SL3000-0CE15-0AA0": {
+    "descrizione": "Sinamics Reattanza di rete per Smart Line Module 5 kW",
+    "codiceInterno": "2117",
+    "tipo": "P"
+  },
+  "SIE 6SL3000-0HE15-0AA0": {
+    "descrizione": "Filtro Di Linea Sinamics per Modulo Smart Line 5 KW",
+    "codiceInterno": "2118",
+    "tipo": "P"
+  },
+  "SIE 6SL3040-1LA01-0AA0": {
+    "descrizione": "CU310-2 PN 24Vdc 7,3A Out 24Vdc 0,5A",
+    "codiceInterno": "426",
+    "tipo": "P"
+  },
+  "SIE 6SL3040-1MA01-0AA0": {
+    "descrizione": "Control Unit CU320-2PN Ta 0-55°C 24Vdc 0,5A Out 24Vdc 0,5A",
+    "codiceInterno": "427",
+    "tipo": "P"
+  },
+  "SIE 6SL3055-0AA00-5CA2": {
+    "descrizione": "Sinamics Sensor Module SMC30",
+    "codiceInterno": "429",
+    "tipo": "P"
+  },
+  "SIE 6SL3055-0AA0-4BA0": {
+    "descrizione": "Basic Operator Panel BOP-20",
+    "codiceInterno": "430",
+    "tipo": "P"
+  },
+  "SIE 6SL3060-4AU00-0AA0": {
+    "descrizione": "Sinamics Drive-Cliq Cable 0,60 Connection System",
+    "codiceInterno": "431",
+    "tipo": "P"
+  },
+  "SIE 6SL3060-4AM00-0AA0": {
+    "descrizione": "Sinamics Drive-Cliq Cable 0,30 Connection System",
+    "codiceInterno": "1167",
+    "tipo": "P"
+  },
+  "SIE 6SL3120-1TE21-8AD0": {
+    "descrizione": "Single Motor Module DC510-720V 18A 3ac 0-480V 22A 0-550HZ",
+    "codiceInterno": "1168",
+    "tipo": "P"
+  },
+  "SIE 6SL3120-1TE23-0AD0": {
+    "descrizione": "Single Motor Module DC510-720V 36A 3ac 0-480V 30A 0-550HZ",
+    "codiceInterno": "432",
+    "tipo": "P"
+  },
+  "SIE 6SL3120-2TE21-0AD0": {
+    "descrizione": "Double Motor Module DC510-720V 22A 3ac 0-480V 9A/9A 0-550HZ",
+    "codiceInterno": "1169",
+    "tipo": "P"
+  },
+  "SIE 6SL3120-2TE21-8AD0": {
+    "descrizione": "Double Motor Module DC510-720V 43A 3ac 0-480V 18A/18A 0-550HZ",
+    "codiceInterno": "433",
+    "tipo": "P"
+  },
+  "SIE 6SL3130-6TE23-6AA3": {
+    "descrizione": "Smart Line Module 36KW IN 3ac 380-480V 62_51A 47_63HZ OUT DC510-720V 67_50A",
+    "codiceInterno": "434",
+    "tipo": "P"
+  },
+  "SIE 6SL3130-6AE15-0AB1": {
+    "descrizione": "Smart Line Module 5KW IN 3ac 380-480V 50_60HZ OUT 600VDC 8,3A",
+    "codiceInterno": "2119",
+    "tipo": "P"
+  },
+  "SIE 6SL3201-0BE21-0AA0": {
+    "descrizione": "Resistenza di Frenatura R 140ohm 200W",
+    "codiceInterno": "905",
+    "tipo": "P"
+  },
+  "SIE 6SL3201-0BE21-8AA0": {
+    "descrizione": "Resistenza di Frenatura 7500W",
+    "codiceInterno": "435",
+    "tipo": "P"
+  },
+  "SIE 6SL3201-0BE23-8AA0": {
+    "descrizione": "Sinamics Braking Resistore 30Ω 925W",
+    "codiceInterno": "436",
+    "tipo": "P"
+  },
+  "SIE 6SL3203-0CE21-8AA0": {
+    "descrizione": "Line Reactor 380/480V 47/63Hz 22,3A",
+    "codiceInterno": "437",
+    "tipo": "P"
+  },
+  "SIE 6SL3203-0CE23-8AA0": {
+    "descrizione": "Line Reactor 380/480V 47/63Hz 47A",
+    "codiceInterno": "438",
+    "tipo": "P"
+  },
+  "SIE 6SL3210-1PE21-1AL0": {
+    "descrizione": "Sinamics Power Module PM240-2 380/400V 13.3A 4Kw",
+    "codiceInterno": "1984",
+    "tipo": "P"
+  },
+  "SIE 6SL3210-1PE21-8AL0": {
+    "descrizione": "Power Module PM240-2 IN 380-480V 22,2A 7,5Kw/10Hp",
+    "codiceInterno": "439",
+    "tipo": "P"
+  },
+  "SIE 6SL3210-1PE22-7AL0": {
+    "descrizione": "Sinamics Power Module PM240-2 380/400V 32,6A 11Kw",
+    "codiceInterno": "440",
+    "tipo": "P"
+  },
+  "SIE 6SL3252-0BB01-0AA0": {
+    "descrizione": "Safe Brake Module - Relay Freno -",
+    "codiceInterno": "441",
+    "tipo": "P"
+  },
+  "SIE JJY023422620001": {
+    "descrizione": "Breaking Resistor 400V 25 ohm 1100W / Pmax 22000W",
+    "codiceInterno": "906",
+    "tipo": "P"
+  },
+  "SIE 6SL3210-1PE24-5AL0": {
+    "descrizione": "Sinamics Power Module PM240-2 380/400V 42A 22Kw",
+    "codiceInterno": "908",
+    "tipo": "P"
+  },
+  "SIE 6SL3210-1KE13-2AF2": {
+    "descrizione": "Frequency Converter SINAMICS G120CPN 1,1kW 1,5Hp.",
+    "codiceInterno": "1171",
+    "tipo": "P"
+  },
+  "SIE 6SL3210-1KE15-8AF2": {
+    "descrizione": "Frequency Converter SINAMICS G120CPN 2,2kW 3Hp.",
+    "codiceInterno": "909",
+    "tipo": "P"
+  },
+  "SIE 6SL3210-1KE17-8AF1": {
+    "descrizione": "Frequency Converter SINAMICS G120CPN 3kW 4Hp.",
+    "codiceInterno": "910",
+    "tipo": "P"
+  },
+  "SIE 6SL3210-1KE18-8AF1": {
+    "descrizione": "Frequency Converter SINAMICS G120CPN 4kW 5Hp.",
+    "codiceInterno": "911",
+    "tipo": "P"
+  },
+  "SIE 6SL3210-1KE21-3AF1": {
+    "descrizione": "Frequency Converter SINAMICS G120CPN 5,5kW 7,5Hp.",
+    "codiceInterno": "912",
+    "tipo": "P"
+  },
+  "SIE 6SL3210-1KE22-6AF1": {
+    "descrizione": "Frequency Converter SINAMICS G120CPN 11kW 15Hp.",
+    "codiceInterno": "913",
+    "tipo": "P"
+  },
+  "SIE 6AV2-123-2BD03-0AX0": {
+    "descrizione": "Pannello Operatore KTP 400 Basic",
+    "codiceInterno": "939",
+    "tipo": "P"
+  },
+  "SIE 6AV2-124-2DC01-0AX0": {
+    "descrizione": "Pannello Operatore KTP 400 Confort",
+    "codiceInterno": "940",
+    "tipo": "P"
+  },
+  "SIE 6AV7 230-0DA30-2CA0": {
+    "descrizione": "SIMATIC IPC 377E",
+    "codiceInterno": "941",
+    "tipo": "P"
+  },
+  "SIE 6SL3120-1TE22-0AD0": {
+    "descrizione": "Single Motor Module DC510-720V 29A 3ac 0-480V 24A 0-550HZ",
+    "codiceInterno": "942",
+    "tipo": "P"
+  },
+  "SIE 6EP1434-2BA20": {
+    "descrizione": "SITOP PSU300S IN 3AC 400/500V Out 24Vdc/10A",
+    "codiceInterno": "1093",
+    "tipo": "P"
+  },
+  "SIE 6SL3210-1PE16-1AL1": {
+    "descrizione": "Sinamics Power Module PM240-2 380/400V 7.7A 2.2Kw",
+    "codiceInterno": "1106",
+    "tipo": "P"
+  },
+  "SIE 6ES7 513-1FL02-0AB0": {
+    "descrizione": "SIMATIC S7-1500 CPU 1513F-1PN",
+    "codiceInterno": "1123",
+    "tipo": "P"
+  },
+  "SIE 6ES7 590-1AB60-0AA0": {
+    "descrizione": "Simatic S7  Profilschiene 160mm",
+    "codiceInterno": "1124",
+    "tipo": "P"
+  },
+  "SIE 6ES7 511-1UK01-0AB0": {
+    "descrizione": "SIMATIC S7-1500T CPU 1511TF-1 PN",
+    "codiceInterno": "1138",
+    "tipo": "P"
+  },
+  "SIE 6ES7 155-6AU01-0CN0": {
+    "descrizione": "IM155-6PN/2 SIMATIC ET 200SP",
+    "codiceInterno": "1139",
+    "tipo": "P"
+  },
+  "SIE 6ES7 138-6BA00-0BA0": {
+    "descrizione": "TM POSINPUT 1 unità di comteggio e rivelamento encoder",
+    "codiceInterno": "1140",
+    "tipo": "P"
+  },
+  "SIE 6ES7 138-6BA01-0BA0": {
+    "descrizione": "TM POSINPUT 1 unità di comteggio e rivelamento encoder",
+    "codiceInterno": "2838",
+    "tipo": "P"
+  },
+  "SIE 6SL3210-1PE14-3AL1": {
+    "descrizione": "Sinamics Power Module PM240-2 380/400V 5,5A 1.5Kw",
+    "codiceInterno": "1893",
+    "tipo": "P"
+  },
+  "SIE 6SL3201-0BE14-3AA0": {
+    "descrizione": "Sinamics Braking Resistore 370hom 75W",
+    "codiceInterno": "1894",
+    "tipo": "P"
+  },
+  "SIE 6ES7 155-6AR00-0AN0": {
+    "descrizione": "Siemens Simatic S7 ET200SP IM155-6PN BA,",
+    "codiceInterno": "1909",
+    "tipo": "P"
+  },
+  "SIE 6ES7 134-6FF00-0AA1": {
+    "descrizione": "SIMATIC ET 200SP, Analog input module, AI 8XU Basic",
+    "codiceInterno": "1910",
+    "tipo": "P"
+  },
+  "SIE 6EP 1331-5BA10": {
+    "descrizione": "SITOP PSU100C 24 V/1.3 A in: 120-230 V AC out: DC 24 V/1,3 A",
+    "codiceInterno": "1911",
+    "tipo": "P"
+  },
+  "SIE 6SL3000-0HE21-0AA0": {
+    "descrizione": "SINAMICS LINE FILTER FOR 10 KW INPUT: 3-PH. 380-480 V 50/60 HZ",
+    "codiceInterno": "1914",
+    "tipo": "P"
+  },
+  "SIE 6SL3000-0CE21-0AA0": {
+    "descrizione": "SINAMICS LINE REACTOR FOR 10 KW INPUT: 3-PH 380-480 V, 50/60 HZ",
+    "codiceInterno": "1915",
+    "tipo": "P"
+  },
+  "SIE 6SL3130-6AE21-0AB1": {
+    "descrizione": "SINAMICS S120  INP 380-480V, 50/60HZ OUT: 600VDC, 17A, 10KW",
+    "codiceInterno": "1916",
+    "tipo": "P"
+  },
+  "SIE 6ES7 515-2FM01-0AB0": {
+    "descrizione": "SIMATIC S7-1500F  CPU 1515F-2 PN",
+    "codiceInterno": "2002",
+    "tipo": "P"
+  },
+  "SIE 6SL3120-1TE22-4AD0": {
+    "descrizione": "Single Motor Module DC510-720V 29A 3ac 0-480V 24A 0-550HZ",
+    "codiceInterno": "",
+    "tipo": "P"
+  },
+  "SIE 6SL3210-1PE23-3AL0": {
+    "descrizione": "Power Module PM240-2 IN 380-480V 39,9A 15Kw/20Hp",
+    "codiceInterno": "2073",
+    "tipo": "P"
+  },
+  "SIE 6ES7 212-1AE40-0XB0": {
+    "descrizione": "CPU 1212C, CPU, DC/DC/DC, onboard I/O: 8 DI, DC 24 V 6 DO DC 24V; 2 AI DC 0-10V",
+    "codiceInterno": "2090",
+    "tipo": "P"
+  },
+  "SIE 6ES7193-6BP20-0BA0": {
+    "descrizione": "SIMATIC ET 200SP, BaseUnit BU15-P16+A10+2B",
+    "codiceInterno": "2309",
+    "tipo": "P"
+  },
+  "SIE 6ES7193-6BP20-0DA0": {
+    "descrizione": "SIMATIC ET 200SP, BaseUnit BU15-P16+A10+2D",
+    "codiceInterno": "2310",
+    "tipo": "P"
+  },
+  "SIE 6SL3210-1PE18-0AL1": {
+    "descrizione": "Power Module PM240-2 IN 380-480V 10,1A 3Kw/4Hp",
+    "codiceInterno": "2330",
+    "tipo": "P"
+  },
+  "SIE 6SL3203-0CE21-0AA0": {
+    "descrizione": "Line Reactor 380/480V 47/63Hz 11,3A",
+    "codiceInterno": "2715",
+    "tipo": "P"
+  },
+  "SIE 6EP4437-7FB00-3CX0": {
+    "descrizione": "SITOP SEL1200 INP: DC 24 V/40 A OUT: DC 24 V/4x 10 A",
+    "codiceInterno": "2717",
+    "tipo": "P"
+  },
+  "SIE 6EP3437-7SB00-3AX0": {
+    "descrizione": "SITOP PSU6200  INP: AC 400 ... 500 V OUT: DC 24 V/40 A",
+    "codiceInterno": "2723",
+    "tipo": "P"
+  },
+  "SIE 6EP3437-8SB00-0AY0": {
+    "descrizione": "SITOP PSU8200  INP: AC 400 ... 500 V OUT: DC 24 V/40 A",
+    "codiceInterno": "3022",
+    "tipo": "P"
+  },
+  "ODOT CN-8032-L": {
+    "descrizione": "Remote I/O Profinet Network Adapter",
+    "codiceInterno": "2415",
+    "tipo": "P"
+  },
+  "ODOT CT-121F": {
+    "descrizione": "Remote I/O 16 Channel Digital Input/24VDC/ Sink Type",
+    "codiceInterno": "2416",
+    "tipo": "P"
+  },
+  "ODOT CT-222F": {
+    "descrizione": "Remote I/O 16 Channel Digital Output/24VDC/ Source Type",
+    "codiceInterno": "2417",
+    "tipo": "P"
+  },
+  "ERT 023102500": {
+    "descrizione": "7286-5KHOM-5% Potenziometro a Filo 2W 10Giri",
+    "codiceInterno": "442",
+    "tipo": "P"
+  },
+  "GBC RES 2kOHM 2W": {
+    "descrizione": "Resistenza 2kOhm 1 Watt",
+    "codiceInterno": "2148",
+    "tipo": "P"
+  },
+  "ERT 150906000": {
+    "descrizione": "Manopola 15Giri D.46mm",
+    "codiceInterno": "443",
+    "tipo": "P"
+  },
+  "GBC CA801125": {
+    "descrizione": "Connettore SubMiniatura 15 Poli",
+    "codiceInterno": "444",
+    "tipo": "P"
+  },
+  "MUR 55556": {
+    "descrizione": "MVK ProfiNet/PROFIsafe  F DI16/8",
+    "codiceInterno": "2353",
+    "tipo": "P"
+  },
+  "MUR MVK-MPNIO": {
+    "descrizione": "MVK ProfiNet/PROFIsafe  F DI8/4 F DO4 7/8\" IRT Art. n. 55557",
+    "codiceInterno": "2335",
+    "tipo": "P"
+  },
+  "700-840-8ES01": {
+    "descrizione": "Ethernet Switch 8xRJ45 Ports",
+    "codiceInterno": "2297",
+    "tipo": "P"
+  },
+  "PIZZ CSMP302M0": {
+    "descrizione": "Modulo di sicurezza multifunzione prog., fino a SIL 3, PLe, Cat. 4",
+    "codiceInterno": "2366",
+    "tipo": "P"
+  },
+  "PIZZ CSMP202M0": {
+    "descrizione": "Modulo di sicurezza multifunzione prog., fino a SIL 3, PLe, Cat. 4",
+    "codiceInterno": "3147",
+    "tipo": "P"
+  },
+  "PLZ PNOZ M1p": {
+    "descrizione": "PNOZmulti Classic, Int. serial RS232, 20 Digital INP, 4 OUT safety, 2 OUT relè safety",
+    "codiceInterno": "2375",
+    "tipo": "P"
+  },
+  "MURR 9000-41034-0401000": {
+    "descrizione": "MICO 4.10 IN: 24VDC OUT: 24V/4-6-8-10ADC",
+    "codiceInterno": "2412",
+    "tipo": "P"
+  },
+  "MURR 58811": {
+    "descrizione": "Xelity 6TX Switch 6xRJ45 FE 10/100 Mbit/s",
+    "codiceInterno": "2707",
+    "tipo": "P"
+  },
+  "MURR 85693": {
+    "descrizione": "Emparro alimentatore trifase 40A IN: 3×324...572 VAC , OUT: 24..28 VDC",
+    "codiceInterno": "2806",
+    "tipo": "P"
+  },
+  "14E6T60-1050": {
+    "descrizione": "KEB FILTER 3AC 50/60Hz 300…528V 21.0A",
+    "codiceInterno": "2697",
+    "tipo": "P"
+  },
+  "14F6A12-3911": {
+    "descrizione": "KEB F6 Application Drive Inp. 3AC 50/60Hz 400/21A Out. 3AC 0….599Hz  0…400V 16.5A",
+    "codiceInterno": "2698",
+    "tipo": "P"
+  },
+  "00F6P00-2000": {
+    "descrizione": "Operator Ethernet LCD",
+    "codiceInterno": "2699",
+    "tipo": "P"
+  },
+  "14IR080-400I": {
+    "descrizione": "Resistenza di frenatura 82 Ohm - 600W - 400V",
+    "codiceInterno": "2700",
+    "tipo": "P"
+  },
+  "13S6A14-1100": {
+    "descrizione": "KEB CONBIVERT S6 Inp: 3AC 50/60Hz 400V/17A Out. 3AC 0….599Hz  0…400V 11A",
+    "codiceInterno": "2742",
+    "tipo": "P"
+  },
+  "15F6A12-3511": {
+    "descrizione": "KEB F6 Application Drive Inp. 3AC 50/60Hz 400/27A Out. 3AC 0….599Hz  0…400V 21A",
+    "codiceInterno": "2772",
+    "tipo": "P"
+  },
+  "16E6T60-3000": {
+    "descrizione": "KEB FILTER 3AC 50/60Hz 300…528V 43A",
+    "codiceInterno": "2771",
+    "tipo": "P"
+  },
+  "EU-SKU: J083": {
+    "descrizione": "Mini interruttori a levetta 3 pin 2 posizioni AC 125V 6A",
+    "codiceInterno": "2124",
+    "tipo": "P"
+  },
+  "F003148": {
+    "descrizione": "Modulo PC1R00A Condizionatore di segnale",
+    "codiceInterno": "1919",
+    "tipo": "P"
+  },
+  "REG80T/400": {
+    "descrizione": "Regolatore di Potenza 8kW 380-400V",
+    "codiceInterno": "1913",
+    "tipo": "P"
+  },
+  "WDM 1469550000-NET": {
+    "descrizione": "Alimentatore Switching 3F 380-480V/24Vdc 20A",
+    "codiceInterno": "445",
+    "tipo": "P"
+  },
+  "IWE 3100200": {
+    "descrizione": "Sezionatore Portaf. LTS/K-00 3P 160A 690V NH00",
+    "codiceInterno": "446",
+    "tipo": "P"
+  },
+  "IWE NH00-C-GG-KTF-80A": {
+    "descrizione": "Fusibile NH00 GG 80A ( 1500680 )",
+    "codiceInterno": "447",
+    "tipo": "P"
+  },
+  "WIM 5400100": {
+    "descrizione": "Fusibile CF10 GG 10x38 0,5A",
+    "codiceInterno": "448",
+    "tipo": "P"
+  },
+  "WIM 5400101": {
+    "descrizione": "Fusibile CF10 GG 10x38 1A",
+    "codiceInterno": "449",
+    "tipo": "P"
+  },
+  "WIM 5400102": {
+    "descrizione": "Fusibile CF10 GG 10x38 2A",
+    "codiceInterno": "450",
+    "tipo": "P"
+  },
+  "WIM 5400104": {
+    "descrizione": "Fusibile CF10 GG 10x38 4A",
+    "codiceInterno": "451",
+    "tipo": "P"
+  },
+  "WIM 5400106": {
+    "descrizione": "Fusibile CF10 GG 10x38 6A",
+    "codiceInterno": "452",
+    "tipo": "P"
+  },
+  "WIM 5400108": {
+    "descrizione": "Fusibile CF10 GG 10x38 8A",
+    "codiceInterno": "453",
+    "tipo": "P"
+  },
+  "WIM 5400110": {
+    "descrizione": "Fusibile CF10 GG 10x38 10A",
+    "codiceInterno": "454",
+    "tipo": "P"
+  },
+  "WIM 5400112": {
+    "descrizione": "Fusibile CF10 GG 10x38 12A",
+    "codiceInterno": "455",
+    "tipo": "P"
+  },
+  "WIM 5400116": {
+    "descrizione": "Fusibile CF10 GG 10x38 16A",
+    "codiceInterno": "456",
+    "tipo": "P"
+  },
+  "WIM 5400120": {
+    "descrizione": "Fusibile CF10 GG 10x38 20A",
+    "codiceInterno": "457",
+    "tipo": "P"
+  },
+  "WIM 5400125": {
+    "descrizione": "Fusibile CF10 GG 10x38 25A",
+    "codiceInterno": "458",
+    "tipo": "P"
+  },
+  "WIM 5400132": {
+    "descrizione": "Fusibile CF10 GG 10x38 32A",
+    "codiceInterno": "459",
+    "tipo": "P"
+  },
+  "WIM 5400220": {
+    "descrizione": "Fusibile CF14 14x51 20A gl",
+    "codiceInterno": "460",
+    "tipo": "P"
+  },
+  "WIM 5400225": {
+    "descrizione": "Fusibile CF14 14x51 25A gl",
+    "codiceInterno": "461",
+    "tipo": "P"
+  },
+  "WIM 5400232": {
+    "descrizione": "Fusibile CF14 14x51 32A gl",
+    "codiceInterno": "462",
+    "tipo": "P"
+  },
+  "WIM 5400240": {
+    "descrizione": "Fusibile CF14 14x51 40A gl",
+    "codiceInterno": "463",
+    "tipo": "P"
+  },
+  "WIM 5400340": {
+    "descrizione": "Fusibile CF22 22x58 40A gl",
+    "codiceInterno": "464",
+    "tipo": "P"
+  },
+  "WIM 5400350": {
+    "descrizione": "Fusibile CF22 22x58 50A gl",
+    "codiceInterno": "465",
+    "tipo": "P"
+  },
+  "WIM 5400363": {
+    "descrizione": "Fusibile CF22 22x58 63A gl",
+    "codiceInterno": "466",
+    "tipo": "P"
+  },
+  "WIM 5400604": {
+    "descrizione": "Fusibile CF10 AM 10x38 4A",
+    "codiceInterno": "467",
+    "tipo": "P"
+  },
+  "WIM 5400880": {
+    "descrizione": "Fusibile CF22 AM 22x58 80A",
+    "codiceInterno": "468",
+    "tipo": "P"
+  },
+  "WIM 5403078": {
+    "descrizione": "CF10 AR Fusibile Extrarapido 10x38 10A",
+    "codiceInterno": "469",
+    "tipo": "P"
+  },
+  "WIM 5403140": {
+    "descrizione": "CF14 AR Fusibile Extrarapido 14x51 40A",
+    "codiceInterno": "470",
+    "tipo": "P"
+  },
+  "WIM 5403263": {
+    "descrizione": "CF22 AR Fusibile Extrarapido 22x58 63A",
+    "codiceInterno": "471",
+    "tipo": "P"
+  },
+  "WIM 5403280": {
+    "descrizione": "CF22 AR Fusibile Extrarapido 22x58 80A",
+    "codiceInterno": "472",
+    "tipo": "P"
+  },
+  "WIM 5450121": {
+    "descrizione": "PMX 10X38 1P UR Portafusibili",
+    "codiceInterno": "473",
+    "tipo": "P"
+  },
+  "WIM 5450123": {
+    "descrizione": "PMX 10x38 2P UR Portafusibili",
+    "codiceInterno": "474",
+    "tipo": "P"
+  },
+  "WIM 5450124": {
+    "descrizione": "PMX 10x38 3P UR Portafusibili",
+    "codiceInterno": "475",
+    "tipo": "P"
+  },
+  "WIM 5450164": {
+    "descrizione": "PMX 14x51 3P UR Portafusibili",
+    "codiceInterno": "476",
+    "tipo": "P"
+  },
+  "WIM 5450234": {
+    "descrizione": "PMX 22x58 3P UR Portafusibili",
+    "codiceInterno": "477",
+    "tipo": "P"
+  },
+  "WIM 6030100": {
+    "descrizione": "E100 PA ES-V-2,5 VDE NY 2,5",
+    "codiceInterno": "478",
+    "tipo": "P"
+  },
+  "WIM 5400250": {
+    "descrizione": "Fusibile CF14 14x51 50A gl",
+    "codiceInterno": "2304",
+    "tipo": "P"
+  },
+  "CVRI-J-60200-M": {
+    "descrizione": "Class J 600V 200A Fuse Cover Assembly",
+    "codiceInterno": "2677",
+    "tipo": "P"
+  },
+  "JM60200-3RC": {
+    "descrizione": "FUSE BLOCK CART 600V 200A SMD",
+    "codiceInterno": "2546",
+    "tipo": "P"
+  },
+  "1492-FB1C30": {
+    "descrizione": "Fuse Holder, 1 Pole Configuration, Class CC Type Fuses, 30A",
+    "codiceInterno": "2549",
+    "tipo": "P"
+  },
+  "1492-FB2C30": {
+    "descrizione": "Fuse Holder, 2 Pole Configuration, Class CC Type Fuses, 30A",
+    "codiceInterno": "2550",
+    "tipo": "P"
+  },
+  "1492-FB3C30": {
+    "descrizione": "Fuse Holder, 3 Pole Configuration, Class CC Type Fuses, 30A",
+    "codiceInterno": "2551",
+    "tipo": "P"
+  },
+  "LPJ-100SP": {
+    "descrizione": "LPJ-100SP Fusibile 100a Classe J Lpj 600vac/300vdc",
+    "codiceInterno": "2547",
+    "tipo": "P"
+  },
+  "LP-CC-1": {
+    "descrizione": "BUSSMANN LP-CC-1 Fuse 1a Class Cc Lpcc 600vac/300vdc",
+    "codiceInterno": "2565",
+    "tipo": "P"
+  },
+  "LP-CC-2": {
+    "descrizione": "BUSSMANN LP-CC-1 Fuse 2a Class Cc Lpcc 600vac/300vdc",
+    "codiceInterno": "2566",
+    "tipo": "P"
+  },
+  "LP-CC-4": {
+    "descrizione": "BUSSMANN LP-CC-1 Fuse 4a Class Cc Lpcc 600vac/300vdc",
+    "codiceInterno": "2567",
+    "tipo": "P"
+  },
+  "LP-CC-20": {
+    "descrizione": "BUSSMANN LP-CC-1 Fuse 20a Class Cc Lpcc 600vac/300vdc",
+    "codiceInterno": "2568",
+    "tipo": "P"
+  },
+  "GEW 20205": {
+    "descrizione": "Presa 2P+T Standard Italiano/Tedesco",
+    "codiceInterno": "479",
+    "tipo": "P"
+  },
+  "GEW 26410": {
+    "descrizione": "Supporto 2 Poli x Montaggio Guida Din",
+    "codiceInterno": "480",
+    "tipo": "P"
+  },
+  "GEW 44205": {
+    "descrizione": "Cassetta IP56 Pareti Lisce 120x80x500",
+    "codiceInterno": "481",
+    "tipo": "P"
+  },
+  "GEW 40028": {
+    "descrizione": "Cassetta IP40 12M 250x215x95",
+    "codiceInterno": "1907",
+    "tipo": "P"
+  },
+  "DAT B730500": {
+    "descrizione": "Guarnizione x bordi ( 50mt )",
+    "codiceInterno": "482",
+    "tipo": "P"
+  },
+  "DAT FC62920": {
+    "descrizione": "B730500-004-106-09 Guarnizione Bordo Macch. (50mt)",
+    "codiceInterno": "483",
+    "tipo": "P"
+  },
+  "ETE GT1111-BK": {
+    "descrizione": "GTUC/B 12,7/6,4 BK Guaina Termor. Nera (1mt)",
+    "codiceInterno": "484",
+    "tipo": "P"
+  },
+  "PMT AP/PMA-12": {
+    "descrizione": "Anello Metallico AP/PMA DN12 (25pz)",
+    "codiceInterno": "485",
+    "tipo": "P"
+  },
+  "PMT AP/PMA-17": {
+    "descrizione": "Anello Metallico AP/PMA DN17 (25pz)",
+    "codiceInterno": "486",
+    "tipo": "P"
+  },
+  "PMT AP/PMA-23": {
+    "descrizione": "Anello Metallico AP/PMA DN23",
+    "codiceInterno": "487",
+    "tipo": "P"
+  },
+  "PMT AP/PMA-29": {
+    "descrizione": "Anello Metallico AP/PMA DN29 (20pz)",
+    "codiceInterno": "488",
+    "tipo": "P"
+  },
+  "PMT AP/PMA-36": {
+    "descrizione": "Anello Metallico AP/PMA DN36 (10pz)",
+    "codiceInterno": "489",
+    "tipo": "P"
+  },
+  "PMT BVND-P07MGT-11": {
+    "descrizione": "Raccordo PMAFIX Diritto PG7 NW07",
+    "codiceInterno": "490",
+    "tipo": "P"
+  },
+  "PMT BVND-P090GT-11": {
+    "descrizione": "Raccordo PMAFIX Diritto PG9 NW10",
+    "codiceInterno": "491",
+    "tipo": "P"
+  },
+  "PMT BVND-P110GT-11": {
+    "descrizione": "Raccordo PMAFIX Diritto PG11 NW10",
+    "codiceInterno": "492",
+    "tipo": "P"
+  },
+  "PMT BVND-P112GT-11": {
+    "descrizione": "Raccordo PMAFIX Diritto PG11 NW12",
+    "codiceInterno": "493",
+    "tipo": "P"
+  },
+  "PMT BVND-P130GT-11": {
+    "descrizione": "Raccordo PMAFIX Diritto PG13,5 NW10",
+    "codiceInterno": "494",
+    "tipo": "P"
+  },
+  "PMT BVND-P132GT-11": {
+    "descrizione": "Raccordo PMAFIX Diritto PG13,5 NW12",
+    "codiceInterno": "495",
+    "tipo": "P"
+  },
+  "PMT BVND-P137GT-11": {
+    "descrizione": "Raccordo PMAFIX Diritto PG13,5 NW17",
+    "codiceInterno": "496",
+    "tipo": "P"
+  },
+  "PMT BVND-P162GT-11": {
+    "descrizione": "Raccordo PMAFIX Diritto PG16 NW12",
+    "codiceInterno": "497",
+    "tipo": "P"
+  },
+  "PMT BVND-P167GT-11": {
+    "descrizione": "Raccordo PMAFIX Diritto PG16 NW17",
+    "codiceInterno": "498",
+    "tipo": "P"
+  },
+  "PMT BVND-P213GT": {
+    "descrizione": "Raccordo PMAFIX Diritto PG21 NW23",
+    "codiceInterno": "499",
+    "tipo": "P"
+  },
+  "PMT BVND-P299GT": {
+    "descrizione": "Raccordo PMAFIX Diritto PG29 NW29",
+    "codiceInterno": "500",
+    "tipo": "P"
+  },
+  "PMT BVND-P366GT": {
+    "descrizione": "Raccordo PMAFIX Diritto PG36 NW36",
+    "codiceInterno": "501",
+    "tipo": "P"
+  },
+  "PMT BVND-P368GT": {
+    "descrizione": "Raccordo PMAFIX Diritto PG36 NW48",
+    "codiceInterno": "502",
+    "tipo": "P"
+  },
+  "PMT BVND-P488GT": {
+    "descrizione": "Raccordo PMAFIX Diritto PG48 NW48",
+    "codiceInterno": "503",
+    "tipo": "P"
+  },
+  "PMT CELT-07B.100": {
+    "descrizione": "Guaina PMA Easiflex leggera PA6 (100mt)",
+    "codiceInterno": "504",
+    "tipo": "P"
+  },
+  "PMT CELT-10B.100": {
+    "descrizione": "Guaina PMA Easiflex leggera PA6 (100mt)",
+    "codiceInterno": "505",
+    "tipo": "P"
+  },
+  "PMT CELT-12B.100": {
+    "descrizione": "Guaina PMA Easiflex Leggera PA6 (100mt)",
+    "codiceInterno": "506",
+    "tipo": "P"
+  },
+  "PMT CELT-17B.100": {
+    "descrizione": "Guaina PMA Easiflex Leggera PA6 (100mt)",
+    "codiceInterno": "507",
+    "tipo": "P"
+  },
+  "PMT CELT-23B.100": {
+    "descrizione": "Guaina PMA Easiflex leggera PA6 (100mt)",
+    "codiceInterno": "508",
+    "tipo": "P"
+  },
+  "PMT LLPA-29A.50": {
+    "descrizione": "Guaina PMA Easiflex leggera PA6 (100mt)",
+    "codiceInterno": "509",
+    "tipo": "P"
+  },
+  "PMT LLPA-36A.30": {
+    "descrizione": "Guaina PMA Easiflex leggera PA6 (100mt)",
+    "codiceInterno": "510",
+    "tipo": "P"
+  },
+  "TEA DPN20": {
+    "descrizione": "Controdado PA6 PG07 NW",
+    "codiceInterno": "511",
+    "tipo": "P"
+  },
+  "TEA DPN21": {
+    "descrizione": "Controdado PA6 PG09 NW",
+    "codiceInterno": "512",
+    "tipo": "P"
+  },
+  "TEA DPN22": {
+    "descrizione": "Controdado PA6 PG11 NW",
+    "codiceInterno": "513",
+    "tipo": "P"
+  },
+  "TEA DPN23": {
+    "descrizione": "Controdado PA6 PG13,5 NW",
+    "codiceInterno": "514",
+    "tipo": "P"
+  },
+  "TEA DPN24": {
+    "descrizione": "Controdado PA6 PG16 NW",
+    "codiceInterno": "515",
+    "tipo": "P"
+  },
+  "TEA DPN25": {
+    "descrizione": "Controdado PA6 PG21 NW",
+    "codiceInterno": "516",
+    "tipo": "P"
+  },
+  "TEA DPN26": {
+    "descrizione": "Controdado PA6 PG29 NW",
+    "codiceInterno": "517",
+    "tipo": "P"
+  },
+  "TEA DPN27": {
+    "descrizione": "Controdado PA6 PG36 NW",
+    "codiceInterno": "518",
+    "tipo": "P"
+  },
+  "TEA DPN29": {
+    "descrizione": "Controdado PA6 PG48 NW",
+    "codiceInterno": "519",
+    "tipo": "P"
+  },
+  "TEA FAN 44-56": {
+    "descrizione": "Fascetta Serratubo 44/56mm",
+    "codiceInterno": "520",
+    "tipo": "P"
+  },
+  "TEA FAN 5": {
+    "descrizione": "Fascetta Serratubo 32/44mm",
+    "codiceInterno": "521",
+    "tipo": "P"
+  },
+  "TEA FAN 6": {
+    "descrizione": "Fascetta Serratubo 38/50mm",
+    "codiceInterno": "522",
+    "tipo": "P"
+  },
+  "TEA PEHB08G": {
+    "descrizione": "Treccia PEHB08 Grigio RAL7037 (100mt)",
+    "codiceInterno": "523",
+    "tipo": "P"
+  },
+  "TEA PEHB12G": {
+    "descrizione": "Treccia PEHB12 Grigio RAL7037 (50mt)",
+    "codiceInterno": "524",
+    "tipo": "P"
+  },
+  "TEA PEHB16G": {
+    "descrizione": "Treccia PEHB16 Grigio RAL7037 (50mt)",
+    "codiceInterno": "525",
+    "tipo": "P"
+  },
+  "TEA PEHB20G": {
+    "descrizione": "Treccia PEHB20 Grigio RAL7037 (50mt)",
+    "codiceInterno": "526",
+    "tipo": "P"
+  },
+  "TEA PEHB25G": {
+    "descrizione": "Treccia PEHB25 Grigio RAL7037 (50mt)",
+    "codiceInterno": "527",
+    "tipo": "P"
+  },
+  "TEA PEHB30G": {
+    "descrizione": "Treccia PEHB30 Grigio RAL7037 (25mt)",
+    "codiceInterno": "528",
+    "tipo": "P"
+  },
+  "TEA PEHB40G": {
+    "descrizione": "Treccia PEHB40 Grigio RAL7037 (25mt)",
+    "codiceInterno": "529",
+    "tipo": "P"
+  },
+  "TEA PEHB50G": {
+    "descrizione": "Treccia PEHB50 Grigio RAL7037 (25mt)",
+    "codiceInterno": "530",
+    "tipo": "P"
+  },
+  "TEA RBPP029": {
+    "descrizione": "Riduzione M-PG21 F-PG29 (10pz)",
+    "codiceInterno": "531",
+    "tipo": "P"
+  },
+  "TEA RPP44": {
+    "descrizione": "Riduzione M-PG21 F-PG16 (10pz)",
+    "codiceInterno": "532",
+    "tipo": "P"
+  },
+  "TEA RPP45": {
+    "descrizione": "Riduzione M-PG29 F-PG21 (10pz)",
+    "codiceInterno": "533",
+    "tipo": "P"
+  },
+  "TEA RPP46": {
+    "descrizione": "Riduzione M-PG36 F-PG29 (10pz)",
+    "codiceInterno": "534",
+    "tipo": "P"
+  },
+  "TEA SMPFT12B": {
+    "descrizione": "Guaina Trecciata tipo SMPFT12B ( 50mt )",
+    "codiceInterno": "535",
+    "tipo": "P"
+  },
+  "TEA SMPFT17B": {
+    "descrizione": "Guaina Trecciata tipo SMPFT17B ( 50mt )",
+    "codiceInterno": "536",
+    "tipo": "P"
+  },
+  "TEA SMPFT23B": {
+    "descrizione": "Guaina Trecciata tipo SMPFT23 ( 50mt )",
+    "codiceInterno": "537",
+    "tipo": "P"
+  },
+  "TEA SMPFT29B": {
+    "descrizione": "Guaina Trecciata tipo SMPFT29 (50mt)",
+    "codiceInterno": "538",
+    "tipo": "P"
+  },
+  "TEA SMPFT36B": {
+    "descrizione": "Guaina Trecciata tipo SMPFT36 (30mt)",
+    "codiceInterno": "539",
+    "tipo": "P"
+  },
+  "BAD 1000224": {
+    "descrizione": "Barra Rame Filettata M5 12x4mm 2mt",
+    "codiceInterno": "540",
+    "tipo": "P"
+  },
+  "BAD 1000655": {
+    "descrizione": "Barra Rame Filettata M6 25x4mm 2mt",
+    "codiceInterno": "541",
+    "tipo": "P"
+  },
+  "BAD BK0474": {
+    "descrizione": "SUPROF 46 Staffe Inclinate per Morsettiere (100pz)",
+    "codiceInterno": "542",
+    "tipo": "P"
+  },
+  "BAD BK0706": {
+    "descrizione": "SUPROF 70 Supporto H.70mm (50pz)",
+    "codiceInterno": "543",
+    "tipo": "P"
+  },
+  "BAD BK2173": {
+    "descrizione": "Barra Rame Filettata M5 12x4mm 1mt",
+    "codiceInterno": "544",
+    "tipo": "P"
+  },
+  "BAD BK2710": {
+    "descrizione": "Barra Rame Filettata M6 25x4mm 1mt",
+    "codiceInterno": "545",
+    "tipo": "P"
+  },
+  "BAD BK3007": {
+    "descrizione": "Guida Metallica C30N",
+    "codiceInterno": "546",
+    "tipo": "P"
+  },
+  "BAD BK3015": {
+    "descrizione": "BALDI Prigioniero 30P4/M4 (100pz)",
+    "codiceInterno": "547",
+    "tipo": "P"
+  },
+  "BAD BK3023": {
+    "descrizione": "BALDI Prigioniero 30P5/M5 (100pz)",
+    "codiceInterno": "548",
+    "tipo": "P"
+  },
+  "BAD BK3031": {
+    "descrizione": "BALDI Prigioniero 30P6/M6 (100pz)",
+    "codiceInterno": "549",
+    "tipo": "P"
+  },
+  "BAD BK4708": {
+    "descrizione": "Distanziatore in Acciaio M/F 7x15xM4 (100pz)",
+    "codiceInterno": "550",
+    "tipo": "P"
+  },
+  "BAD BK5820": {
+    "descrizione": "Distanziatore in Acciaio M/F 8x25x5MA (100pz)",
+    "codiceInterno": "551",
+    "tipo": "P"
+  },
+  "BAD BK5838": {
+    "descrizione": "Distanziatore in Acciaio M/F 8x30x5MA (100pz)",
+    "codiceInterno": "552",
+    "tipo": "P"
+  },
+  "BAD BK6828": {
+    "descrizione": "Distanziatore in Acciaio M/F 10x20x6MA (100pz)",
+    "codiceInterno": "553",
+    "tipo": "P"
+  },
+  "CAN PD15ZF4": {
+    "descrizione": "Guida 15x50x5,6mm Forata",
+    "codiceInterno": "554",
+    "tipo": "P"
+  },
+  "CAN PD35CZ": {
+    "descrizione": "Guida Omega Alta 35x27x15 senza fori",
+    "codiceInterno": "555",
+    "tipo": "P"
+  },
+  "CAN PD35Z": {
+    "descrizione": "Guida Omega Bassa 35x27x7,5 senza fori",
+    "codiceInterno": "556",
+    "tipo": "P"
+  },
+  "LEG 037436": {
+    "descrizione": "Supporto 4P x Barre 25x4mm",
+    "codiceInterno": "557",
+    "tipo": "P"
+  },
+  "AP9 AP1000BP-B": {
+    "descrizione": "Kit Filtro mm 150x150 Basso Prof. RAL7035",
+    "codiceInterno": "558",
+    "tipo": "P"
+  },
+  "AP9 AP1500BP-B": {
+    "descrizione": "Kit Vent. mm 150x150 15W 230V B.Prof. RAL7035",
+    "codiceInterno": "559",
+    "tipo": "P"
+  },
+  "AP9 AP1524BPT-B": {
+    "descrizione": "Kit Vent. mm 150x150 24Vdc B.Prof. RAL7036",
+    "codiceInterno": "560",
+    "tipo": "P"
+  },
+  "AP9 AP2000BP-B": {
+    "descrizione": "Kit Filtro mm 255x255 basso prof. RAL7035",
+    "codiceInterno": "561",
+    "tipo": "P"
+  },
+  "AP9 AP2500BP-B": {
+    "descrizione": "Kit Vent. mm 255x255 230Vac b.prof. RAL7035",
+    "codiceInterno": "562",
+    "tipo": "P"
+  },
+  "AP9 AP2524BPT-B": {
+    "descrizione": "Kit Vent. mm 255x255 24Vdc b.prof. RAL7035",
+    "codiceInterno": "563",
+    "tipo": "P"
+  },
+  "CTP 1120.2": {
+    "descrizione": "RK50/35N PA Morsetto 50mmq Beige VT",
+    "codiceInterno": "564",
+    "tipo": "P"
+  },
+  "CTP 1122.2": {
+    "descrizione": "RK95/35N PA Morsetto 95mmq Beige VT",
+    "codiceInterno": "565",
+    "tipo": "P"
+  },
+  "CTP 1511.2": {
+    "descrizione": "RK16/35N PA  Morsetto 16mmq Beige VT",
+    "codiceInterno": "566",
+    "tipo": "P"
+  },
+  "CTP 1533.2": {
+    "descrizione": "SL16/35N PA Morsetto di Terra 16mmq VT",
+    "codiceInterno": "567",
+    "tipo": "P"
+  },
+  "CTP 1534.2": {
+    "descrizione": "SL35/35N PA Morsetto di Terra 35mmq VT",
+    "codiceInterno": "568",
+    "tipo": "P"
+  },
+  "CTP 17002.2": {
+    "descrizione": "HSK 50/M8 B BG Morsetto di Potenza",
+    "codiceInterno": "569",
+    "tipo": "P"
+  },
+  "CTP 17370.2": {
+    "descrizione": "RK35/35N Morsetto 35mmq Beige VT",
+    "codiceInterno": "570",
+    "tipo": "P"
+  },
+  "CTP 2005.2": {
+    "descrizione": "ES 35 PA Fermo x Morsetti",
+    "codiceInterno": "571",
+    "tipo": "P"
+  },
+  "CTP 2810.0": {
+    "descrizione": "AD 1/50 B Targhetta di Protezione RK50",
+    "codiceInterno": "572",
+    "tipo": "P"
+  },
+  "CTP 2955.0": {
+    "descrizione": "AD 1/12N Targhetta di Protezione RK16",
+    "codiceInterno": "573",
+    "tipo": "P"
+  },
+  "CTP 3500.2": {
+    "descrizione": "ZRK 2,5/2A Morsetto 2,5mmq Beige",
+    "codiceInterno": "574",
+    "tipo": "P"
+  },
+  "CTP 3510.2": {
+    "descrizione": "ZSL2,5/2A Morsetto di Terra 2,5mmq Verde",
+    "codiceInterno": "575",
+    "tipo": "P"
+  },
+  "CTP 3515.2": {
+    "descrizione": "ZRK4/2A Morsetto 4mmq Beige",
+    "codiceInterno": "576",
+    "tipo": "P"
+  },
+  "CTP 3516.2": {
+    "descrizione": "ZRK4/3A Morsetto 4mmq Beige",
+    "codiceInterno": "577",
+    "tipo": "P"
+  },
+  "CTP 3517.2": {
+    "descrizione": "ZRK4/4A Morsetto 4mmq Beige",
+    "codiceInterno": "578",
+    "tipo": "P"
+  },
+  "CTP 3525.2": {
+    "descrizione": "ZSL4/2A Morsetto di Terra 4mmq",
+    "codiceInterno": "579",
+    "tipo": "P"
+  },
+  "CTP 3562.2": {
+    "descrizione": "ZRKD 2,5/2A Morsetto Doppio 2,5mmq Beige",
+    "codiceInterno": "580",
+    "tipo": "P"
+  },
+  "CTP 3567.2": {
+    "descrizione": "ZSLD 2,5/2A Morsetto Doppio di Terra 2,5mmq",
+    "codiceInterno": "581",
+    "tipo": "P"
+  },
+  "CTP 3573.2": {
+    "descrizione": "ZRKD 2,5/D4 Morsetto Doppio con Diodo 2,5mmq",
+    "codiceInterno": "582",
+    "tipo": "P"
+  },
+  "CTP 3581.2": {
+    "descrizione": "ZRK6/2A Morsetto 6mmq Beige",
+    "codiceInterno": "583",
+    "tipo": "P"
+  },
+  "CTP 3589.2": {
+    "descrizione": "ZSL6/2A Morsetto di Terra 6mmq",
+    "codiceInterno": "584",
+    "tipo": "P"
+  },
+  "CTP 3597.2": {
+    "descrizione": "ZRK 10/2A Morsetto 10mmq Beige",
+    "codiceInterno": "585",
+    "tipo": "P"
+  },
+  "CTP 3598.2": {
+    "descrizione": "ZSL10/2A Morsetto di Terra 10mmq",
+    "codiceInterno": "586",
+    "tipo": "P"
+  },
+  "CTP 3700.1": {
+    "descrizione": "ZAP2,5/2A Parete Verde x ZSL2,5/2A",
+    "codiceInterno": "587",
+    "tipo": "P"
+  },
+  "CTP 3700.2": {
+    "descrizione": "ZAP2,5/2A Parete Beige x ZRK2,5/2A",
+    "codiceInterno": "588",
+    "tipo": "P"
+  },
+  "CTP 3702.2": {
+    "descrizione": "ZAP2,5/4A Parete Beige x ZRK2,5/4A",
+    "codiceInterno": "589",
+    "tipo": "P"
+  },
+  "CTP 3703.1": {
+    "descrizione": "ZAP 4/2A Parete Verde x ZSL4/2A",
+    "codiceInterno": "590",
+    "tipo": "P"
+  },
+  "CTP 3703.2": {
+    "descrizione": "ZAP 4/2A Parete Beige x ZRK4/2A",
+    "codiceInterno": "591",
+    "tipo": "P"
+  },
+  "CTP 3704.2": {
+    "descrizione": "ZAP 4/3A Parete Beige x ZRK4/3A",
+    "codiceInterno": "592",
+    "tipo": "P"
+  },
+  "CTP 3705.2": {
+    "descrizione": "ZAP 4/4A Parete Beige x ZRK4/4A",
+    "codiceInterno": "593",
+    "tipo": "P"
+  },
+  "CTP 3712.8": {
+    "descrizione": "ZQI 2,5/4 Ponte Coll, Trasv.",
+    "codiceInterno": "594",
+    "tipo": "P"
+  },
+  "CTP 3713.8": {
+    "descrizione": "ZQI 2,5/5 Ponte Coll, Trasv.",
+    "codiceInterno": "595",
+    "tipo": "P"
+  },
+  "CTP 3720.8": {
+    "descrizione": "ZQI 4/2 Ponte Coll. Trasv.",
+    "codiceInterno": "596",
+    "tipo": "P"
+  },
+  "CTP 3721.8": {
+    "descrizione": "ZQI 4/3 Ponte Coll. Trasv.",
+    "codiceInterno": "597",
+    "tipo": "P"
+  },
+  "CTP 3722.8": {
+    "descrizione": "ZQI 4/4 Ponte Coll. Trasv.",
+    "codiceInterno": "598",
+    "tipo": "P"
+  },
+  "CTP 3723.8": {
+    "descrizione": "ZQI 4/5 Ponte Coll. Trasv.",
+    "codiceInterno": "599",
+    "tipo": "P"
+  },
+  "CTP 3728.8": {
+    "descrizione": "ZQI 4/10 Ponte Coll. Trasv.",
+    "codiceInterno": "600",
+    "tipo": "P"
+  },
+  "CTP 3756.1": {
+    "descrizione": "ZAPD 2,5 Verde x ZRKD2,5",
+    "codiceInterno": "601",
+    "tipo": "P"
+  },
+  "CTP 3756.2": {
+    "descrizione": "ZAPD 2,5 Beige x ZRKD2,5",
+    "codiceInterno": "602",
+    "tipo": "P"
+  },
+  "CTP 3760.1": {
+    "descrizione": "ZAP6/2A Parete Verde x ZSL6/2A",
+    "codiceInterno": "603",
+    "tipo": "P"
+  },
+  "CTP 3760.2": {
+    "descrizione": "ZAP6/2A Parete Beige x ZRK6/2A",
+    "codiceInterno": "604",
+    "tipo": "P"
+  },
+  "CTP 3762.2": {
+    "descrizione": "ZAP 6/2 Parete Beige",
+    "codiceInterno": "605",
+    "tipo": "P"
+  },
+  "CTP 3788.1": {
+    "descrizione": "ZAP 10/2A Parete Verde x ZSL10/2A",
+    "codiceInterno": "606",
+    "tipo": "P"
+  },
+  "CTP 3788.2": {
+    "descrizione": "ZAP 10/2A Parete Beige x ZRK10/2A",
+    "codiceInterno": "607",
+    "tipo": "P"
+  },
+  "CTP 3789.8": {
+    "descrizione": "ZQI 10/2 Ponte Coll. Trasv.",
+    "codiceInterno": "608",
+    "tipo": "P"
+  },
+  "FCZ B4E31": {
+    "descrizione": "Morsetto di Fissaggio con Bullone",
+    "codiceInterno": "609",
+    "tipo": "P"
+  },
+  "CTP 1078.2": {
+    "descrizione": "STK 2 PA Morsetto Sezionatore con Fusibile Beige",
+    "codiceInterno": "2836",
+    "tipo": "P"
+  },
+  "CEM Z50-DP12-160": {
+    "descrizione": "CEMBRE Ripartitore 4Poli 160Amp",
+    "codiceInterno": "610",
+    "tipo": "P"
+  },
+  "ERI 563200": {
+    "descrizione": "Morsettiera di Distribuzione 4P TD160A",
+    "codiceInterno": "611",
+    "tipo": "P"
+  },
+  "ERI 563995": {
+    "descrizione": "Morsettiera di Distribuzione 4P 250-400A 14out",
+    "codiceInterno": "612",
+    "tipo": "P"
+  },
+  "TKN RPT3000": {
+    "descrizione": "Ripartitore 3Poli Block 125A 6U",
+    "codiceInterno": "613",
+    "tipo": "P"
+  },
+  "TKN RPT3005": {
+    "descrizione": "Ripartitore 3Poli Block 160A 6U",
+    "codiceInterno": "614",
+    "tipo": "P"
+  },
+  "TKN RPU3000": {
+    "descrizione": "Ripartitore Unipolare 125A 8U",
+    "codiceInterno": "615",
+    "tipo": "P"
+  },
+  "TKN RPU3005": {
+    "descrizione": "Ripartitore Unipolare 160A 8U",
+    "codiceInterno": "616",
+    "tipo": "P"
+  },
+  "TKN RPU3500": {
+    "descrizione": "Ripartitore Unipolare 160A 8U",
+    "codiceInterno": "617",
+    "tipo": "P"
+  },
+  "WDM 062522": {
+    "descrizione": "Morsettiera BK6 CRN",
+    "codiceInterno": "618",
+    "tipo": "P"
+  },
+  "KLO 2005493": {
+    "descrizione": "GC-R4P/160 Ripartitore 4P 160A",
+    "codiceInterno": "619",
+    "tipo": "P"
+  },
+  "TKN RPU3015": {
+    "descrizione": "Ripartitore Unipoli Block 400A 11U",
+    "codiceInterno": "2629",
+    "tipo": "P"
+  },
+  "LEG 037395": {
+    "descrizione": "Morsettiera 4 Poli 125A",
+    "codiceInterno": "620",
+    "tipo": "P"
+  },
+  "CEM 0400-HT015": {
+    "descrizione": "Etic. Avvertimento WST-TSW lato =   (cf 50pz)",
+    "codiceInterno": "621",
+    "tipo": "P"
+  },
+  "CEM 201202": {
+    "descrizione": "Etic. Avvertimento WS-HS \"Alta Temperatura\" (50pz)",
+    "codiceInterno": "622",
+    "tipo": "P"
+  },
+  "CEM 34602": {
+    "descrizione": "Porta Targhetta Adesiva PTPSA D.22mm (100pz)",
+    "codiceInterno": "623",
+    "tipo": "P"
+  },
+  "CEM 40090": {
+    "descrizione": "Targhetta Segnafilo MG-TPM Bianca 4x10mm (2250pz)",
+    "codiceInterno": "624",
+    "tipo": "P"
+  },
+  "CEM 41090N": {
+    "descrizione": "Targhetta MG-CPM-01 Bianca 5x10mm WDM (1960pz)",
+    "codiceInterno": "625",
+    "tipo": "P"
+  },
+  "CEM 46915": {
+    "descrizione": "Etic. G-VYT Adesiva 6x15mm Bianca (5250pz)",
+    "codiceInterno": "626",
+    "tipo": "P"
+  },
+  "CEM 50100": {
+    "descrizione": "Tubetto PM-01 Segnacavo 0,2_0,3mm ( 6000pz )",
+    "codiceInterno": "627",
+    "tipo": "P"
+  },
+  "CEM 700701": {
+    "descrizione": "Etichetta x Apparecchiature CS-EYC-TER (cf.140.pz)",
+    "codiceInterno": "628",
+    "tipo": "P"
+  },
+  "PHC 1405578": {
+    "descrizione": "VS-04-C-SDA/SDB/1,8 Cavo USB",
+    "codiceInterno": "629",
+    "tipo": "P"
+  },
+  "PHC 1086111": {
+    "descrizione": "VS-08-BU/BU-RJ45-F Inserto Porta",
+    "codiceInterno": "630",
+    "tipo": "P"
+  },
+  "PHC 1411904": {
+    "descrizione": "CUC-V06-F1PGY-UBA/UBBB Passarete",
+    "codiceInterno": "631",
+    "tipo": "P"
+  },
+  "PHC 1656495": {
+    "descrizione": "VS-SI-E3-EMV-2 Telaio da Incasso",
+    "codiceInterno": "632",
+    "tipo": "P"
+  },
+  "PHC 1656505": {
+    "descrizione": "VS-SI-SD-DE Presa con Contatto",
+    "codiceInterno": "633",
+    "tipo": "P"
+  },
+  "PHC 1658532": {
+    "descrizione": "VS-SI-FP-2F Piastra Dati Frontale",
+    "codiceInterno": "634",
+    "tipo": "P"
   },
-  "TEASMPF07B": {
-    "descrizione": "GUAINA NERA PAST 7 (50m)",
-    "codiceInterno": "10858",
+  "PHC 3024177": {
+    "descrizione": "D-MZB 1,5 Piastra Terminale",
+    "codiceInterno": "635",
     "tipo": "P"
   },
-  "TEASMPF10B": {
-    "descrizione": "GUAINA NERA PAST 10 (50m)",
-    "codiceInterno": "10860",
+  "PHC 3244012": {
+    "descrizione": "MSB 2,5 Mini Morsetto a Molla",
+    "codiceInterno": "636",
     "tipo": "P"
   },
-  "TEASMPF12B": {
-    "descrizione": "GUAINA NERA PAST 12 (50m)",
-    "codiceInterno": "10863",
-    "tipo": "P",
-    "categoria": "Elettrica"
+  "PHC PLC-RSC-24DC/21": {
+    "descrizione": "PLC-INTERFACE, relè in miniatura 1 contatto di scambio 24 VDC",
+    "codiceInterno": "1983",
+    "tipo": "P"
+  },
+  "PHC 1910704": {
+    "descrizione": "FKIC 2,5/5-ST",
+    "codiceInterno": "2149",
+    "tipo": "P"
+  },
+  "PHC 1910733": {
+    "descrizione": "FKIC 2,5/8-ST",
+    "codiceInterno": "2150",
+    "tipo": "P"
+  },
+  "PHC 1910775": {
+    "descrizione": "FKIC 2,5/12-ST",
+    "codiceInterno": "2151",
+    "tipo": "P"
+  },
+  "PHC 1910746": {
+    "descrizione": "FKIC 2,5/9-ST",
+    "codiceInterno": "2155",
+    "tipo": "P"
+  },
+  "CEM 1900-13/X": {
+    "descrizione": "Maxi Block Pressacavo PG13,5 con Dado",
+    "codiceInterno": "637",
+    "tipo": "P"
+  },
+  "CEM 1900-16/X": {
+    "descrizione": "Maxi Block Pressacavo PG16 con Dado",
+    "codiceInterno": "638",
+    "tipo": "P"
+  },
+  "CEM 1900-21/X": {
+    "descrizione": "Maxi Block Pressacavo PG21 con Dado",
+    "codiceInterno": "639",
+    "tipo": "P"
+  },
+  "CEM 1900-36/X": {
+    "descrizione": "Maxi Block Pressacavo PG36 con Dado",
+    "codiceInterno": "640",
+    "tipo": "P"
+  },
+  "KLO 216472": {
+    "descrizione": "M22-XZK-GB299 Targhetta \"Emergency-Stop\"",
+    "codiceInterno": "641",
+    "tipo": "P"
+  },
+  "SNR XACA02": {
+    "descrizione": "Pulsantiera Pensile Vuota 2 Posti",
+    "codiceInterno": "642",
+    "tipo": "P"
+  },
+  "SNR XACA04": {
+    "descrizione": "Pulsantiera Pensile Vuota 4 Posti",
+    "codiceInterno": "643",
+    "tipo": "P"
+  },
+  "SNR XACA06": {
+    "descrizione": "Pulsantiera Pensile Vuota 6 Posti",
+    "codiceInterno": "644",
+    "tipo": "P"
+  },
+  "SNR XACS4111": {
+    "descrizione": "Contatti x Pulsantiere XACA",
+    "codiceInterno": "645",
+    "tipo": "P"
+  },
+  "SNR XD4PA22": {
+    "descrizione": "Manipolatore 2 Direzioni R.C.",
+    "codiceInterno": "646",
+    "tipo": "P"
+  },
+  "SNR XD4PA24": {
+    "descrizione": "Manipolatore 4 Direzioni R.C.",
+    "codiceInterno": "647",
+    "tipo": "P"
+  },
+  "SNR ZB2BE101": {
+    "descrizione": "Contatto Aggiuntivo 1no",
+    "codiceInterno": "648",
+    "tipo": "P"
+  },
+  "SNR ZB2BE102": {
+    "descrizione": "Contatto Aggiuntivo 1nc",
+    "codiceInterno": "649",
+    "tipo": "P"
+  },
+  "SNR ZB4BA2": {
+    "descrizione": "Tasto Cieco NERO",
+    "codiceInterno": "650",
+    "tipo": "P"
+  },
+  "SNR ZB4BA3": {
+    "descrizione": "Testa Pulsante Cieco Verde",
+    "codiceInterno": "651",
+    "tipo": "P"
+  },
+  "SNR ZB4BA4": {
+    "descrizione": "Testa Pulsante Cieco Rosso",
+    "codiceInterno": "652",
+    "tipo": "P"
+  },
+  "SNR ZB4BA5": {
+    "descrizione": "Testa Pulsante Cieco Giallo",
+    "codiceInterno": "653",
+    "tipo": "P"
+  },
+  "SNR ZB4BA6": {
+    "descrizione": "Tasto Cieco BLU",
+    "codiceInterno": "654",
+    "tipo": "P"
+  },
+  "SNR ZB4BD2": {
+    "descrizione": "Testa selettore a leva 2 posizioni",
+    "codiceInterno": "655",
+    "tipo": "P"
+  },
+  "SNR ZB4BD3": {
+    "descrizione": "Testa selettore a leva 3 posizioni",
+    "codiceInterno": "656",
+    "tipo": "P"
+  },
+  "SNR ZB4BD5": {
+    "descrizione": "Testa selettore a leva 3 posizioni RC",
+    "codiceInterno": "657",
+    "tipo": "P"
+  },
+  "SNR ZB4BD7": {
+    "descrizione": "Testa selettore a leva 3 posizioni RC da SX",
+    "codiceInterno": "658",
+    "tipo": "P"
+  },
+  "SNR ZB4BD8": {
+    "descrizione": "Testa selettore a leva 3 posizioni RC da DX",
+    "codiceInterno": "659",
+    "tipo": "P"
+  },
+  "SNR ZB4BG00": {
+    "descrizione": "Testa Selettore a Chiave Estraibile 3Pos.",
+    "codiceInterno": "660",
+    "tipo": "P"
+  },
+  "SNR ZB4BG2": {
+    "descrizione": "Testa Selettore a Chiave 2 posizioni",
+    "codiceInterno": "661",
+    "tipo": "P"
+  },
+  "SNR ZB4BG4": {
+    "descrizione": "Testa selettore a Chiave 0-1",
+    "codiceInterno": "662",
+    "tipo": "P"
+  },
+  "SNR ZB4BG412": {
+    "descrizione": "Testa Selettore a Chiave 2 Pos.",
+    "codiceInterno": "663",
+    "tipo": "P"
+  },
+  "SNR ZB4BG4-F034": {
+    "descrizione": "Selettore a Chiave (Rossa) 2Pos. 0-1",
+    "codiceInterno": "664",
+    "tipo": "P"
+  },
+  "SNR ZB4BG6": {
+    "descrizione": "Selettore a Chiave 2Pos. 0-1 RC da DX",
+    "codiceInterno": "665",
+    "tipo": "P"
+  },
+  "SNR ZB4BG7": {
+    "descrizione": "Testa selettore a chiave 3 posizioni RC",
+    "codiceInterno": "666",
+    "tipo": "P"
+  },
+  "SNR ZB4BK1333": {
+    "descrizione": "Testa Selettore Lum. Verde 3Pos.",
+    "codiceInterno": "2752",
+    "tipo": "P"
+  },
+  "SNR ZB4BK1533": {
+    "descrizione": "Testa Selettore Lum. Verde 3Pos. RC",
+    "codiceInterno": "667",
+    "tipo": "P"
+  },
+  "SNR ZB4BK1733": {
+    "descrizione": "Testa Selettore Lum. Verde 3Pos.",
+    "codiceInterno": "668",
+    "tipo": "P"
+  },
+  "SNR ZB4BS834": {
+    "descrizione": "Testa pulsante a fungo rosso emergenza D.30",
+    "codiceInterno": "669",
+    "tipo": "P"
+  },
+  "SNR ZB4BS844": {
+    "descrizione": "Testa Pulsante a Fungo Rosso di Emergenza D.40",
+    "codiceInterno": "670",
+    "tipo": "P"
+  },
+  "SNR ZB4BS864": {
+    "descrizione": "Testa Pulsante a Fungo Rosso di Emergenza D.60",
+    "codiceInterno": "671",
+    "tipo": "P"
+  },
+  "SNR ZB4BV013": {
+    "descrizione": "Testa Lampada Spia Bianca Led",
+    "codiceInterno": "672",
+    "tipo": "P"
+  },
+  "SNR ZB4BV033": {
+    "descrizione": "Testa Lampada Spia Verde Led",
+    "codiceInterno": "673",
+    "tipo": "P"
+  },
+  "SNR ZB4BV043": {
+    "descrizione": "Testa Lampada Spia Rossa Led",
+    "codiceInterno": "674",
+    "tipo": "P"
+  },
+  "SNR ZB4BV053": {
+    "descrizione": "Testa Lampada Spia Gialla Led",
+    "codiceInterno": "675",
+    "tipo": "P"
+  },
+  "SNR ZB4BV063": {
+    "descrizione": "Testa Lampada Spia Blu Led",
+    "codiceInterno": "676",
+    "tipo": "P"
+  },
+  "SNR ZB4BVB1": {
+    "descrizione": "Corpo Lampada Spia Bianca Led 24V",
+    "codiceInterno": "677",
+    "tipo": "P"
+  },
+  "SNR ZB4BVB4": {
+    "descrizione": "Corpo Lampada Spia Rossa Led 24V",
+    "codiceInterno": "678",
+    "tipo": "P"
+  },
+  "SNR ZB4BVB6": {
+    "descrizione": "Corpo Lampada Spia Blu Led 24V",
+    "codiceInterno": "679",
+    "tipo": "P"
+  },
+  "SNR ZB4BW313": {
+    "descrizione": "Testa Pulsante Luminoso Bianco Led 24V",
+    "codiceInterno": "680",
+    "tipo": "P"
+  },
+  "SNR ZB4BW333": {
+    "descrizione": "Testa Pulsante Luminoso Verde Led 24V",
+    "codiceInterno": "681",
+    "tipo": "P"
+  },
+  "SNR ZB4BW343": {
+    "descrizione": "Testa Pulsante Luminoso Rosso Led 24V",
+    "codiceInterno": "682",
+    "tipo": "P"
+  },
+  "SNR ZB4BW353": {
+    "descrizione": "Testa Pusante Luminoso Giallo Led 24V",
+    "codiceInterno": "683",
+    "tipo": "P"
+  },
+  "SNR ZB4BW363": {
+    "descrizione": "Testa Pulsante Luminoso Blu Led 24v",
+    "codiceInterno": "684",
+    "tipo": "P"
+  },
+  "SNR ZB4BZ009": {
+    "descrizione": "Base di fissaggio",
+    "codiceInterno": "685",
+    "tipo": "P"
+  },
+  "SNR ZB4BZ101": {
+    "descrizione": "Corpo contatti 1no",
+    "codiceInterno": "686",
+    "tipo": "P"
+  },
+  "SNR ZB4BZ102": {
+    "descrizione": "Corpo Contatti 1nc",
+    "codiceInterno": "687",
+    "tipo": "P"
+  },
+  "SNR ZB5AA2": {
+    "descrizione": "Testa Pulsante Cieco Nero",
+    "codiceInterno": "688",
+    "tipo": "P"
+  },
+  "SNR ZB5AA3": {
+    "descrizione": "Testa Pulsante Cieco Verde",
+    "codiceInterno": "689",
+    "tipo": "P"
+  },
+  "SNR ZB5AD2": {
+    "descrizione": "Testa Selettore 2Pos.",
+    "codiceInterno": "690",
+    "tipo": "P"
+  },
+  "SNR ZB5AD3": {
+    "descrizione": "Testa Selettore 3Pos.",
+    "codiceInterno": "691",
+    "tipo": "P"
+  },
+  "SNR ZB5AD5": {
+    "descrizione": "Testa Selettore a Leva 3 Posizioni RC",
+    "codiceInterno": "692",
+    "tipo": "P"
+  },
+  "SNR ZB5AG6": {
+    "descrizione": "Testa Selettore a Chiave 2Pos.",
+    "codiceInterno": "693",
+    "tipo": "P"
+  },
+  "SNR ZB5AS834": {
+    "descrizione": "Pulsante a Fungo di Emergenza ROSSO D.30mm",
+    "codiceInterno": "694",
+    "tipo": "P"
+  },
+  "SNR ZB5AVB1": {
+    "descrizione": "Corpo Led Bianco",
+    "codiceInterno": "695",
+    "tipo": "P"
+  },
+  "SNR ZB5AW333": {
+    "descrizione": "Testa Pulsante Lum. Verde",
+    "codiceInterno": "696",
+    "tipo": "P"
+  },
+  "SNR ZB5AZ101": {
+    "descrizione": "Corpo Contatti 1no",
+    "codiceInterno": "697",
+    "tipo": "P"
+  },
+  "SNR ZB5AZ102": {
+    "descrizione": "Corpo Contatti 1nc",
+    "codiceInterno": "698",
+    "tipo": "P"
+  },
+  "SNR ZB5SZ3": {
+    "descrizione": "Tappo Otturatore D.22mm",
+    "codiceInterno": "699",
+    "tipo": "P"
+  },
+  "SNR ZBE101": {
+    "descrizione": "Elemento di contatto NO",
+    "codiceInterno": "700",
+    "tipo": "P"
+  },
+  "SNR ZBE102": {
+    "descrizione": "Elemento di Contatto NC",
+    "codiceInterno": "701",
+    "tipo": "P"
+  },
+  "SNR ZBE203": {
+    "descrizione": "Elemento di contatto 2 NO",
+    "codiceInterno": "702",
+    "tipo": "P"
+  },
+  "SNR ZBE204": {
+    "descrizione": "Elemento di contatto 2 NC",
+    "codiceInterno": "703",
+    "tipo": "P"
+  },
+  "SNR ZBE205": {
+    "descrizione": "Elemento di Contatto Doppio 1NO+1NC",
+    "codiceInterno": "704",
+    "tipo": "P"
+  },
+  "SNR ZBY9320": {
+    "descrizione": "Etichetta \"Emergency-Stop\" 3D",
+    "codiceInterno": "705",
+    "tipo": "P"
+  },
+  "SNR ZBZ001": {
+    "descrizione": "Porta etichetta per contatti ZB4",
+    "codiceInterno": "706",
+    "tipo": "P"
+  },
+  "SNR ZBY9121": {
+    "descrizione": "Etichetta Ø60",
+    "codiceInterno": "2361",
+    "tipo": "P"
+  },
+  "SNR ZB4BG6F015": {
+    "descrizione": "Selettore a Chiave 2Pos. 0-1 RC da DX Con Chiave Gialla",
+    "codiceInterno": "3114",
+    "tipo": "P"
+  },
+  "SIE 3SU1050-0AB20-0AA0": {
+    "descrizione": "Pulsante Piatto ROSSO",
+    "codiceInterno": "707",
+    "tipo": "P"
+  },
+  "SIE 3SU1050-0AB40-0AA0": {
+    "descrizione": "Pulsante Piatto VERDE",
+    "codiceInterno": "708",
+    "tipo": "P"
+  },
+  "SIE 3SU1050-1HB20-0AA0": {
+    "descrizione": "Pulsante a Fungo di Emergenza ROSSO Rotazione",
+    "codiceInterno": "709",
+    "tipo": "P"
+  },
+  "SIE 3SU1050-4CM01-0AA0": {
+    "descrizione": "Selettore a Chiave SB455 3Pos. R.C.",
+    "codiceInterno": "710",
+    "tipo": "P"
+  },
+  "SIE 3SU1051-0AB60-0AA0": {
+    "descrizione": "Pulsante Luminoso Piatto BIANCO",
+    "codiceInterno": "1174",
+    "tipo": "P"
+  },
+  "SIE 3SU1051-0AB40-0AA0": {
+    "descrizione": "Pulsante Luminoso Piatto VERDE",
+    "codiceInterno": "711",
+    "tipo": "P"
+  },
+  "SIE 3SU1051-0AB50-0AA0": {
+    "descrizione": "Pulsante Luminoso Piatto BLU",
+    "codiceInterno": "712",
+    "tipo": "P"
+  },
+  "SIE 3SU1051-6AA60-0AA0": {
+    "descrizione": "Indicatore Luminoso BIANCO",
+    "codiceInterno": "713",
+    "tipo": "P"
+  },
+  "SIE 3SU1052-2BF60-0AA0": {
+    "descrizione": "Selettore Luminoso BIANCO 2Pos",
+    "codiceInterno": "714",
+    "tipo": "P"
+  },
+  "SIE 3SU1052-2BL60-0AA0": {
+    "descrizione": "Selettore Luminoso BIANCO 3P",
+    "codiceInterno": "715",
+    "tipo": "P"
+  },
+  "SIE 3SU1052-2BM60-0AA0": {
+    "descrizione": "Selettore Luminoso BIANCO 3Pos. R.C.",
+    "codiceInterno": "716",
+    "tipo": "P"
+  },
+  "SIE 3SU1052-2BN60-0AA0": {
+    "descrizione": "Selettore Luminoso BIANCO 3P RC da DX / Fisso SX",
+    "codiceInterno": "717",
+    "tipo": "P"
+  },
+  "SIE 3SU1052-2BP60-0AA0": {
+    "descrizione": "Selettore Luminoso BIANCO 3Pos. R.C. SX / Fisso DX",
+    "codiceInterno": "718",
+    "tipo": "P"
+  },
+  "SIE 3SU1400-1AA10-1BA0": {
+    "descrizione": "Blocchetto Contatti 1no",
+    "codiceInterno": "719",
+    "tipo": "P"
+  },
+  "SIE 3SU1400-1AA10-1CA0": {
+    "descrizione": "Blocchetto Contatti 1nc",
+    "codiceInterno": "720",
+    "tipo": "P"
+  },
+  "SIE 3SU1400-1LK10-1AA1": {
+    "descrizione": "Modulo Interfaccia Profinet",
+    "codiceInterno": "721",
+    "tipo": "P"
+  },
+  "SIE 3SU1400-1LL10-1BA1": {
+    "descrizione": "Modulo Interfaccia FAILSAFE Profinet",
+    "codiceInterno": "722",
+    "tipo": "P"
+  },
+  "SIE 3SU1400-1MA10-1BA1": {
+    "descrizione": "Modulo Terminale Profinet Push",
+    "codiceInterno": "723",
+    "tipo": "P"
+  },
+  "SIE 3SU1401-1BB60-1AA0": {
+    "descrizione": "Portalampada Led 24Vdc VT",
+    "codiceInterno": "724",
+    "tipo": "P"
+  },
+  "SIE 3SU1401-1MC40-1CA1": {
+    "descrizione": "Modulo Terminale Profinet Led/Push VERDE",
+    "codiceInterno": "725",
+    "tipo": "P"
+  },
+  "SIE 3SU1401-1MC50-1CA1": {
+    "descrizione": "Modulo Terminale Profinet Led/Push BLU",
+    "codiceInterno": "726",
+    "tipo": "P"
+  },
+  "SIE 3SU1550-0AA10-0AA0": {
+    "descrizione": "Supporto/Fissaggio Metallo",
+    "codiceInterno": "727",
+    "tipo": "P"
+  },
+  "SIE 3SU1900-0KH80-0AA0": {
+    "descrizione": "Supporto Guida DIN Pulsante D.22mm",
+    "codiceInterno": "728",
+    "tipo": "P"
+  },
+  "SIE 3SU1950-0GB80-0AA0": {
+    "descrizione": "RJ45 Adapter Pulsante D.22mm",
+    "codiceInterno": "2308",
+    "tipo": "P"
+  },
+  "SIE 3SU1200-2PR10-1AA0": {
+    "descrizione": "Potenziometro, compatto, 22 mm, rotondo, in plastica, nero, 4,7k ohm",
+    "codiceInterno": "2399",
+    "tipo": "P"
+  },
+  "CEM A10-M10": {
+    "descrizione": "Capicorda Nudi 50F10 (50pz)",
+    "codiceInterno": "729",
+    "tipo": "P"
+  },
+  "CEM A10-M12": {
+    "descrizione": "Capicorda Nudi 50F12 (50pz)",
+    "codiceInterno": "730",
+    "tipo": "P"
+  },
+  "CEM A10-M6": {
+    "descrizione": "Capicorda Nudi 50F6 (50pz)",
+    "codiceInterno": "731",
+    "tipo": "P"
+  },
+  "CEM A10-M8": {
+    "descrizione": "Capicorda Nudi 50F8 (50pz)",
+    "codiceInterno": "732",
+    "tipo": "P"
+  },
+  "CEM A14-M10": {
+    "descrizione": "Capicorda Nudi 70F10 (50pz)",
+    "codiceInterno": "733",
+    "tipo": "P"
+  },
+  "CEM A14-M12": {
+    "descrizione": "Capicorda Nudi 70F12 (50pz)",
+    "codiceInterno": "734",
+    "tipo": "P"
+  },
+  "CEM A14-M8": {
+    "descrizione": "Capicorda Nudi 70F8 (50pz)",
+    "codiceInterno": "735",
+    "tipo": "P"
+  },
+  "CEM A19-M12": {
+    "descrizione": "Capicorda Nudi 95F12 (50pz)",
+    "codiceInterno": "736",
+    "tipo": "P"
+  },
+  "CEM A24-M8": {
+    "descrizione": "Capicorda Nudi 120F8 (50pz)",
+    "codiceInterno": "737",
+    "tipo": "P"
+  },
+  "CEM A2-M6": {
+    "descrizione": "Capicorda Nudi 10F6 (100pz)",
+    "codiceInterno": "738",
+    "tipo": "P"
+  },
+  "CEM A2-M8": {
+    "descrizione": "Capicorda Nudi 10F8 (100pz)",
+    "codiceInterno": "739",
+    "tipo": "P"
+  },
+  "CEM A3-M10": {
+    "descrizione": "Capicorda Nudi 16F10 (100pz)",
+    "codiceInterno": "740",
+    "tipo": "P"
+  },
+  "CEM A3-M12": {
+    "descrizione": "Capicorda Nudi 16F12 (100pz)",
+    "codiceInterno": "741",
+    "tipo": "P"
+  },
+  "CEM A3-M6": {
+    "descrizione": "Capicorda Nudi 16F6 (100pz)",
+    "codiceInterno": "742",
+    "tipo": "P"
+  },
+  "CEM A3-M8": {
+    "descrizione": "Capicorda Nudi 16F8 (100pz)",
+    "codiceInterno": "744",
+    "tipo": "P"
+  },
+  "CEM A5-M10": {
+    "descrizione": "Capicorda Nudi 25F10 (100pz)",
+    "codiceInterno": "745",
+    "tipo": "P"
+  },
+  "CEM A5-M12": {
+    "descrizione": "Capicorda Nudi 25F12 (100pz)",
+    "codiceInterno": "746",
+    "tipo": "P"
+  },
+  "CEM A5-M6": {
+    "descrizione": "Capicorda Nudi 25F6 (100pz)",
+    "codiceInterno": "747",
+    "tipo": "P"
+  },
+  "CEM A5-M8": {
+    "descrizione": "Capicorda Nudi 25F8 (100pz)",
+    "codiceInterno": "748",
+    "tipo": "P"
+  },
+  "CEM A7-M10": {
+    "descrizione": "Capicorda Nudi 35F10 (100pz)",
+    "codiceInterno": "749",
+    "tipo": "P"
   },
-  "TEASMPF17B": {
-    "descrizione": "GUAINA NERA PAST 17 (50m)",
-    "codiceInterno": "10864",
+  "CEM A7-M12": {
+    "descrizione": "Capicorda Nudi 35F12 (100pz)",
+    "codiceInterno": "750",
     "tipo": "P"
   },
-  "TEASMPF23B": {
-    "descrizione": "GUAINA NERA PAST 23 (50m)",
-    "codiceInterno": "10867",
+  "CEM A7-M6": {
+    "descrizione": "Capicorda Nudi 35F6 (100pz)",
+    "codiceInterno": "751",
     "tipo": "P"
   },
-  "TEASMPF29B": {
-    "descrizione": "GUAINA NERA PAST 29 (50m)",
-    "codiceInterno": "10868",
+  "CEM A7-M8": {
+    "descrizione": "Capicorda Nudi 35F8 (100pz)",
+    "codiceInterno": "752",
     "tipo": "P"
   },
-  "TEASMPF36B": {
-    "descrizione": "GUAINA NERA PAST 36 (50m)",
-    "codiceInterno": "10869",
+  "CEM BF-F608P": {
+    "descrizione": "Faston Isolato 2,5x6,3mmq (100pz)",
+    "codiceInterno": "753",
     "tipo": "P"
   },
-  "TEASMPF48B": {
-    "descrizione": "GUAINA NERA PAST 48 (50m)",
-    "codiceInterno": "10870",
+  "CEM BF-M4": {
+    "descrizione": "Capicorda Isolato ad Occhiello 2,5F4 (100pz)",
+    "codiceInterno": "754",
     "tipo": "P"
   },
-  "TEABSC07": {
-    "descrizione": "FISSA GUAINA PAST 7",
-    "codiceInterno": "10872",
+  "CEM BF-M5": {
+    "descrizione": "Capicorda Isolato ad Occhiello 2,5F5 (100pz)",
+    "codiceInterno": "755",
     "tipo": "P"
   },
-  "TEABSC10": {
-    "descrizione": "FISSA GUAINA PAST 10",
-    "codiceInterno": "10874",
+  "CEM BF-M6": {
+    "descrizione": "Capicorda Isolato ad Occhiello 2,5F6 (100pz)",
+    "codiceInterno": "756",
     "tipo": "P"
   },
-  "TEABSC12": {
-    "descrizione": "FISSA GUAINA PAST 12",
-    "codiceInterno": "10877",
+  "CEM BF-M8": {
+    "descrizione": "Capicorda Isolato ad Occhiello 2,5F8 (50pz)",
+    "codiceInterno": "757",
     "tipo": "P"
   },
-  "TEABSC17": {
-    "descrizione": "FISSA GUAINA PAST 17",
-    "codiceInterno": "10879",
+  "CEM BF-U4": {
+    "descrizione": "Capicorda Isolato ad Forcella 2,5F4 (100pz)",
+    "codiceInterno": "758",
     "tipo": "P"
   },
-  "TEABSC23": {
-    "descrizione": "FISSA GUAINA PAST 23",
-    "codiceInterno": "10880",
+  "CEM GF-F608": {
+    "descrizione": "Faston Isolato 6x6,3mmq (100pz)",
+    "codiceInterno": "759",
     "tipo": "P"
   },
-  "TEABSC29": {
-    "descrizione": "FISSA GUAINA PAST 29",
-    "codiceInterno": "10881",
+  "CEM GF-M4": {
+    "descrizione": "Capicorda Isolato ad Occhiello 2,5F4 (100pz)",
+    "codiceInterno": "760",
     "tipo": "P"
   },
-  "TEAR42": {
-    "descrizione": "RIDUZIONE PG13 > PG11",
-    "codiceInterno": "10883",
+  "CEM GF-M5": {
+    "descrizione": "Capicorda Isolato ad Occhiello 2,5F5 (100pz)",
+    "codiceInterno": "761",
     "tipo": "P"
   },
-  "TEARPP43": {
-    "descrizione": "RIDUZIONE PG13,5 > PG16",
-    "codiceInterno": "10884",
+  "CEM GF-M6": {
+    "descrizione": "Capicorda Isolato ad Occhiello 2,5F6 (100pz)",
+    "codiceInterno": "762",
     "tipo": "P"
   },
-  "TEAR44RPP44": {
-    "descrizione": "RIDUZIONE PG16 > PG21",
-    "codiceInterno": "10885",
+  "CEM GF-M8": {
+    "descrizione": "Capicorda Isolato ad Occhiello 6F8 (100pz)",
+    "codiceInterno": "763",
     "tipo": "P"
   },
-  "TEAR45": {
-    "descrizione": "RIDUZIONE PG21 > PG29",
-    "codiceInterno": "10886",
+  "CEM GF-U4": {
+    "descrizione": "Capicorda Isolato a Forcella 6F4 (100pz)",
+    "codiceInterno": "764",
     "tipo": "P"
   },
-  "TEAR46": {
-    "descrizione": "RIDUZIONE PG29 > PG36",
-    "codiceInterno": "10887",
+  "CEM GF-U5": {
+    "descrizione": "Capicorda Isolato a Forcella 6F5 (100pz)",
+    "codiceInterno": "765",
     "tipo": "P"
   },
-  "TEARM2016": {
-    "descrizione": "RIDUZIONE RM2016 ISO 20M-ISO 16F",
-    "codiceInterno": "10888",
+  "CEM PKD1012": {
+    "descrizione": "Tubetto Isolato DIN 10mmq L.12 (100pz)",
+    "codiceInterno": "766",
     "tipo": "P"
   },
-  "TEARM2520": {
-    "descrizione": "RIDUZIONE ISO 25M-IS",
-    "codiceInterno": "10889",
-    "tipo": "C"
+  "CEM PKD108": {
+    "descrizione": "Tubetto Isolato DIN 1mmq L.8 (500pz)",
+    "codiceInterno": "767",
+    "tipo": "P"
   },
-  "TEARM3225": {
-    "descrizione": "RIDUZUZIONE ISO 32M-IS",
-    "codiceInterno": "10890",
+  "CEM PKD112": {
+    "descrizione": "Tubetto Isolato DIN 1mmq L.12 (500pz)",
+    "codiceInterno": "768",
     "tipo": "P"
   },
-  "TEARM4032": {
-    "descrizione": "RIDUZIONE ISO 40M-IS",
-    "codiceInterno": "10891",
+  "CEM PKD1508": {
+    "descrizione": "Tubetto Isolato DIN 1,5mmq L.8 (500pz)",
+    "codiceInterno": "769",
     "tipo": "P"
   },
-  "PANPLT1M-C": {
-    "descrizione": "Fascetta miniaturiz. Nylon6.6 99mm, Natural (100PZ)",
-    "codiceInterno": "10892",
+  "CEM PKD1512": {
+    "descrizione": "Tubetto Isolato DIN 1,5mmq L.12 (500pz)",
+    "codiceInterno": "770",
     "tipo": "P"
   },
-  "PANPLT1.5M-C": {
-    "descrizione": "Fascetta intermedia Nylon6.6 142mm, Natural (100PZ)",
-    "codiceInterno": "10893",
+  "CEM PKD1612": {
+    "descrizione": "Tubetto IsolatoDIN 16mmq L.12 (100pz)",
+    "codiceInterno": "771",
     "tipo": "P"
   },
-  "PANPLT1.5M-C0": {
-    "descrizione": "Fascetta, 142 mm, sezione trasversale minia (100PZ)",
-    "codiceInterno": "10894",
+  "CEM PKD25016": {
+    "descrizione": "Tubetto Isolato DIN 25mmq L.16 (50pz)",
+    "codiceInterno": "772",
     "tipo": "P"
   },
-  "PANPLT2M-C": {
-    "descrizione": "Fascetta miniaturizzata Nylon6.6 203mm, Natural (100PZ)",
-    "codiceInterno": "10896",
+  "CEM PKD2508": {
+    "descrizione": "Tubetto Isolato DIN 2,5mmq L.8 (500pz)",
+    "codiceInterno": "773",
     "tipo": "P"
   },
-  "PANPLT2M-C0": {
-    "descrizione": "Fascetta miniaturizzata Nylon6.6 203mm, Nera (100PZ)",
-    "codiceInterno": "10898",
+  "CEM PKD2512": {
+    "descrizione": "Tubetto Isolato DIN 2,5mmq L.12 (500pz)",
+    "codiceInterno": "774",
     "tipo": "P"
   },
-  "PANPLT3I-C": {
-    "descrizione": "Fascetta intermedia Nylon6.6 290mm, Natural (100PZ)",
-    "codiceInterno": "10899",
+  "CEM PKD410": {
+    "descrizione": "Tubetto Isolato DIN 4mmq L.10 (200pz)",
+    "codiceInterno": "775",
     "tipo": "P"
   },
-  "PANPLT3I-C0": {
-    "descrizione": "Fascetta intermedia Nylon6.6 290mm, Nera (100PZ)",
-    "codiceInterno": "10900",
+  "CEM PKD412": {
+    "descrizione": "Tubetto isolato DIN 4mmq L.12mm (100pz)",
+    "codiceInterno": "776",
     "tipo": "P"
   },
-  "PANPLT4H-L0": {
-    "descrizione": "Fascetta carico ridotto Nylon6.6 368mm, Nera (50PZ)",
-    "codiceInterno": "10904",
+  "CEM PKD508": {
+    "descrizione": "Tubetto Isolato DIN 0,50mmq L.8 (500pz)",
+    "codiceInterno": "777",
     "tipo": "P"
   },
-  "PANABM100-A-C": {
-    "descrizione": "Supporto per fascette a 4 vie con adesivo (100PZ)",
-    "codiceInterno": "10905",
+  "CEM PKD510": {
+    "descrizione": "Tubetto Isolato DIN 0,50mmq L.10 (500pz)",
+    "codiceInterno": "778",
     "tipo": "P"
   },
-  "PANABMM-A-C": {
-    "descrizione": "Supporto adesivo fascette 4vie 19.1mm (500PZ)",
-    "codiceInterno": "10906",
+  "CEM PKD612": {
+    "descrizione": "Tubetto isolato DIN 6mmq L.12mm (100pz)",
+    "codiceInterno": "779",
     "tipo": "P"
   },
-  "CEM1142007": {
-    "descrizione": "CONTRODADO PA6.6 CON COLLARE PG7 GRIGIO CH (1PZ)",
-    "codiceInterno": "10907",
+  "CEM PKD7508": {
+    "descrizione": "Tubetto Isolato DIN 0,75mmq L.8 (500pz)",
+    "codiceInterno": "780",
     "tipo": "P"
   },
-  "CEM1142009": {
-    "descrizione": "CONTRODADO PA6.6 CON COLLARE PG9 GRIGIO CH (1PZ)",
-    "codiceInterno": "10910",
-    "tipo": "C"
+  "CEM PKD7512": {
+    "descrizione": "Tubetto Isolato DIN 0,75mmq L.12 (500pz)",
+    "codiceInterno": "781",
+    "tipo": "P"
   },
-  "CEM1142011": {
-    "descrizione": "CONTRODADO PA6.6CON COLLARE PG11 GRIGIO CH (1PZ)",
-    "codiceInterno": "10911",
+  "CEM PKT1508": {
+    "descrizione": "Tubetto Isolato DIN 1,5x2mmq L.8mm (100pz)",
+    "codiceInterno": "782",
     "tipo": "P"
   },
-  "CEM1142013": {
-    "descrizione": "CONTRODADO PA6.6 CON COLL.PG13,5 GRIGIO CH. (1PZ)",
-    "codiceInterno": "10913",
+  "CEM PKT1512": {
+    "descrizione": "Tubetto Isolato DIN 1,5x2mmq L.12mm (100pz)",
+    "codiceInterno": "783",
     "tipo": "P"
   },
-  "CEM1142016": {
-    "descrizione": "CONTRODADO PA6.6 CON COLLARE PG16 GRIGIO C. (1PZ)",
-    "codiceInterno": "10914",
+  "CEM PKT2510": {
+    "descrizione": "Tubetto Isolato DIN 2,5x2mmq L.10mm (100pz)",
+    "codiceInterno": "784",
     "tipo": "P"
   },
-  "CEM1142021": {
-    "descrizione": "CONTRODADO PA6.6 CON COLLARE PG21 GRIGIO C. (1PZ)",
-    "codiceInterno": "10916",
+  "CEM PKT2512": {
+    "descrizione": "Tubetto Isolato DIN 2,5x2mmq L.12mm (100pz)",
+    "codiceInterno": "785",
     "tipo": "P"
   },
-  "CEM1142029": {
-    "descrizione": "CONTRODADO PA6.6 CON COLLARE PG29 GRIGIO C. (1PZ)",
-    "codiceInterno": "10917",
+  "CEM RF-F305P": {
+    "descrizione": "Faston Isolato 1,5x3,5mmq (100pz)",
+    "codiceInterno": "786",
     "tipo": "P"
   },
-  "CEM1142036": {
-    "descrizione": "CONTRODADO PA6.6 CON COLLARE PG36 GRIGIO C. (1PZ)",
-    "codiceInterno": "10918",
+  "CEM RF-M3": {
+    "descrizione": "Capicorda Isolato a Occhiello 1,5F3 (100pz)",
+    "codiceInterno": "787",
     "tipo": "P"
   },
-  "CEM1142042": {
-    "descrizione": "CONTRODADO PA6.6 CON COLLARE PG42 GRIGIO C. (25PZ)",
-    "codiceInterno": "10919",
+  "CEM RF-M4": {
+    "descrizione": "Capicorda Isolato a Occhiello 1,5F4 (100pz)",
+    "codiceInterno": "788",
     "tipo": "P"
   },
-  "CEM1900.07": {
-    "descrizione": "PRESSACAVO PA6.6 IP68 PG7 GRIGIO CHIARO (1PZ)",
-    "codiceInterno": "10920",
-    "tipo": "C"
+  "CEM RF-M5": {
+    "descrizione": "Capicorda Isolato a Occhiello 1,5F5 (100pz)",
+    "codiceInterno": "789",
+    "tipo": "P"
   },
-  "CEM1900.09": {
-    "descrizione": "PRESSACAVO PA6.6 IP68 PG9 GRIGIO CHIARO (1PZ)",
-    "codiceInterno": "10921",
+  "CEM RF-M6": {
+    "descrizione": "Capicorda Isolato a Occhiello 1,5F6 (100pz)",
+    "codiceInterno": "790",
     "tipo": "P"
   },
-  "CEM1900.11": {
-    "descrizione": "PRESSACAVO PA6.6 IP68 PG11 GRIGIO CHIARO (1PZ)",
-    "codiceInterno": "10922",
+  "CEM RF-M8": {
+    "descrizione": "Capicorda Isolato a Occhiello 1,5F8 (100pz)",
+    "codiceInterno": "791",
     "tipo": "P"
   },
-  "CEM1900.13": {
-    "descrizione": "PRESSACAVO PA6.6 IP68 PG13,5 GRIGIO CHIARO (1PZ)",
-    "codiceInterno": "10925",
+  "CEM RF-U3": {
+    "descrizione": "Capicorda Isolato a Forcella 1,5F3 (100pz)",
+    "codiceInterno": "792",
     "tipo": "P"
   },
-  "CEM1900.16": {
-    "descrizione": "PRESSACAVO PA6.6 IP68 PG16 GRIGIO CHIARO (1PZ)",
-    "codiceInterno": "10927",
+  "CEM RF-U4": {
+    "descrizione": "Capicorda Isolato a Forcella 1,5F4 (100pz)",
+    "codiceInterno": "793",
     "tipo": "P"
   },
-  "CEM1900.21": {
-    "descrizione": "PRESSACAVO PA6.6 IP68 PG21 GRIGIO CHIARO (1PZ)",
-    "codiceInterno": "10928",
+  "CBR XCKPT": {
+    "descrizione": "CK-PT Piastra di Chiusura",
+    "codiceInterno": "794",
     "tipo": "P"
   },
-  "CEM1900.29": {
-    "descrizione": "PRESSACAVO PA6.6 IP68 PG29 GRIGIO CHIARO (1PZ)",
-    "codiceInterno": "10929",
+  "CBR XCKS024DC024DC05": {
+    "descrizione": "CKS-024DC/024DC/05 Rele Stato Solido",
+    "codiceInterno": "795",
     "tipo": "P"
   },
-  "CEM1900.36": {
-    "descrizione": "PRESSACAVO PA6.6 IP68 PG36 GRIGIO CHIARO (1PZ)",
-    "codiceInterno": "10930",
+  "CBR XCKS15E": {
+    "descrizione": "CKS15E OPTO 5-24Vdc",
+    "codiceInterno": "796",
     "tipo": "P"
   },
-  "CEM1900.42": {
-    "descrizione": "PRESSACAVO PA6.6 IP68 PG42 GRIGIO CHIARO (5PZ)",
-    "codiceInterno": "10931",
+  "CBR XO332060": {
+    "descrizione": "Rele Opto 5-24VDC",
+    "codiceInterno": "798",
     "tipo": "P"
   },
-  "TEA6BSM07P07": {
-    "descrizione": "RAC.NE IP66 PG07 (1PZ)",
-    "codiceInterno": "10933",
+  "FIN 09320": {
+    "descrizione": "Pettine 20 Poli per Rele Interfaccia",
+    "codiceInterno": "799",
     "tipo": "P"
   },
-  "TEA6BSM10P09": {
-    "descrizione": "RAC.NE IP66 PG09 SM10 (1PZ)",
-    "codiceInterno": "10934",
+  "FIN 385100240060": {
+    "descrizione": "Modulo Interfaccia 1sc 6A 24Vac/dc",
+    "codiceInterno": "800",
     "tipo": "P"
   },
-  "TEA6BSM10P11": {
-    "descrizione": "RAC.NE IP66 SM10 PG11 (1PZ)",
-    "codiceInterno": "10935",
+  "FIN 850200240000": {
+    "descrizione": "Mini Temporizzatore 24Vac/dc 2sc",
+    "codiceInterno": "801",
     "tipo": "P"
   },
-  "TEA6BSM12P11": {
-    "descrizione": "RAC.NE IP66 PG11 SM12 (1PZ)",
-    "codiceInterno": "10939",
+  "FIN 9474SMA": {
+    "descrizione": "Zoccolo a Vite 4 Scambi Minirele",
+    "codiceInterno": "802",
     "tipo": "P"
   },
-  "TEA6BSM12P13": {
-    "descrizione": "RAC.NE IP66 PG13,5 (1PZ)",
-    "codiceInterno": "10940",
+  "FIN 9482SMA": {
+    "descrizione": "Zoccolo a Vite 1-2 Scambi Minirele",
+    "codiceInterno": "803",
     "tipo": "P"
   },
-  "TEA6BSM17P16": {
-    "descrizione": "RAC.NE D.17 PG16 (1PZ)",
-    "codiceInterno": "10941",
+  "LOV LVM25240": {
+    "descrizione": "Rele di Livello 24-240Vac-dc",
+    "codiceInterno": "804",
     "tipo": "P"
   },
-  "TEA6BSM23P21": {
-    "descrizione": "RAC.NE PG21 IP66 SM23 (1PZ)",
-    "codiceInterno": "10942",
+  "OMR MY2IN-B1": {
+    "descrizione": "Rele 2 Scambi 24Vdc 10A/250Vca LED",
+    "codiceInterno": "805",
     "tipo": "P"
   },
-  "TEA6BSM29P29": {
-    "descrizione": "RAC.NE PG29 IP66 PG29SM29 (1PZ)",
-    "codiceInterno": "10944",
+  "PIZ 777304": {
+    "descrizione": "PNOZ X2 24Vac/Dc 3na Rele di Sicurezza",
+    "codiceInterno": "806",
     "tipo": "P"
   },
-  "TEA6BSM36P36": {
-    "descrizione": "RAC.NE IP66 PG36 SM36 (1PZ)",
-    "codiceInterno": "10945",
+  "PNL GS4": {
+    "descrizione": "Zoccolo Rele 4 Scambi",
+    "codiceInterno": "807",
     "tipo": "P"
   },
-  "TEA6BSM48P42": {
-    "descrizione": "RAC.NE IP66 PG42SM48 (150PZ)",
-    "codiceInterno": "10946",
+  "PNL GS4-0035": {
+    "descrizione": "Targhetta x Zoccolo Rele GS4",
+    "codiceInterno": "808",
     "tipo": "P"
   },
-  "SCA653.00": {
-    "descrizione": "CASSETTA ALUBOX 100X100X59 MM (1PZ)",
-    "codiceInterno": "10947",
+  "PNL LM-AB": {
+    "descrizione": "Modulo Diodo 6-230Vdc (type 22)",
+    "codiceInterno": "809",
     "tipo": "P"
   },
-  "SCA653.01": {
-    "descrizione": "CASSETTA ALUBOX 140X115X60 MM (1PZ)",
-    "codiceInterno": "10948",
+  "PNL R4N-23-1024-WTL": {
+    "descrizione": "Rele 4 Contatti 24Vdc con Led",
+    "codiceInterno": "812",
     "tipo": "P"
   },
-  "SCA653.02": {
-    "descrizione": "CASSETTA ALUBOX 166X142X64 MM (1PZ)",
-    "codiceInterno": "10949",
+  "PNL R4N-23-5024-WTL": {
+    "descrizione": "Rele 4 Contatti 24Vac con Led",
+    "codiceInterno": "813",
     "tipo": "P"
   },
-  "SCA653.03": {
-    "descrizione": "CASSETTA ALUBOX 192X168X80 MM (1PZ)",
-    "codiceInterno": "10950",
+  "PZZ E6-1DMO4K7-D119": {
+    "descrizione": "Potenziometro Serie E6  4,7Khom 1 Giro",
+    "codiceInterno": "814",
     "tipo": "P"
   },
-  "SCA653.04": {
-    "descrizione": "CASSETTA ALUBOX 253X217X93 MM (1PZ)",
-    "codiceInterno": "10952",
+  "CBR PTCCK42": {
+    "descrizione": "PTC/CK/42 Ponte Pettine per CK",
+    "codiceInterno": "955",
     "tipo": "P"
   },
-  "SCA653.05": {
-    "descrizione": "CASSETTA ALUBOX 314X264X122 MM (1PZ)",
-    "codiceInterno": "10953",
+  "FIN 385170240050": {
+    "descrizione": "Modulo Interfaccia 1sc 6A 24Vdc",
+    "codiceInterno": "2020",
     "tipo": "P"
   },
-  "SCA653.07": {
-    "descrizione": "CASSETTA ALUBOX 410X315X153 MM (1PZ)",
-    "codiceInterno": "10954",
+  "PNL GZT4": {
+    "descrizione": "Zoccolo Rele 4 Scambi",
+    "codiceInterno": "2077",
     "tipo": "P"
   },
-  "SCA920.0030420": {
-    "descrizione": "CUSTODIA VOL.+PRESSACAVO COD.64120030420 (1PZ)",
-    "codiceInterno": "10955",
+  "FIN 39.11.0.24.0060": {
+    "descrizione": "Modulo Interfaccia 1sc 6A 24Vdc/ac",
+    "codiceInterno": "2134",
     "tipo": "P"
   },
-  "SCA920.0030720": {
-    "descrizione": "CUSTODIA PROL+PRESSACAVO COD.64120030720 (1PZ)",
-    "codiceInterno": "10956",
+  "SNR SSM1D26BD": {
+    "descrizione": "Rele Statico 24Vdc / 60Vdc 6A 1NO",
+    "codiceInterno": "350",
     "tipo": "P"
   },
-  "SCA920.0032611": {
-    "descrizione": "INSERTO MASCHIO 3 POLI (1PZ)",
-    "codiceInterno": "10957",
+  "FIN 97.01": {
+    "descrizione": "Zoccolo Con Morsetti a Bussola",
+    "codiceInterno": "2657",
     "tipo": "P"
   },
-  "SCA920.0032711": {
-    "descrizione": "INSERTO FEMMINA 3 POLI (1PZ)",
-    "codiceInterno": "10958",
+  "FIN 466190240040": {
+    "descrizione": "Minirelè 24 V, Standard, 1 contatto, 16 A, AgNi, DC, Scambio",
+    "codiceInterno": "2658",
     "tipo": "P"
   },
-  "SCA920.0042611": {
-    "descrizione": "INSERTO MASCHIO 4 POLI (1PZ)",
-    "codiceInterno": "10959",
+  "FIN 9902902499": {
+    "descrizione": "EMC 6...24 V DC, Indicatore LED + Diodo",
+    "codiceInterno": "2650",
     "tipo": "P"
   },
-  "SCA920.0042711": {
-    "descrizione": "INSERTO FEMMINA 4 POLI (1PZ)",
-    "codiceInterno": "10960",
+  "620379": {
+    "descrizione": "Interfaccia Eclr-24AD-RS824",
+    "codiceInterno": "2761",
     "tipo": "P"
   },
-  "CEM700702": {
-    "descrizione": "ETICHETTA PER APPAREC.CS-EYG-TERRA- 20MM (90PZ)",
-    "codiceInterno": "10961",
+  "WEI 7760056097": {
+    "descrizione": "D-SERIES DRM, relè, 4 Contatto di scambio, 24 V DC, 5 A, Con Led",
+    "codiceInterno": "3174",
     "tipo": "P"
   },
-  "CEM200103": {
-    "descrizione": "ETICH.AVVERT.WS-HT -TENSIONE ELETTR.- 100MM (10PZ)",
-    "codiceInterno": "10962",
+  "WEI 7760056363": {
+    "descrizione": "D-SERIES DRM, Zoccolo portarelè, 4 Contatto di scambio,  6 A, PUSH IN",
+    "codiceInterno": "3175",
     "tipo": "P"
   },
-  "CEM0400HT015": {
-    "descrizione": "ETICH.AVVERTIMENTO WST-TSW LATO=50 + TESTO (25PZ)",
-    "codiceInterno": "10963",
+  "WEI 7760056169": {
+    "descrizione": "D-SERIES, Free-wheeling diode,  6…230 V",
+    "codiceInterno": "3176",
     "tipo": "P"
   },
-  "CEM90010": {
-    "descrizione": "TUBETTO PMF-00 SERIE FLAT Ø=0,3-2,2MM. L=12 (7000PZ)",
-    "codiceInterno": "10964",
+  "WEI 1525800000": {
+    "descrizione": "ESG 9/26 SCM ECO MC SDR Siglatura di apparecchi x 26 mm, PA 66",
+    "codiceInterno": "3177",
     "tipo": "P"
   },
-  "CEM90110": {
-    "descrizione": "TUBETTO PMF-01 SERIE FLAT Ø=2,0-3,7MM. L=12 (5000PZ)",
-    "codiceInterno": "10965",
+  "PNL R2N-23-1024-WTL": {
+    "descrizione": "Rele 2 Contatti 24Vdc con Led",
+    "codiceInterno": "2357",
     "tipo": "P"
   },
-  "CEM90210": {
-    "descrizione": "TUBETTO PMF-02 SERIE FLAT Ø=3,5-4,3MM. L=12 (4000PZ)",
-    "codiceInterno": "10966",
+  "FIN 34.51.7.024.0010": {
+    "descrizione": "Modulo relè bobina 24V cc, per guida DIN, contatti SPDT,  6 A",
+    "codiceInterno": "1908",
     "tipo": "P"
   },
-  "CEM90310": {
-    "descrizione": "TUBETTO PMF-03 SERIE FLAT Ø=4,0-6,3MM. L=12 (200PZ)",
-    "codiceInterno": "10968",
+  "ILM CDSF42": {
+    "descrizione": "Frutto Presa 10A 42P molla",
+    "codiceInterno": "815",
     "tipo": "P"
   },
-  "CEM90410": {
-    "descrizione": "TUBETTO PMF-04 SERIE FLAT Ø=6-10MM. L=12 (1000PZ)",
-    "codiceInterno": "10969",
+  "ILM CDSM42": {
+    "descrizione": "Frutto Spina 10A 42P molla",
+    "codiceInterno": "816",
     "tipo": "P"
   },
-  "CEM90510": {
-    "descrizione": "TUBETTO PMF-05 SERIE FLAT Ø=9-15MM. L=12 (500PZ)",
-    "codiceInterno": "10970",
+  "ILM CHI06L": {
+    "descrizione": "Custodia Incasso 1Leva 6Poli IP65",
+    "codiceInterno": "817",
     "tipo": "P"
   },
-  "CEM34002": {
-    "descrizione": "PORTA-TARGA PTPS-22 PULSA. Ø=22 17X30 NERO (100PZ)",
-    "codiceInterno": "10971",
+  "ILM CHI10": {
+    "descrizione": "Custodia Incasso 2Leve 10Poli IP65",
+    "codiceInterno": "818",
     "tipo": "P"
   },
-  "CEM35102N": {
-    "descrizione": "PORTA-TARGA PLA QUADRO 17X30 ADESIVO NERO (100PZ)",
-    "codiceInterno": "10972",
-    "tipo": "C"
+  "ILM CHI16": {
+    "descrizione": "Custodia Incasso 2Leve 16Poli IP66",
+    "codiceInterno": "819",
+    "tipo": "P"
   },
-  "CEM64040": {
-    "descrizione": "TUBETTO PMF-ET SERIE FLAT A FASCETTA L=20 (1000PZ)",
-    "codiceInterno": "10973",
+  "ILM CHI24": {
+    "descrizione": "Custodia Incasso 2Leve 24Poli IP67",
+    "codiceInterno": "820",
     "tipo": "P"
   },
-  "CEM35202N": {
-    "descrizione": "PORTA-TARGA PLA QUADRO 17X52 ADESIVO NERO (100PZ)",
-    "codiceInterno": "10974",
+  "ILM CHI32": {
+    "descrizione": "Custodia Incasso 2Leve 32Poli IP68",
+    "codiceInterno": "821",
     "tipo": "P"
   },
-  "CEM990521": {
-    "descrizione": "PLACHETTA TAP-CCS DI PROTEZIONE TRASP.15X27 (100PZ)",
-    "codiceInterno": "10975",
+  "ILM CHI48LS": {
+    "descrizione": "Custodia Incasso 1Leva+Sportello 48Poli PG36 IP65",
+    "codiceInterno": "822",
     "tipo": "P"
   },
-  "CEM990522": {
-    "descrizione": "PLACHETTA TAP-CCS DI PROTEZIONE TRASP.15X49 (100PZ)",
-    "codiceInterno": "10976",
+  "ILM CHO06L16": {
+    "descrizione": "Custodia Mobile 1Leva+Sportello 6P PG16 IP65",
+    "codiceInterno": "823",
     "tipo": "P"
   },
-  "CEM990523": {
-    "descrizione": "PLACHETTA TAP-CCS DI PROTEZIONE TRASP.15X67 (100PZ)",
-    "codiceInterno": "10977",
+  "ILM CHO10": {
+    "descrizione": "Custodia Mobile 2Leve 10Poli IP65",
+    "codiceInterno": "824",
     "tipo": "P"
   },
-  "CEM47591": {
-    "descrizione": "PROTEZIONE CPT TRASPARENTE X TARGHE 47X98 (10PZ)",
-    "codiceInterno": "10978",
+  "ILM CHO10L": {
+    "descrizione": "Custodia Mobile 10P 1Leva PG16",
+    "codiceInterno": "825",
     "tipo": "P"
   },
-  "CEM47592": {
-    "descrizione": "PROTEZIONE CPT TRASPARENTE X TARGHE 57X127 (10PZ)",
-    "codiceInterno": "10979",
+  "ILM CHO16": {
+    "descrizione": "Custodia Mobile 2Leve 16Poli IP66",
+    "codiceInterno": "826",
     "tipo": "P"
   },
-  "CEM47593": {
-    "descrizione": "PROTEZIONE CPT TRASPARENTE X TARGHE 97X140 (10PZ)",
-    "codiceInterno": "10980",
+  "ILM CHO16L": {
+    "descrizione": "Custodia Mobile 16P 1Leva PG21",
+    "codiceInterno": "827",
     "tipo": "P"
   },
-  "CEM42091B": {
-    "descrizione": "TARGHETTA MG-TPMF BIANCA 4X12MM X TUBETTI (4000PZ)",
-    "codiceInterno": "10983",
+  "ILM CHO24": {
+    "descrizione": "Custodia Mobile 2Leve 24Poli IP67",
+    "codiceInterno": "828",
     "tipo": "P"
   },
-  "CEM47091N": {
-    "descrizione": "TARGHETTA MG-TAP BIANCA 15X27 X CAVI/COMP. (1400PZ)",
-    "codiceInterno": "10984",
+  "ILM CHO32-29": {
+    "descrizione": "Custodia Mobile 2Leve 32Poli PG29 IP68 Orizz.",
+    "codiceInterno": "829",
     "tipo": "P"
   },
-  "CEM49090N": {
-    "descrizione": "TARGHETTA MG-TAPW BIANCA 9X20 X CAVI/COMP. (2750PZ)",
-    "codiceInterno": "10985",
+  "ILM CHO48-L29": {
+    "descrizione": "Custodia Mobile 1Leva 48Poli PG29 IP65",
+    "codiceInterno": "830",
     "tipo": "P"
   },
-  "CEM48901": {
-    "descrizione": "TARGA QUADRO MG-VRT-R BIANCA IN PVC 42X78 (100PZ)",
-    "codiceInterno": "10987",
+  "ILM CHP10LS": {
+    "descrizione": "Custodia Parete 1Leva+Sportello 10Poli PG16 IP65",
+    "codiceInterno": "831",
     "tipo": "P"
   },
-  "CEM48903": {
-    "descrizione": "TARGA QUADRO MG-VRT-R BIANCA IN PVC 52X107 (100PZ)",
-    "codiceInterno": "10988",
+  "ILM CHP16LS": {
+    "descrizione": "Custodia Parete 1Leva+Sportello 16Poli PG21 IP65",
+    "codiceInterno": "832",
     "tipo": "P"
   },
-  "CEM48913": {
-    "descrizione": "TARGA QUADRO MG-VRT-R BIANCA IN PVC 92X118 (50PZ)",
-    "codiceInterno": "10989",
+  "ILM CHV48L": {
+    "descrizione": "Custodia Mobile Usc.Vert. 1Leva 48Poli PG36 IP65",
+    "codiceInterno": "833",
     "tipo": "P"
   },
-  "CEM46915": {
-    "descrizione": "ETICHETTA MG-VYT ADES.BIANCA IN VINILE 6X15 (5250PZ)",
-    "codiceInterno": "10990",
+  "ILM CK03VGS": {
+    "descrizione": "Custodia Mobile con Leva / no pressacavo",
+    "codiceInterno": "834",
     "tipo": "P"
   },
-  "CEM46415": {
-    "descrizione": "ETICHETTA MG-VYT ADES.GIALLA IN VINILE 6X15 (5250PZ)",
-    "codiceInterno": "10991",
+  "ILM CK03VS": {
+    "descrizione": "Custodia Mobile con Piolini",
+    "codiceInterno": "835",
     "tipo": "P"
   },
-  "CEM47092N": {
-    "descrizione": "TARGHETTA MG-TAP BIANCA 15X49 X CAVI/COMP. (700PZ)",
-    "codiceInterno": "10992",
+  "ILM CKF03": {
+    "descrizione": "Frutto Presa 3P+T 10A",
+    "codiceInterno": "836",
     "tipo": "P"
   },
-  "CEM47093": {
-    "descrizione": "TARGHETTA MG-TAP BIANCA 15X67 X CAVI/COMP. (350PZ)",
-    "codiceInterno": "10993",
+  "ILM CKM03": {
+    "descrizione": "Frutto Spina 3P+T 10A",
+    "codiceInterno": "837",
     "tipo": "P"
   },
-  "CEM71058-HF": {
-    "descrizione": "TAR.MG-PLC VERDE S.12,7X31X0,3 HF SIEMENS (1680PZ)",
-    "codiceInterno": "10994",
+  "ILM CNF06": {
+    "descrizione": "Frutto Presa 6P+T 16A VT",
+    "codiceInterno": "838",
     "tipo": "P"
   },
-  "CEM71048-HF": {
-    "descrizione": "TAR.MG-PLC GIALLO 12,7X31X0,3 HF SIEMENS (1680PZ)",
-    "codiceInterno": "10995",
+  "ILM CNM06": {
+    "descrizione": "Frutto Spina 6P+T 16A VT",
+    "codiceInterno": "839",
     "tipo": "P"
   },
-  "SNRRM22LA32MR": {
-    "descrizione": "Relè controllo livello Schneider 24-240V (1PZ)",
-    "codiceInterno": "10996",
+  "ILM COB16BC": {
+    "descrizione": "Base Completa x CN16",
+    "codiceInterno": "840",
     "tipo": "P"
   },
-  "LOVLVM25240": {
-    "descrizione": "Relè controllo livello Lovato (1PZ)",
-    "codiceInterno": "10997",
+  "ILM COB16CMS": {
+    "descrizione": "Custodia Mobile con Serracavi x CN16",
+    "codiceInterno": "841",
     "tipo": "P"
   },
-  "ABBCMENS31S": {
-    "descrizione": "Relè controllo livello ABB (1PZ)",
-    "codiceInterno": "10999",
+  "ILM COB24BC": {
+    "descrizione": "Base Completa x CN24",
+    "codiceInterno": "842",
     "tipo": "P"
   },
-  "PHC2966171": {
-    "descrizione": "PLC-RSC- 24DC/21 Rele a vite (1PZ)",
-    "codiceInterno": "11000",
+  "ILM COB24CMS": {
+    "descrizione": "Custodia Mobile con Serracavi x CN24",
+    "codiceInterno": "843",
     "tipo": "P"
   },
-  "CBRXO332060": {
-    "descrizione": "O332060 1.Opto.5-24Vdc/5-50Vdc.3A (1PZ)",
-    "codiceInterno": "11002",
+  "ILM CPF06": {
+    "descrizione": "Frutto Femmina 6P+T 35A VT",
+    "codiceInterno": "844",
     "tipo": "P"
   },
-  "SNRSSM1D26BD": {
-    "descrizione": "Rele statico 1NO 60Vdc 6A 24Vdc (1PZ)",
-    "codiceInterno": "11003",
+  "ILM CPM06": {
+    "descrizione": "Frutto Maschio 6p+T 35A VT",
+    "codiceInterno": "845",
     "tipo": "P"
   },
-  "OMRZCQ2255-15180400": {
-    "descrizione": "FinecorsaZC,1xSPDT,10A/250Vca,pul.sig.+rot.(1PZ)",
-    "codiceInterno": "11004",
+  "ILM CRF": {
+    "descrizione": "Perno Codifica Femmina",
+    "codiceInterno": "846",
     "tipo": "P"
   },
-  "OMRZCQ2155-10633200": {
-    "descrizione": "FinecorsaZC,1xSPDT,10A/250Vca,pul+rot trasv (10PZ)",
-    "codiceInterno": "11006",
+  "ILM CRM": {
+    "descrizione": "Perno Codifica Maschio",
+    "codiceInterno": "847",
     "tipo": "P"
   },
-  "CAVO FS17 16 G/V MAT CE1/6018": {
-    "descrizione": "CAVO DI TERRA 16mm2 (100m)",
-    "codiceInterno": "11007",
+  "ILM CSEF10": {
+    "descrizione": "Frutto Presa 16A 10Poli Molla",
+    "codiceInterno": "848",
     "tipo": "P"
   },
-  "ASI338471925NE": {
-    "descrizione": "Nastro isol.PVC 0.15mmX19mmX25m IMQ nero (1PZ)",
-    "codiceInterno": "11008",
+  "ILM CSEF16": {
+    "descrizione": "Frutto Presa 16A 16Poli 1/16 Molla",
+    "codiceInterno": "849",
     "tipo": "P"
   },
-  "CEMPKD510": {
-    "descrizione": "TUBETTO ISOLATO DIN SEZ.0,5MMQ P=10MMBIANCO (500PZ)",
-    "codiceInterno": "11009",
+  "ILM CSEF16N": {
+    "descrizione": "Frutto Presa 16A 16Poli 17/32 Molla",
+    "codiceInterno": "850",
     "tipo": "P"
   },
-  "CEMPKD7510": {
-    "descrizione": "TUBETTO ISOLATO DIN SEZ.0,75MMQP=10MMGRIGIO (500PZ)",
-    "codiceInterno": "11017",
+  "ILM CSEF24": {
+    "descrizione": "Frutto Presa 16A 24Poli Molla",
+    "codiceInterno": "851",
     "tipo": "P"
   },
-  "CEMPKD110": {
-    "descrizione": "TUBETTO ISOLATO DIN SEZ.1MMQ P=10MM ROSSO (500PZ)",
-    "codiceInterno": "11018",
+  "ILM CSEF24N": {
+    "descrizione": "Frutto Presa 16A 24Poli Molla ( pin 25-48 )",
+    "codiceInterno": "852",
     "tipo": "P"
   },
-  "CEMPKD1510": {
-    "descrizione": "TUBETTO ISOLATO DIN SEZ.1,5MMQ P=10MM NERO (500PZ)",
-    "codiceInterno": "11019",
+  "ILM CSEM10": {
+    "descrizione": "Frutto Spina 16A 10Poli Molla",
+    "codiceInterno": "853",
     "tipo": "P"
   },
-  "CEMPKD2512": {
-    "descrizione": "TUBETTO ISOLATO DIN SEZ.2,5MMQ P=12MM BLU (500PZ)",
-    "codiceInterno": "11020",
+  "ILM CSEM16": {
+    "descrizione": "Frutto Spina 16A 16Poli Molla",
+    "codiceInterno": "854",
     "tipo": "P"
   },
-  "CEMPKD412": {
-    "descrizione": "TUBETTO ISOLATO DIN SEZ.4MMQ P=12MM GRIGIO (200PZ)",
-    "codiceInterno": "11022",
+  "ILM CSEM16N": {
+    "descrizione": "Frutto Spina 16A 16Poli 17/32 Molla",
+    "codiceInterno": "855",
     "tipo": "P"
   },
-  "CEMPKD612": {
-    "descrizione": "TUBETTO ISOLATO DIN SEZ.6MMQ P=12MM GIALLO (200PZ)",
-    "codiceInterno": "11023",
-    "tipo": "C"
+  "ILM CSEM24": {
+    "descrizione": "Frutto Spina 16A 24Poli Molla",
+    "codiceInterno": "856",
+    "tipo": "P"
   },
-  "CEMPKD1012": {
-    "descrizione": "TUBETTO ISOLATO DIN SEZ.10MMQ P=12MM ROSSO (100PZ)",
-    "codiceInterno": "11024",
+  "ILM CSEM24N": {
+    "descrizione": "Frutto Spina 16A 24Poli Molla ( pin 25-48 )",
+    "codiceInterno": "857",
     "tipo": "P"
   },
-  "CEMPKD1612": {
-    "descrizione": "TUBETTO ISOLATO DIN SEZ.16MMQ P=12MM BLU (100PZ)",
-    "codiceInterno": "11027",
+  "ILM CXF 4-8": {
+    "descrizione": "Frutto Presa 4P 80A + 4P 16A +T",
+    "codiceInterno": "858",
     "tipo": "P"
   },
-  "CEMKE110ST": {
-    "descrizione": "TUBETTO NON ISOLATO SEZ.1MMQ L=10MM (500PZ)",
-    "codiceInterno": "11028",
+  "ILM CXM 4-8": {
+    "descrizione": "Frutto Spina 4P 80A + 4P 16A + T",
+    "codiceInterno": "859",
     "tipo": "P"
   },
-  "CEMKE1510ST": {
-    "descrizione": "TUBETTO NON ISOLATO SEZ.1,5MMQ L=10MM (500PZ)",
-    "codiceInterno": "11029",
-    "tipo":"P"
+  "ILM CHP 48 LS": {
+    "descrizione": "CUST.PAR.1L.SP.48P.2PG36",
+    "codiceInterno": "1136",
+    "tipo": "P"
   },
-  "CEMRF-M4": {
-    "descrizione": "CAPOCORDA ROSSO AD OCCHIELLO VITE 4MM (100PZ)",
-    "codiceInterno": "11030",
+  "ILM JHF16": {
+    "descrizione": "Frutto Presa 16A 16Poli 1/16 Molla Squich",
+    "codiceInterno": "3180",
     "tipo": "P"
   },
-  "CEMRF-M5": {
-    "descrizione": "CAPOCORDA ROSSO AD OCCHIELLO VITE 5MM (100PZ)",
-    "codiceInterno": "11031",
+  "ILM JHM16": {
+    "descrizione": "Frutto Presa 16A 16Poli 1/16 Molla Squich",
+    "codiceInterno": "3181",
     "tipo": "P"
   },
-  "CEMRF-M6": {
-    "descrizione": "CAPOCORDA ROSSO AD OCCHIELLO VITE 6MM (100PZ)",
-    "codiceInterno": "11032",
+  "ILM JHF 24": {
+    "descrizione": "Frutto Presa 16A 24Poli 1/24 Molla Squich",
+    "codiceInterno": "3182",
     "tipo": "P"
   },
-  "CEMRF-M8": {
-    "descrizione": "CAPOCORDA ROSSO AD OCCHIELLO VITE 8MM (100PZ)",
-    "codiceInterno": "11033",
+  "ILM JHM 24": {
+    "descrizione": "Frutto Presa 16A 24Poli 1/24 Molla Squich",
+    "codiceInterno": "3183",
     "tipo": "P"
   },
-  "CEMBF-M4": {
-    "descrizione": "CAPOCORDA BLU AD OCCHIELLO VITE 4MM (100PZ)",
-    "codiceInterno": "11034",
+  "ILM JHF16N": {
+    "descrizione": "Frutto Presa 16A 16Poli 17/32 Molla Squich",
+    "codiceInterno": "3199",
     "tipo": "P"
   },
-  "CEMBF-M5": {
-    "descrizione": "CAPOCORDA BLU AD OCCHIELLO VITE 5MM (100PZ)",
-    "codiceInterno": "11035",
+  "ILM JHM16N": {
+    "descrizione": "Frutto Presa 16A 16Poli 17/32 Molla Squich",
+    "codiceInterno": "3200",
     "tipo": "P"
   },
-  "CEMBF-M6": {
-    "descrizione": "CAPOCORDA BLU AD OCCHIELLO VITE 6MM (100PZ)",
-    "codiceInterno": "11036",
+  "ILM JHF 24N": {
+    "descrizione": "Frutto Presa 16A 24Poli 25/48 Molla Squich",
+    "codiceInterno": "3201",
     "tipo": "P"
   },
-  "CEMBF-M8": {
-    "descrizione": "CAPOCORDA BLU AD OCCHIELLO VITE 8MM (100PZ)",
-    "codiceInterno": "11038",
+  "ILM JHM 24N": {
+    "descrizione": "Frutto Presa 16A 24Poli 25/48 Molla Squich",
+    "codiceInterno": "3202",
     "tipo": "P"
   },
-  "CEMGF-M4": {
-    "descrizione": "CAPOCORDA GIALLO AD OCCHIELLO VITE 4MM (100PZ)",
-    "codiceInterno": "11039",
+  "ILM CDSHF42": {
+    "descrizione": "Frutto Presa 10A 42Poli 1/42 Molla Squich",
+    "codiceInterno": "3211",
     "tipo": "P"
   },
-  "CEMRF-U4": {
-    "descrizione": "CAPOCORDA ROSSO A FORCELLA VITE 4MM (100PZ)",
-    "codiceInterno": "11040",
+  "ILM CDSHM42": {
+    "descrizione": "Frutto Presa 10A 42Poli 1/42 Molla Squich",
+    "codiceInterno": "3212",
     "tipo": "P"
   },
-  "CEMRF-U5": {
-    "descrizione": "CAPOCORDA ROSSO A FORCELLA VITE 5MM (100PZ)",
-    "codiceInterno": "11041",
+  "ILM CSHF10": {
+    "descrizione": "Frutto Spina 16A 10Poli Molla",
+    "codiceInterno": "3350",
     "tipo": "P"
   },
-  "CEMRF-U6": {
-    "descrizione": "CAPOCORDA ROSSO A FORCELLA VITE 6MM (100PZ)",
-    "codiceInterno": "11042",
+  "ILM CSHM10": {
+    "descrizione": "Frutto Spina 16A 10Poli Molla",
+    "codiceInterno": "3351",
     "tipo": "P"
   },
-  "CEMBF-U4": {
-    "descrizione": "CAPOCORDA BLU A FORCELLA VITE 4MM (100PZ)",
-    "codiceInterno": "11044",
+  "ILM CSHF16": {
+    "descrizione": "Frutto Presa 16A 16Poli 1/16 Molla Squich",
+    "codiceInterno": "3372",
     "tipo": "P"
   },
-  "CEMBF-U5": {
-    "descrizione": "CAPOCORDA BLU A FORCELLA VITE 5MM (100PZ)",
-    "codiceInterno": "11045",
+  "ILM CSHM16": {
+    "descrizione": "Frutto Presa 16A 16Poli 1/16 Molla Squich",
+    "codiceInterno": "3373",
     "tipo": "P"
   },
-  "CEMBF-U6": {
-    "descrizione": "CAPOCORDA BLU A FORCELLA VITE 6MM (100PZ)",
-    "codiceInterno": "11046",
+  "SCA933.0162601": {
+    "descrizione": "Frutto Maschio 16A 16 Poli 500V",
+    "codiceInterno": "1163",
     "tipo": "P"
   },
-  "CEMGF-U4": {
-    "descrizione": "CAPOCORDA GIALLO A FORCELLA VITE 4MM (100PZ)",
-    "codiceInterno": "11047",
+  "SCA933.0162701": {
+    "descrizione": "Frutto Femmina 16A 16 Poli 500V",
+    "codiceInterno": "1164",
     "tipo": "P"
   },
-  "CEMGF-U5": {
-    "descrizione": "CAPOCORDA GIALLO A FORCELLA VITE 5MM (100PZ)",
-    "codiceInterno": "11048",
-    "tipo": "C"
+  "SCA933.0242601": {
+    "descrizione": "Frutto Maschio 16A 24 Poli 500V",
+    "codiceInterno": "1165",
+    "tipo": "P"
   },
-  "CEMGF-U6": {
-    "descrizione": "CAPOCORDA GIALLO A FORCELLA VITE 6MM (100PZ)",
-    "codiceInterno": "11049",
+  "SCA933.0242701": {
+    "descrizione": "Frutto Femmina 16A 24 Poli 500V",
+    "codiceInterno": "1166",
     "tipo": "P"
   },
-  "CEMBN-FA608": {
-    "descrizione": "INNESTO FEMMINA NUDO SEZ.1-2,5MMQ 6,3X0,8 (100PZ)",
-    "codiceInterno": "11050",
+  "SCA933.0242711": {
+    "descrizione": "Frutto Femmina 16A 24 Poli (25-48) 500V",
+    "codiceInterno": "1175",
     "tipo": "P"
   },
-  "CEMBN-MA608": {
-    "descrizione": "INNESTO MASCHIO NUDO SEZ.1-2,5MMQ 6,3X0,8 (4000PZ)",
-    "codiceInterno": "11051",
+  "SCA933.0242611": {
+    "descrizione": "Frutto Maschio 16A 24 Poli (25-48) 500V",
+    "codiceInterno": "1176",
     "tipo": "P"
   },
-  "CEMBF-F608P": {
-    "descrizione": "INNESTO FEMMINA BLU 6,35X0,8 TUTTO ISOLATO (1000PZ)",
-    "codiceInterno": "11052",
+  "BTS USE60BB": {
+    "descrizione": "TM 600VA P.0-230-400V S.24V",
+    "codiceInterno": "860",
     "tipo": "P"
   },
-  "CEMGF-F608P": {
-    "descrizione": "INNESTO FEMMINA GIALLO 6,35X0,8 TUTTO ISOL. (800PZ)",
-    "codiceInterno": "11053",
-    "tipo": "C"
+  "IWE CFM00100CC04": {
+    "descrizione": "CF11849 TM 100VA P.230-400V S.24V",
+    "codiceInterno": "861",
+    "tipo": "P"
   },
-  "CEMRF-M608P": {
-    "descrizione": "INNESTO MASCHIO ROSSO 6.35X0.8 TUTTO ISOL. (100PZ)",
-    "codiceInterno": "11054",
+  "IWE CFM001K0CC15": {
+    "descrizione": "CF11855 TM 1000VA P.230-400V S.115-0-115",
+    "codiceInterno": "862",
     "tipo": "P"
   },
-  "CEMBF-M608P": {
-    "descrizione": "INNESTO MASCHIO BLU 6.35X0.8 TUTTO ISOLATO (100PZ)",
-    "codiceInterno": "11056",
+  "IWE CFM001K6CC15": {
+    "descrizione": "SP21817 TM 1600VA P.230-400V S.115-0-115",
+    "codiceInterno": "863",
     "tipo": "P"
   },
-  "CEMPL03-M": {
-    "descrizione": "GIUNTO TESTA-TESTA ROSSO SEZ.0,25 - 1,5 MMQ (1000PZ)",
-    "codiceInterno": "11057",
+  "IWE CFM00400CC15": {
+    "descrizione": "TM 400VA P.230-400V S.115-0-115",
+    "codiceInterno": "864",
     "tipo": "P"
   },
-  "CEMA2-M6": {
-    "descrizione": "CAPOCORDA SEZ.10MMQ VITE 6MM",
-    "codiceInterno": "11058",
+  "IWE CFM00630CC15": {
+    "descrizione": "CF11851 TM 630VA P.230-400V S.115-0-115",
+    "codiceInterno": "865",
     "tipo": "P"
   },
-  "CEMA2-M8": {
-    "descrizione": "CAPOCORDA SEZ.10MMQ VITE 8MM (100PZ)",
-    "codiceInterno": "11059",
+  "IWE CFM00800CC15": {
+    "descrizione": "SP21817 TM 800VA P.230-400V S.115-0-115",
+    "codiceInterno": "866",
     "tipo": "P"
   },
-  "CEMA2-M10": {
-    "descrizione": "CAPOCORDA SEZ.10MMQ VITE 10MM (100PZ)",
-    "codiceInterno": "11060",
+  "BBR AT3F5KVA-1": {
+    "descrizione": "Autotrasformatore Trifase 5KVA 230/400V 50-60HZ",
+    "codiceInterno": "868",
     "tipo": "P"
   },
-  "CEMA3-M6": {
-    "descrizione": "CAPOCORDA SEZ.16MMQ VITE 6MM (100PZ)",
-    "codiceInterno": "11061",
+  "BBR AT3F7,5KVA-5": {
+    "descrizione": "Autotrasformatore Trifase 7,5KVA 230/400V 50-60HZ",
+    "codiceInterno": "869",
     "tipo": "P"
   },
-  "CEMA3-M8": {
-    "descrizione": "CAPOCORDA SEZ.16MMQ VITE 8MM (100PZ)",
-    "codiceInterno": "11062",
+  "BBR TM20VA-5": {
+    "descrizione": "TM 20VA P.230V_S.230V",
+    "codiceInterno": "870",
     "tipo": "P"
   },
-  "CEMA3-M10": {
-    "descrizione": "CAPOCORDA SEZ.16MMQ VITE 10MM (100PZ)",
-    "codiceInterno": "11063",
+  "BBR TM20VA-6": {
+    "descrizione": "TM 20VA P.230V_S.6V",
+    "codiceInterno": "871",
     "tipo": "P"
   },
-  "SNRPKX16M423": {
-    "descrizione": "SP.MOB.IP44 2PT 16A 220V CR (1PZ)",
-    "codiceInterno": "11064",
+  "BBR TM50VA-46": {
+    "descrizione": "TM 50VA P.230V_S.230V",
+    "codiceInterno": "872",
     "tipo": "P"
   },
-  "SNRPKY16M423": {
-    "descrizione": "PR.MOB.IP44 2PT 16A 220V CR (1PZ)",
-    "codiceInterno": "11065",
+  "BBR TM50VA-47": {
+    "descrizione": "TM 50VA P.230V_S1.24Vx25VA/S2.24Vx25VA",
+    "codiceInterno": "873",
     "tipo": "P"
   },
-  "SNRPKX16M434": {
-    "descrizione": "SP.MOB.IP44 3PT 16A 380V CR (1PZ)",
-    "codiceInterno": "11066",
+  "TRF 1U6000060": {
+    "descrizione": "TM 600VA P.239-400V S. 0-230V 300VA / 0-24V 300VA",
+    "codiceInterno": "1146",
     "tipo": "P"
   },
-  "SNRPKY16M434": {
-    "descrizione": "PR.MOB.IP44 3PT 16A 380V CR (1PZ)",
-    "codiceInterno": "11067",
+  "BTS UME16CE": {
+    "descrizione": "TM 1600VA P.0-230-400V S. 0-230V",
+    "codiceInterno": "1899",
     "tipo": "P"
   },
-  "SNRPKX32M435": {
-    "descrizione": "SP.MOB.IP44 3PNT 32A 380V CR (1PZ)",
-    "codiceInterno": "11068",
+  "170131": {
+    "descrizione": "Tr. Mono. F 800Va 230.400.415.440/230",
+    "codiceInterno": "2510",
     "tipo": "P"
   },
-  "SNRPKY32M435": {
-    "descrizione": "PR.MOB.IP44 3PNT 32A 380V CR (1PZ)",
-    "codiceInterno": "11069",
+  "170141": {
+    "descrizione": "Tr. Mono. F 1000Va 230.400.415.440/230",
+    "codiceInterno": "2513",
     "tipo": "P"
   },
-  "GEWGW64212": {
-    "descrizione": "ADAT.IC 2P+T 16A 230V 1X2P+T BIV.P30-17 (1PZ)",
-    "codiceInterno": "11070",
+  "IWE OCM064080R417": {
+    "descrizione": "Trasf.1PH 1500VA 0-400-440-460-480/0-115-230",
+    "codiceInterno": "2607",
     "tipo": "P"
   },
-  "GEWGW64208": {
-    "descrizione": "ADAT.CI S17 2P+T 16A 250V-2P+T 16A 6H (1PZ)",
-    "codiceInterno": "11071",
+  "SC1656P": {
+    "descrizione": "GW 20056 COPRIFORO COMPON.",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "MEM495237891": {
-    "descrizione": "Stagno in rocchetto 60/4Ox1 mm 100gr (1PZ)",
-    "codiceInterno": "11072",
+  "MS1443X": {
+    "descrizione": "GW 44204 CASSET. ST.IP56 100X100X50",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "SCO7100037105": {
-    "descrizione": "SPRAY 1625 DETERGENTE CONTATTI (1PZ)",
-    "codiceInterno": "11073",
+  "GD71316": {
+    "descrizione": "TKNCLIP1005  Clip per Trave Spessore",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "VIW00201": {
-    "descrizione": "Spina 2P+T 10A S11 assiale nero (1PZ)",
-    "codiceInterno": "11074",
+  "CF37162": {
+    "descrizione": "GW 20571 INTERR. SYSTEM 1P 16A",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "VIW00201.B": {
-    "descrizione": "Spina 2P+T 10A S11 assiale bianco (1PZ)",
-    "codiceInterno": "11075",
+  "CF133108": {
+    "descrizione": "MG VDICE115118P  CAVO  U/UTP  4P  CAT.5  E  PVC CLASSE",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "VIW00202": {
-    "descrizione": "Spina 2P+T 16A S17 assiale nero (1PZ)",
-    "codiceInterno": "11076",
+  "CF 85373": {
+    "descrizione": "BENBKB-LCD TASTIERA CLASSIKA LCD",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "VIW00202.B": {
-    "descrizione": "Spina 2P+T 16A S17 assiale bianco NR (1PZ)",
-    "codiceInterno": "11077",
+  "CF 76873": {
+    "descrizione": "FMMFG20721 BATT. RIC. 12V 7,2AH",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "VIW00223": {
-    "descrizione": "Presa 2P+T 16A P17/11 assiale nero (1PZ)",
-    "codiceInterno": "11078",
+  "CF 76871": {
+    "descrizione": "FMMFG20201 BATT. RIC. 12V 2AH",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "VIW00223.B": {
-    "descrizione": "Presa 2P+T 16A P17/11 assiale bianco (1PZ)",
-    "codiceInterno": "11079",
+  "CF 75092": {
+    "descrizione": "MEN460 – CSA CONTAT. MAGN. ALL. POTENZA",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "GEWGW27102": {
-    "descrizione": "CONTENITORE 2POS.PULSANTI D.22 (1PZ)",
-    "codiceInterno": "11080",
+  "CF 74861": {
+    "descrizione": "BENCALL-FPI SIRENA ESTERNA ANTISCHIUMA",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "SNRZBE101": {
-    "descrizione": "Elemento di contatto NO (1PZ)",
-    "codiceInterno": "11081",
+  "CF 74725": {
+    "descrizione": "BENBMD504 RIVELATORE DOPP. TECNOL.",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "SNRZBE102": {
-    "descrizione": "Elemento di contatto NC (1PZ)",
-    "codiceInterno": "11082",
+  "CF 74654": {
+    "descrizione": "BENBOXPLUS CONTENUTORE PLASTICO",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "SNRZB5AZ009": {
-    "descrizione": "Base di fissaggio in plastica (1PZ)",
-    "codiceInterno": "11083",
+  "CF 74653": {
+    "descrizione": "BENUNK32G SCHEDA KYO 8 ZONE ESPAND.",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "SNRZB5SZ3": {
-    "descrizione": "Tappo otturatore (1PZ)",
-    "codiceInterno": "11084",
+  "CF 128439": {
+    "descrizione": "BENBGS-220 COMUNICATORE UNIVERSALE GSM",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "SNRZBVB1": {
-    "descrizione": "LED universale 24Vac/dc (1PZ)",
-    "codiceInterno": "11085",
+  "C757171": {
+    "descrizione": "CAVO FS17 2,5mm G/V  MAT CE",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "SNRZB5AA2": {
-    "descrizione": "Testa pulsante nero (1PZ)",
-    "codiceInterno": "11086",
+  "C757153": {
+    "descrizione": "CAVO FS17 2,5mm BLU 5015 MAT CE",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "SNRZB5AA3": {
-    "descrizione": "Testa pulsante verde (1PZ)",
-    "codiceInterno": "11087",
+  "C757151": {
+    "descrizione": "CAVO FS17 2,5mm NERO MAT CE",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "SNRZB5AA4": {
-    "descrizione": "Testa pulsante rosso (1PZ)",
-    "codiceInterno": "11088",
+  "AF0703C": {
+    "descrizione": "FIN260182300000  RELE  INT",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "SNRZB5AW313": {
-    "descrizione": "Testa pulsante luminoso bianco led (1PZ)",
-    "codiceInterno": "11089",
+  "A806150": {
+    "descrizione": "PRI305952 NORMA+M 45 S/EW 840 GR-RA",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "SNRZB5AW333": {
-    "descrizione": "Testa pulsante luminoso verde led (1PZ)",
-    "codiceInterno": "11090",
+  "A539070": {
+    "descrizione": "CEMMG3 SIST. SIGL.MARKINGGENIUS MG3",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "SNRZB5AW363": {
-    "descrizione": "Testa pulsante luminoso blu led (1PZ)",
-    "codiceInterno": "11091",
+  "A477631": {
+    "descrizione": "ETQRTS20 / 16 RACC. T / G IP67 / 65 D20 / 16",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "SNRZB5AV013": {
-    "descrizione": "Testa lampada spia bianca led (1PZ)",
-    "codiceInterno": "11092",
+  "A477617": {
+    "descrizione": "ETQRTS16G RACC. GIR. GUA. D16 GAS 1/2”",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "SNRZB5AV063": {
-    "descrizione": "Testa lampada spia blu led (1PZ)",
-    "codiceInterno": "11094",
+  "A477572": {
+    "descrizione": "ETQFSTC32  FISSATUBO  A  CLIP D32",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "SNRZB5AV043": {
-    "descrizione": "Testa lampada spia rossa led (1PZ)",
-    "codiceInterno": "11095",
+  "A477556": {
+    "descrizione": "ETQFSTC20  FISSATUBO  A CLIP D20",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "SNRZB5AV033": {
-    "descrizione": "Testa lampada spia verde led (1PZ)",
-    "codiceInterno": "11096",
+  "A477552": {
+    "descrizione": "ETQCRV20IP40 CURVA A 90 IP40 D 20",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "SNRZB5AV053": {
-    "descrizione": "Testa lampada spia arancio led (1PZ)",
-    "codiceInterno": "11097",
+  "A477345": {
+    "descrizione": "ETQRTS20 RACC. TUBO-SCAT. D20 M20X1,5",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "WF CA12PD10M": {
-    "descrizione": "Cavo per finecorsa con serratura PIZZATO 10 metri",
-    "codiceInterno": "11111",
+  "A477341": {
+    "descrizione": "ETQMTT32  Manicotto Giunz. IP67  D32",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "SIE 6XV18402AH10": {
-    "descrizione": "Cavo Profinet (1metro)",
-    "codiceInterno": "11135",
+  "A477291": {
+    "descrizione": "ETQ00025  MORSETTO  ST. MM2,5  TR.  10P",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "SNRZB5AS834": {
-    "descrizione": "Pulsante a Fungo Serie in plastica (1PZ)",
-    "codiceInterno": "11138",
+  "A449027": {
+    "descrizione": "MG A9C30811 ITL 1NA 16A COMANDO 230",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "SNRZB5-AD5": {
-    "descrizione": "TESTA SEL A LEVA 3 POSIZIONI (1PZ)",
-    "codiceInterno": "11142",
+  "A448967": {
+    "descrizione": "MG A9R41440  IID  4P  40A  30MA  TIPO",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "FRZ07503M100": {
-    "descrizione": "CAVO FROR16 O.R. 3X0.75 DIN 47 (100m)",
-    "codiceInterno": "11191",
+  "A364004": {
+    "descrizione": "TC  AM5979C5E  BTNET  -  MATRIX  RJ45  TOO",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "FRZ07504M100": {
-    "descrizione": "CAVO FROR16 O.R. 4X0.75 DIN 47 (100m)",
-    "codiceInterno": "11192",
+  "A259015": {
+    "descrizione": "MG KBA40ZFUW  STAFFA  UNIVERSALE  KBA",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "CFZ05006M100": {
-    "descrizione": "CAVO 6X0.50 SCH. CONTROLFLEX FR2OH2R16 O.R. (100m)",
-    "codiceInterno": "11193",
+  "A116651": {
+    "descrizione": "MG 10342  QUADRO  KAEDRA  IP65  2 FILE",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "CFZ25004G": {
-    "descrizione": "CAVO 4G2.5 SCH. CONTROLFLEX FR20H2R16 O.R. (100m)",
-    "codiceInterno": "11194",
+  "A114861": {
+    "descrizione": "TC AM5440 / 16  MATIX – PRESA SCHUKO E",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "060SFP": {
-    "descrizione": "STAFFA FISSAGGIO PARETE PULSANTIERA ELFIN (1PZ)",
-    "codiceInterno": "11196",
+  "A110535": {
+    "descrizione": "MG DOMA45C16 INT. AUT. 1P+N 1M C16A",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "060PFM": {
-    "descrizione": "PIASTRA FISSAGGIO MAGNETICA X PULSANTIERA ELFIN (1PZ)",
-    "codiceInterno": "11197",
+  "A099575": {
+    "descrizione": "TC  503BP  SCATOLA  DA  PARETE",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "3714.8": {
-    "descrizione": "ZQI 2.5/6 PONTI MORSETTI DA 6 (1PZ)",
-    "codiceInterno": "11199",
+  "A064661": {
+    "descrizione": "TC  503SA  Magic  TT -  Supporto  3P",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "3811.2": {
-    "descrizione": "ZES 35/2 BLOCCA MORSETTI (1PZ)",
-    "codiceInterno": "11200",
+  "A062468": {
+    "descrizione": "DX  43332  RMG  32/25  RACC. TUBO-GUAINA",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "RAYLST-TEC-3.2-0": {
-    "descrizione": "RAYLST-TEC-3.2-0 NERO (8m)",
-    "codiceInterno": "11203",
+  "A054098": {
+    "descrizione": "DX  40020  RK M/20G MANICOTTO GRI.",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  // 📦 Aggiunti 20/04/2026
-  "CFZ07503M100": {
-    "descrizione": "CAVO 3X0.75  SCH. CONTROLFLEX FR2OH2R16 O. R. (100m)",
-    "codiceInterno": "11429",
+  "A053037": {
+    "descrizione": "DX  43220  MS20 Racc. Tubo-Scatola",
+    "codiceInterno": "",
     "tipo": "P"
   },
-  "RAYLST-TEC-19.0-0": {
-    "descrizione": "RAYLST-TEC-19.0-0 NERO (5m)",
-    "codiceInterno": "11494",
+  "A052079": {
+    "descrizione": "DX  30016  DF  16G  GUAINA GRIGIA",
+    "codiceInterno": "",
     "tipo": "P"
-    },
-    "040C0814-8EP2": {
-    "descrizione": "Scatola pulsantiera alluminio M10 85x140x85, 2 fori Ø 22, con entrata cavo Elfin",
-    "codiceInterno": "11583",
+  },
+  "A045606": {
+    "descrizione": "DX  25332  RK15/32G  TUBO  RIGIDO",
+    "codiceInterno": "",
     "tipo": "P"
-    },
-     "6XV1850-2GH20": {
-    "descrizione": "Cavo Profinet Stampato RJ45 / RJ45 2m (1PZ)",
-    "codiceInterno": "11595",
+  },
+  "A033038": {
+    "descrizione": "GW 20510  PULSANTE  UNIP. NA  10A",
+    "codiceInterno": "",
     "tipo": "P"
-    },
-     "6XV1850-2GH05": {
-    "descrizione": "Cavo Profinet Stampato RJ45 / RJ45 0,5m (1PZ)",
-    "codiceInterno": "11596",
+  },
+  "A021496": {
+    "descrizione": "GW 27002  CONTENITORE  2P  IP40",
+    "codiceInterno": "",
     "tipo": "P"
-    },
-       "6XV1850-2GH10": {
-    "descrizione": "Cavo Profinet Stampato RJ45 / RJ45 1m (1PZ)",
-    "codiceInterno": "11597",
+  },
+  "A017473": {
+    "descrizione": "GW 27004  CONTENITORE  4P  IP40",
+    "codiceInterno": "",
     "tipo": "P"
-    }
-  };
+  }
+}
+};
 
 
 // 📦 ORDINE
